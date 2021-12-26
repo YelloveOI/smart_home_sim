@@ -1,2 +1,2 @@
-# SemOmo
+# cz.cvut.fel.smarthome.SemOmo
 
