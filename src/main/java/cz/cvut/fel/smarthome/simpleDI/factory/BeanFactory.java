@@ -38,7 +38,28 @@ public class BeanFactory {
                 .filter(field -> field.isAnnotationPresent(Inject.class))
                 .collect(Collectors.toList())) {
             f.setAccessible(true);
-            f.set(bean, context.getBean(f.getType()));
+
+            String param = f.getAnnotation(Inject.class).beanType();
+            switch (param) {
+                case "singleton" : {
+                    if (f.getAnnotation(Inject.class).implType() == Object.class) {
+                        f.set(bean, context.getBean(f.getType()));
+                    } else {
+                        f.set(bean, context.getBean(f.getAnnotation(Inject.class).implType()));
+                    }
+                    break;
+                }
+                case "prototype" : {
+                    if (f.getAnnotation(Inject.class).implType() == Object.class) {
+                        f.set(bean, context.getNewBean(f.getType()));
+                    } else {
+                        f.set(bean, context.getNewBean(f.getAnnotation(Inject.class).implType()));
+                    }
+                }
+                default: {
+                    throw new RuntimeException("Wrong annotation type: " + param);
+                }
+            }
         }
         return bean;
     }

@@ -26,4 +26,14 @@ public class ApplicationContext {
         return bean;
     }
 
+    public <T> T getNewBean(Class<T> clazz) {
+        T bean = beanFactory.getBean(clazz);
+
+        if(!beanMap.containsKey(clazz)) {
+            beanMap.put(clazz, bean);
+        }
+
+        return beanFactory.getBean(clazz);
+    }
+
 }

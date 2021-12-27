@@ -8,4 +8,9 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.FIELD)
 public @interface Inject {
+
+    String beanType() default "singleton";
+
+    Class implType() default Object.class;
+
 }

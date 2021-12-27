@@ -10,17 +10,22 @@ public class Base {
     @Inject
     private B b;
 
+    @Inject(implType = Impl2.class)
+    private Inter inter;
+
     public Base() {
     }
 
-    public Base(A a, B b) {
+    public Base(A a, B b, Inter inter) {
         this.a = a;
         this.b = b;
+        this.inter = inter;
     }
 
     public void foo() {
         System.out.println(a.bar());
         b.bar();
+        inter.dooFoo();
     }
 
 }
