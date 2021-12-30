@@ -1,0 +1,26 @@
+{
+  "name": "Smart Home 1",
+  "floors": [
+    {
+      "name": "1st",
+      "places": [
+        {"name": "room1"},
+        {"name": "room2"},
+        {"name": "room3"}
+      ]
+    },
+    {
+      "name": "2nd",
+      "places": [
+        {"name": "room4"},
+        {"name": "room5"}
+      ]
+    }
+  ],
+  "address": {
+    "country": "Czech Republic",
+    "city": "city",
+    "street": "Omackova",
+    "buildingNumber": "13/37"
+  }
+}
