@@ -15,6 +15,10 @@ public class ApplicationContext {
     }
 
     public <T> T getBean(Class<T> clazz) {
+        if(clazz == ApplicationContext.class) {
+            return (T) this;
+        }
+
         if(beanMap.containsKey(clazz)) {
             return (T) beanMap.get(clazz);
         }
