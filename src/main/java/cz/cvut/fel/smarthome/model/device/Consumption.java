@@ -1,28 +1,28 @@
 package cz.cvut.fel.smarthome.model.device;
 
+import cz.cvut.fel.smarthome.model.enums.ConsumptionType;
+import cz.cvut.fel.smarthome.model.enums.DeviceStateType;
+
 public class Consumption {
+    private final ConsumptionType consumptionType;
+    private final DeviceStateType deviceStateType;
+    private final Double value;
 
-    private String consumptionType;
-    private Double consumptionValue;
-
-    public Consumption(String consumptionType, Double consumptionValue) {
+    public Consumption(ConsumptionType consumptionType, DeviceStateType deviceStateType, Double value) {
         this.consumptionType = consumptionType;
-        this.consumptionValue = consumptionValue;
+        this.deviceStateType = deviceStateType;
+        this.value = value;
     }
 
-    public String getConsumptionType() {
+    public ConsumptionType getConsumptionType() {
         return consumptionType;
     }
 
-    public void setConsumptionType(String consumptionType) {
-        this.consumptionType = consumptionType;
+    public DeviceStateType getDeviceStateType() {
+        return deviceStateType;
     }
 
-    public Double getConsumptionValue() {
-        return consumptionValue;
-    }
-
-    public void setConsumptionValue(Double consumptionValue) {
-        this.consumptionValue = consumptionValue;
+    public Double getValue() {
+        return value;
     }
 }

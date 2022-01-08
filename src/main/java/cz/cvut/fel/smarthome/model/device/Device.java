@@ -1,60 +1,49 @@
 package cz.cvut.fel.smarthome.model.device;
 
-import cz.cvut.fel.smarthome.model.Action;
-import cz.cvut.fel.smarthome.model.Const;
+import cz.cvut.fel.smarthome.model.enums.DeviceStateType;
 
-import java.util.Map;
+import java.util.Objects;
+import java.util.Set;
+import java.util.stream.Collectors;
 
-public class Device implements IControl, IData {
+public class Device {
 
     private final String name;
-    private DeviceStateType currentState;
-    private Double durability;
-    private Map<DeviceStateType, Consumption> stateConsumptionMap;
+    private final Set<Consumption> consumptions;
     private boolean isBroken;
+    private double durability;
 
-    public Device(String name, Map<DeviceStateType, Consumption> stateConsumptionMap) {
-        this.currentState = DeviceStateType.INACTIVE;
-        this.durability = 1d;
-        this.stateConsumptionMap = stateConsumptionMap;
-        this.isBroken = false;
+    public Device(String name, Set<Consumption> consumptions) {
         this.name = name;
+        this.consumptions = consumptions;
+        this.isBroken = false;
+        this.durability = 1d;
+    }
+
+    public boolean isBroken() {
+        return isBroken;
+    }
+
+    public void setBroken(boolean broken) {
+        isBroken = broken;
+    }
+
+    public double getDurability() {
+        return durability;
+    }
+
+    public void setDurability(double durability) {
+        this.durability = durability;
     }
 
     public String getName() {
         return name;
     }
 
-    public void wearOut() {
-        durability -= Const.wearOut;
-        if(durability < 0) {
-            isBroken = true;
-            //TODO Event "im broken"
-        }
-    }
-
-    public Boolean isBroken() {
-        return isBroken;
-    }
-
-    @Override
-    public void turnOn() {
-        if(isBroken) {
-            //TODO Event "im broken"
-        }
-        currentState = DeviceStateType.ACTIVE;
-        //TODO Event "im on"
-    }
-
-    @Override
-    public void turnOff() {
-        currentState = DeviceStateType.INACTIVE;
-        //TODO Event "im off"
-    }
-
-    @Override
-    public Consumption getCurrentConsumption() {
-        return stateConsumptionMap.get(currentState);
+    public Set<Consumption> getConsumptions(DeviceStateType type) {
+        return consumptions.stream()
+                .filter(v -> Objects.equals(v.getDeviceStateType(), type))
+                .collect(Collectors.toSet());
     }
 
 }

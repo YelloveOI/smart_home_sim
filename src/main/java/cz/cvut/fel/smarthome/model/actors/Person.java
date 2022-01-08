@@ -1,5 +1,7 @@
 package cz.cvut.fel.smarthome.model.actors;
 
+import cz.cvut.fel.smarthome.model.enums.PersonRoleType;
+
 import java.util.Objects;
 
 public class Person {

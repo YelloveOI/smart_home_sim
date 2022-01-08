@@ -1,7 +1,5 @@
 package cz.cvut.fel.smarthome.model.location;
 
-import javax.naming.ConfigurationException;
-
 public class Floor extends Location {
     public Floor(Location root) {
         super(root);
