@@ -44,4 +44,12 @@ public class Device implements IControl, IData {
     public Double getDurability() {
         return null;
     }
+
+    public void generateEvent(){
+
+    }
+
+    public void processEvent(){
+
+    }
 }
