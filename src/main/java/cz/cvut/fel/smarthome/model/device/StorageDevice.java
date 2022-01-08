@@ -1,29 +1,41 @@
 package cz.cvut.fel.smarthome.model.device;
 
-import java.util.List;
+import java.util.Map;
+import java.util.Objects;
 
 public class StorageDevice extends Device {
 
-    private List<StorageItem> storageItems;
+    private String itemType;
+    private int quantity;
 
-
-    public String poll() {
-        return null;
+    public StorageDevice(Map<DeviceStateType, Consumption> stateConsumptionMap, String itemType) {
+        super(stateConsumptionMap);
+        this.itemType = itemType;
     }
 
-    public String get(String item) {
-        return null;
+
+    public boolean get(String item) {
+        if(quantity > 0) {
+            if(Objects.equals(itemType, item)) {
+                quantity--;
+                return true;
+            }
+        }
+
+        return false;
     }
 
-    public void put(String item) {
+    public boolean put(String item) {
+        if(Objects.equals(item, itemType)) {
+            quantity++;
+            return true;
+        }
+
+        return false;
     }
 
-    public int quantityOf(String item) {
-        return 0;
-    }
-
-    public int totalQuantity() {
-        return 0;
+    public boolean isEmpty() {
+        return quantity <= 0;
     }
 
 }
