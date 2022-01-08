@@ -1,4 +1,4 @@
-package cz.cvut.fel.smarthome.model.auxiliary;
+package cz.cvut.fel.smarthome.model;
 
 import cz.cvut.fel.smarthome.model.enums.AuxiliaryDestinyType;
 import cz.cvut.fel.smarthome.model.enums.AuxiliaryType;

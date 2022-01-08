@@ -1,11 +1,11 @@
 package cz.cvut.fel.smarthome.repository;
 
 import cz.cvut.fel.smarthome.model.exception.PersistenceException;
+import cz.cvut.fel.smarthome.repository.interfaces.CrudRepository;
 
 import java.util.Collection;
 import java.util.Map;
 import java.util.Objects;
-import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
 public abstract class AbstractRepository <ID, T> implements CrudRepository<ID, T> {

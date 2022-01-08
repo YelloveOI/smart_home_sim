@@ -1,4 +1,4 @@
-package cz.cvut.fel.smarthome.model.actors;
+package cz.cvut.fel.smarthome.model;
 
 public class Pet {
 

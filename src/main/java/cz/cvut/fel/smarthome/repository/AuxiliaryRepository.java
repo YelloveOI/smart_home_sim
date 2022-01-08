@@ -1,6 +1,6 @@
 package cz.cvut.fel.smarthome.repository;
 
-import cz.cvut.fel.smarthome.model.auxiliary.Auxiliary;
+import cz.cvut.fel.smarthome.model.Auxiliary;
 import cz.cvut.fel.smarthome.model.enums.AuxiliaryDestinyType;
 
 import java.util.Objects;

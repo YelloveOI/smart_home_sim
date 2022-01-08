@@ -1,4 +1,4 @@
-package cz.cvut.fel.smarthome.repository;
+package cz.cvut.fel.smarthome.repository.interfaces;
 
 import java.util.Collection;
 

@@ -1,6 +1,6 @@
 package cz.cvut.fel.smarthome.repository;
 
-import cz.cvut.fel.smarthome.model.actors.Pet;
+import cz.cvut.fel.smarthome.model.Pet;
 
 public class PetRepository extends AbstractRepository<String, Pet> {
 
