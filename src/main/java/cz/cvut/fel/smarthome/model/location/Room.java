@@ -1,8 +1,19 @@
 package cz.cvut.fel.smarthome.model.location;
 
-import javax.naming.ConfigurationException;
+import cz.cvut.fel.smarthome.model.device.Device;
 
-public class Room extends Location {
+import javax.naming.ConfigurationException;
+import java.util.ArrayList;
+import java.util.List;
+
+final public class Room extends Location {
+    final List<Device> placedDevices = new ArrayList<>();
+
+    public Room placeDevice(Device device){
+        placedDevices.add(device);
+        return this;
+    }
+
     public Room(Location root) {
         super(root);
     }

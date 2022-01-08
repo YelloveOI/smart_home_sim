@@ -1,11 +1,26 @@
 package cz.cvut.fel.smarthome.model.location;
 
-import javax.naming.ConfigurationException;
+import cz.cvut.fel.smarthome.model.device.Device;
 
-public class Garage extends Location {
+import javax.naming.ConfigurationException;
+import java.util.ArrayList;
+import java.util.List;
+
+final public class Garage extends Location {
+    public Garage(Location root) {
+        super(root);
+    }
+
+    final List<Device> placedDevices = new ArrayList<>();
+
+    public Garage placeDevice(Device device){
+        placedDevices.add(device);
+        return this;
+    }
+
     @Override
     public Garage addNestedLocation() {
-        return null;
+        return this;
     }
 
     @Override

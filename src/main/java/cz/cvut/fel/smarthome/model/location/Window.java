@@ -1,10 +1,21 @@
 package cz.cvut.fel.smarthome.model.location;
 
-import javax.naming.ConfigurationException;
+import cz.cvut.fel.smarthome.model.device.Device;
 
-public class Window extends Location {
+import javax.naming.ConfigurationException;
+import java.util.ArrayList;
+import java.util.List;
+
+final public class Window extends Location {
     public Window(Location root) {
         super(root);
+    }
+
+    final List<Device> placedDevices = new ArrayList<>();
+
+    public Window placeDevice(Device device){
+        placedDevices.add(device);
+        return this;
     }
 
     @Override
