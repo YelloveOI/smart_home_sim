@@ -23,8 +23,8 @@ final public class Garage extends Location {
     }
 
     @Override
-    public Garage getRoot() {
-        return this;
+    public House getRoot() {
+        return (House) root;
     }
 
     @Override
