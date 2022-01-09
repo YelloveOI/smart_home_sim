@@ -2,7 +2,6 @@ package cz.cvut.fel.smarthome.service.interfaces;
 
 import cz.cvut.fel.smarthome.model.Auxiliary;
 import cz.cvut.fel.smarthome.model.device.Device;
-import cz.cvut.fel.smarthome.model.enums.DeviceStateType;
 import cz.cvut.fel.smarthome.model.location.Location;
 
 public interface IPersonActionService {

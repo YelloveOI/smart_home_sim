@@ -1,9 +1,8 @@
 package cz.cvut.fel.smarthome;
 
-//TODO убрать из модели
 public interface IData {
 
-//    Consumption getCurrentConsumption();
+    Double getCurrentConsumption();
 
     Boolean isBroken();
 

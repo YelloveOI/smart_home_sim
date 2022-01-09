@@ -3,12 +3,13 @@ package cz.cvut.fel.smarthome.model.device;
 import java.util.Objects;
 import java.util.Set;
 
-public class SimpleStorage {
+//TODO связать storage и device
+public class Storage {
 
     private final String itemType;
     private int quantity;
 
-    public SimpleStorage(String itemType) {
+    public Storage(String itemType) {
         this.itemType = itemType;
         this.quantity = 0;
     }
