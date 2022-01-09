@@ -1,6 +1,8 @@
 package cz.cvut.fel.smarthome.model.actor;
 
-public class Pet {
+import cz.cvut.fel.smarthome.model.actor.action.Action;
+
+public class Pet implements Actor {
 
     private final String name;
 
@@ -12,4 +14,8 @@ public class Pet {
         return name;
     }
 
+    @Override
+    public void act(Action action) {
+        action.visit(this);
+    }
 }

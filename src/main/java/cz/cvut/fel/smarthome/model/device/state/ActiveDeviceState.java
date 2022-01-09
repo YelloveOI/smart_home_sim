@@ -16,15 +16,11 @@ public class ActiveDeviceState extends DeviceState {
 
     @Override
     public void turnOff() {
-        if(device.wearOut()) {
-            device.setDeviceState(new BrokenDeviceState(device));
-        } else {
-            device.setDeviceState(new InactiveDeviceState(device));
-        }
     }
 
     @Override
-    public void startUse() {
+    public Boolean startUse() {
+        return false;
     }
 
     @Override

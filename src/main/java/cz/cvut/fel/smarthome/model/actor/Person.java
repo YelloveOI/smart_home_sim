@@ -1,6 +1,8 @@
 package cz.cvut.fel.smarthome.model.actor;
 
-public class Person {
+import cz.cvut.fel.smarthome.model.actor.action.Action;
+
+public class Person implements Actor {
 
     private final String name;
     private PersonRoleType role;
@@ -32,4 +34,8 @@ public class Person {
         this.role = role;
     }
 
+    @Override
+    public void act(Action action) {
+        action.visit(this);
+    }
 }

@@ -23,8 +23,9 @@ public class IdleDeviceState extends DeviceState {
     }
 
     @Override
-    public void startUse() {
+    public Boolean startUse() {
         device.setDeviceState(new ActiveDeviceState(device));
+        return true;
     }
 
     @Override

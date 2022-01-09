@@ -1,4 +1,6 @@
-package cz.cvut.fel.smarthome.model;
+package cz.cvut.fel.smarthome.model.event;
+
+import cz.cvut.fel.smarthome.model.Listener;
 
 import java.util.Set;
 

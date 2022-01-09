@@ -8,7 +8,7 @@ import java.util.Set;
 
 public abstract class DeviceState {
 
-    protected Device device;
+    protected final Device device;
 
     public DeviceState(Device device) {
         this.device = device;
@@ -16,7 +16,7 @@ public abstract class DeviceState {
 
     public abstract void turnOn();
     public abstract void turnOff();
-    public abstract void startUse();
+    public abstract Boolean startUse();
     public abstract void stopUse();
     public abstract Double getCurrentConsumption();
     public abstract ConsumptionType getConsumptionType();

@@ -1,23 +1,28 @@
 package cz.cvut.fel.smarthome.model.auxiliary;
 
-public class Auxiliary {
+import cz.cvut.fel.smarthome.model.auxiliary.state.AuxiliaryState;
+import cz.cvut.fel.smarthome.model.auxiliary.state.AvailableAuxiliaryState;
+
+public class Auxiliary implements IUse {
 
     private final String name;
     private final AuxiliaryType destiny;
-    private boolean isAvailable;
+    private Integer scratchesNumber;
+    private AuxiliaryState state;
 
     public Auxiliary(String name, AuxiliaryType destinyType) {
         this.name = name;
         this.destiny = destinyType;
-        this.isAvailable = true;
+        this.scratchesNumber = 0;
+        this.state = new AvailableAuxiliaryState(this);
     }
 
-    public boolean isAvailable() {
-        return isAvailable;
+    public void setState(AuxiliaryState state) {
+        this.state = state;
     }
 
-    public void setAvailable(boolean available) {
-        isAvailable = available;
+    public Integer getScratchesNumber() {
+        return scratchesNumber;
     }
 
     public String getName() {
@@ -28,4 +33,18 @@ public class Auxiliary {
         return destiny;
     }
 
+    @Override
+    public Boolean startUse() {
+        return state.startUse();
+    }
+
+    @Override
+    public void stopUse() {
+        state.stopUse();
+    }
+
+    @Override
+    public void badUse() {
+        scratchesNumber++;
+    }
 }

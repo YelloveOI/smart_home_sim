@@ -22,7 +22,8 @@ public class InactiveDeviceState extends DeviceState {
     }
 
     @Override
-    public void startUse() {
+    public Boolean startUse() {
+        return false;
     }
 
     @Override

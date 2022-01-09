@@ -1,11 +1,10 @@
 package cz.cvut.fel.smarthome.model.device;
 
-import cz.cvut.fel.smarthome.IControl;
-import cz.cvut.fel.smarthome.IData;
+import cz.cvut.fel.smarthome.model.auxiliary.IUse;
 import cz.cvut.fel.smarthome.model.device.state.DeviceState;
 import cz.cvut.fel.smarthome.model.device.state.InactiveDeviceState;
 
-public class Device implements IControl, IData {
+public class Device implements IControl, IData, IUse {
 
     private final String name;
     private final Double activeConsumption;
@@ -66,5 +65,20 @@ public class Device implements IControl, IData {
     @Override
     public Boolean isBroken() {
         return deviceState.isBroken();
+    }
+
+    @Override
+    public Boolean startUse() {
+        return deviceState.startUse();
+    }
+
+    @Override
+    public void stopUse() {
+        deviceState.stopUse();
+    }
+
+    @Override
+    public void badUse() {
+        wearOut();
     }
 }
