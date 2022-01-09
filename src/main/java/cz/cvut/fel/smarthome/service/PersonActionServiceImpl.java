@@ -1,6 +1,6 @@
 package cz.cvut.fel.smarthome.service;
 
-import cz.cvut.fel.smarthome.model.Person;
+import cz.cvut.fel.smarthome.model.actor.Person;
 import cz.cvut.fel.smarthome.repository.interfaces.CrudRepository;
 
 public class PersonActionServiceImpl {

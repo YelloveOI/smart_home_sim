@@ -1,15 +1,13 @@
 package cz.cvut.fel.smarthome.service.interfaces;
 
+import cz.cvut.fel.smarthome.model.actor.Person;
+import cz.cvut.fel.smarthome.model.device.Device;
+import cz.cvut.fel.smarthome.model.location.Room;
+
 public interface ILocationService {
-//    //TODO
-//    Location getPersonLocation(String personID);
-//
-//    Location getPetLocation(String petID);
-//
-//    Location getDeviceLocation(String deviceID);
-//
-//    Location getNearestSportAux(String personID);
-//
-//    Location getNearestWorkAux(String personID);
+
+    Room getPersonLocation(Person person);
+
+    Room getDeviceLocation(Device device);
 
 }

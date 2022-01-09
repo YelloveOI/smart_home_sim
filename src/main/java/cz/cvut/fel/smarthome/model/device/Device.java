@@ -2,7 +2,6 @@ package cz.cvut.fel.smarthome.model.device;
 
 import cz.cvut.fel.smarthome.IControl;
 import cz.cvut.fel.smarthome.IData;
-import cz.cvut.fel.smarthome.model.Const;
 import cz.cvut.fel.smarthome.model.device.state.DeviceState;
 import cz.cvut.fel.smarthome.model.device.state.InactiveDeviceState;
 

@@ -1,8 +1,5 @@
 package cz.cvut.fel.smarthome.service.interfaces;
 
-import cz.cvut.fel.smarthome.model.Auxiliary;
-import cz.cvut.fel.smarthome.model.device.Device;
-
 public interface IPersonActionService {
 
 //    //TODO

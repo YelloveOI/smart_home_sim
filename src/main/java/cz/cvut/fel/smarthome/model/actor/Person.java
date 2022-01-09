@@ -1,8 +1,4 @@
-package cz.cvut.fel.smarthome.model;
-
-import cz.cvut.fel.smarthome.model.enums.PersonRoleType;
-
-import java.util.Objects;
+package cz.cvut.fel.smarthome.model.actor;
 
 public class Person {
 
@@ -36,18 +32,4 @@ public class Person {
         this.role = role;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        Person person = (Person) o;
-
-        return Objects.equals(name, person.name);
-    }
-
-    @Override
-    public int hashCode() {
-        return name != null ? name.hashCode() : 0;
-    }
 }
