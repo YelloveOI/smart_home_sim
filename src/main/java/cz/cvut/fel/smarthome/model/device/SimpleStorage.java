@@ -1,18 +1,14 @@
 package cz.cvut.fel.smarthome.model.device;
 
-import cz.cvut.fel.smarthome.model.enums.DeviceStateType;
-
-import java.util.Map;
 import java.util.Objects;
 import java.util.Set;
 
-public class StorageDevice extends Device {
+public class SimpleStorage {
 
     private final String itemType;
     private int quantity;
 
-    public StorageDevice(String name, Set<Consumption> consumptions, String itemType) {
-        super(name, consumptions);
+    public SimpleStorage(String itemType) {
         this.itemType = itemType;
         this.quantity = 0;
     }
