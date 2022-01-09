@@ -1,39 +1,44 @@
 package cz.cvut.fel.smarthome.model.location;
 
-import javax.naming.ConfigurationException;
+import java.util.HashSet;
+import java.util.Set;
 
-final public class House extends Location {
-    @Override
-    public House addNestedLocation() {
-        nestedLocations.add(new Floor(this));
+public class House {
+
+    private final String name;
+    private final Integer floorQuantity;
+    private Set<Room> rooms;
+
+    public House(String name, Integer floorQuantity) {
+        this.name = name;
+        this.floorQuantity = floorQuantity;
+        this.rooms = new HashSet<>();
+    }
+
+    public House addRoom(String name, Integer floorNumber, Integer windowsQuantity) {
+        Room newRoom = new Room(name, floorNumber);
+        for(int i = 0; i < windowsQuantity; i++) {
+            rooms.add(new Window("Window"+i, newRoom));
+        }
+        rooms.add(newRoom);
         return this;
     }
 
-    public House addNestedGarage(){
-        nestedLocations.add(new Garage(this));
+    public House addGarage(String name, Integer windowsQuantity) {
+        Garage newGarage = new Garage(name);
+        for(int i = 0; i < windowsQuantity; i++) {
+            rooms.add(new Window("Window"+i, newGarage));
+        }
+        rooms.add(newGarage);
         return this;
-    }
-
-    @Override
-    public House removeNestedLocation(int index) {
-        nestedLocations.remove(index);
-        return this;
-    }
-
-    @Override
-    public Location getNestedLocation(int index) {
-        return nestedLocations.get(index);
-    }
-
-    @Override
-    public Location getRoot() {
-        return null;
     }
 
     @Override
     public String toString() {
         return "House{" +
-                "nestedLocations=" + nestedLocations +
+                "name='" + name + '\'' +
+                ", floorQuantity=" + floorQuantity +
+                ", rooms=" + rooms +
                 '}';
     }
 }

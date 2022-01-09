@@ -1,39 +1,28 @@
 package cz.cvut.fel.smarthome.model.location;
 
-import javax.naming.ConfigurationException;
+public class Room {
 
-final public class Room extends Location {
+    private final String name;
+    private final Integer floorNumber;
 
-    public Room(Location root) {
-        super(root);
+    public Room(String name, Integer floorNumber) {
+        this.name = name;
+        this.floorNumber = floorNumber;
     }
 
-    @Override
-    public Room addNestedLocation() {
-        nestedLocations.add(new Window(this));
-        return this;
+    public String getName() {
+        return name;
     }
 
-    @Override
-    public Room removeNestedLocation(int index) {
-        nestedLocations.remove(index);
-        return this;
-    }
-
-    @Override
-    public Window getNestedLocation(int index) {
-        return (Window) nestedLocations.get(index);
-    }
-
-    @Override
-    public Floor getRoot() {
-        return (Floor) root;
+    public Integer getFloorNumber() {
+        return floorNumber;
     }
 
     @Override
     public String toString() {
         return "Room{" +
-                "nestedLocations=" + nestedLocations +
+                "name='" + name + '\'' +
+                ", floorNumber=" + floorNumber +
                 '}';
     }
 }

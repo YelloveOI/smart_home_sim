@@ -11,22 +11,11 @@ public class SemOmo {
         DICompositionPoint compositionPoint = new DICompositionPoint();
         ApplicationContext context = compositionPoint.run();
 
-        House house = new House();
-        house
-                .addNestedLocation()
-                    .getNestedLocation(0)
-                    .addNestedLocation()
-                    .addNestedLocation()
-                    .addNestedLocation()
-                        .getNestedLocation(2)
-                        .addNestedLocation()
-                        .getRoot()
-                    .getRoot()
-                .addNestedLocation()
-                    .getNestedLocation(1)
-                    .addNestedLocation()
-                    .addNestedLocation();
+        House house = new House("Happy Home", 2)
+                .addGarage("G1", 0)
+                .addRoom("Room1", 0, 2)
+                .addRoom("Room2", 1, 3);
 
-
+        System.out.println(house);
     }
 }
