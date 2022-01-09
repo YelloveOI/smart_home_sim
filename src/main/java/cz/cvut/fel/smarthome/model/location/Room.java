@@ -2,7 +2,8 @@ package cz.cvut.fel.smarthome.model.location;
 
 import javax.naming.ConfigurationException;
 
-public class Room extends Location {
+final public class Room extends Location {
+
     public Room(Location root) {
         super(root);
     }

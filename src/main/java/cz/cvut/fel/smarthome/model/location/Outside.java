@@ -2,10 +2,10 @@ package cz.cvut.fel.smarthome.model.location;
 
 import javax.naming.ConfigurationException;
 
-public class Outside extends Location {
+final public class Outside extends Location {
     @Override
     public Outside addNestedLocation() {
-        return null;
+        return this;
     }
 
     @Override

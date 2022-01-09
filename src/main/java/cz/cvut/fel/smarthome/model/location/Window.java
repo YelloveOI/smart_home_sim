@@ -2,7 +2,7 @@ package cz.cvut.fel.smarthome.model.location;
 
 import javax.naming.ConfigurationException;
 
-public class Window extends Location {
+final public class Window extends Location {
     public Window(Location root) {
         super(root);
     }

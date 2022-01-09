@@ -1,6 +1,6 @@
 package cz.cvut.fel.smarthome.model.location;
 
-public class Floor extends Location {
+final public class Floor extends Location {
     public Floor(Location root) {
         super(root);
     }

@@ -2,10 +2,14 @@ package cz.cvut.fel.smarthome.model.location;
 
 import javax.naming.ConfigurationException;
 
-public class Garage extends Location {
+final public class Garage extends Location {
+    public Garage(Location root) {
+        super(root);
+    }
+
     @Override
     public Garage addNestedLocation() {
-        return null;
+        return this;
     }
 
     @Override
@@ -19,8 +23,8 @@ public class Garage extends Location {
     }
 
     @Override
-    public Garage getRoot() {
-        return this;
+    public House getRoot() {
+        return (House) root;
     }
 
     @Override
