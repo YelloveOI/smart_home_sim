@@ -6,6 +6,5 @@ public interface IActive extends INamed{
 
     void goWork();
 
-    //TODO
 
 }

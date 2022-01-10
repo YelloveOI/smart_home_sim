@@ -4,9 +4,9 @@ import java.util.Collection;
 
 public interface CrudRepository<ID, T> {
 
-    T create(ID id, T entity);
+    T create(T entity);
 
-    T update(ID id, T entity);
+    T update(T entity);
 
     void delete(ID id);
 

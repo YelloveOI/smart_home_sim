@@ -16,4 +16,18 @@ public class BusyPersonState extends PersonState {
                 .createReportEvent(this.getClass(), person.getName(),"cannot tear himself away from the previous case")
                 .execute();
     }
+
+    @Override
+    public void goSport() {
+        ReportContext
+                .createReportEvent(this.getClass(), person.getName(),"cannot tear himself away from the previous case")
+                .execute();
+    }
+
+    @Override
+    public void goWork() {
+        ReportContext
+                .createReportEvent(this.getClass(), person.getName(),"cannot tear himself away from the previous case")
+                .execute();
+    }
 }

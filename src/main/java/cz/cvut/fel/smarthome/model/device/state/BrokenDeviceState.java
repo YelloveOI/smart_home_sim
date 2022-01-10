@@ -42,4 +42,8 @@ public class BrokenDeviceState extends DeviceState {
         return true;
     }
 
+    @Override
+    public Boolean isAvailable() {
+        return false;
+    }
 }

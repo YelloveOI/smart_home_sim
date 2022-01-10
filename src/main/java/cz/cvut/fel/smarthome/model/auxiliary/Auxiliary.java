@@ -1,21 +1,18 @@
 package cz.cvut.fel.smarthome.model.auxiliary;
 
+import com.google.gson.annotations.Expose;
 import cz.cvut.fel.smarthome.model.auxiliary.state.AuxiliaryState;
 import cz.cvut.fel.smarthome.model.auxiliary.state.AvailableAuxiliaryState;
 import cz.cvut.fel.smarthome.model.event.ReportContext;
 import cz.cvut.fel.smarthome.model.event.PlainEvent;
 import cz.cvut.fel.smarthome.model.interfaces.IUseable;
 
-import java.sql.Date;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-
 public class Auxiliary implements IUseable {
 
     private final String name;
     private final AuxiliaryType destiny;
     private Integer scratchesNumber;
-    private AuxiliaryState state;
+    transient private AuxiliaryState state;
 
     public Auxiliary(String name, AuxiliaryType destinyType) {
         this.name = name;
@@ -56,4 +53,10 @@ public class Auxiliary implements IUseable {
     public void badUse() {
         scratchesNumber++;
     }
+
+    @Override
+    public Boolean isAvailable() {
+        return state.isAvailable();
+    }
+
 }

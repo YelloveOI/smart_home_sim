@@ -17,4 +17,14 @@ public class FreePersonState extends PersonState {
                 .createReportEvent(this.getClass(), person.getName(),"takes on a new business")
                 .execute();
     }
+
+    @Override
+    public void goSport() {
+
+    }
+
+    @Override
+    public void goWork() {
+
+    }
 }

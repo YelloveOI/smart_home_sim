@@ -1,15 +1,11 @@
 package cz.cvut.fel.smarthome.model.device;
 
-import cz.cvut.fel.smarthome.model.event.PlainEvent;
+import cz.cvut.fel.smarthome.model.device.state.DeviceState;
+import cz.cvut.fel.smarthome.model.device.state.InactiveDeviceState;
 import cz.cvut.fel.smarthome.model.event.ReportContext;
 import cz.cvut.fel.smarthome.model.interfaces.IControl;
 import cz.cvut.fel.smarthome.model.interfaces.IData;
 import cz.cvut.fel.smarthome.model.interfaces.IUseable;
-import cz.cvut.fel.smarthome.model.device.state.DeviceState;
-import cz.cvut.fel.smarthome.model.device.state.InactiveDeviceState;
-
-import java.sql.Date;
-import java.time.LocalDate;
 
 public class Device implements IControl, IData, IUseable {
 
@@ -18,7 +14,7 @@ public class Device implements IControl, IData, IUseable {
     private final Double activeConsumption;
     private final Double idleConsumption;
     private final ConsumptionType consumptionType;
-    private DeviceState deviceState;
+    transient private DeviceState deviceState;
     private Double durability;
 
     public Device(String name, DeviceType deviceType, Double activeConsumption, Double idleConsumption, ConsumptionType consumptionType) {
@@ -83,6 +79,11 @@ public class Device implements IControl, IData, IUseable {
     @Override
     public Boolean isBroken() {
         return deviceState.isBroken();
+    }
+
+    @Override
+    public Boolean isAvailable() {
+        return deviceState.isAvailable();
     }
 
     @Override

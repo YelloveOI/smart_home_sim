@@ -45,4 +45,8 @@ public class InactiveDeviceState extends DeviceState {
         return false;
     }
 
+    @Override
+    public Boolean isAvailable() {
+        return false;
+    }
 }

@@ -12,4 +12,6 @@ public abstract class AuxiliaryState {
 
     abstract public Boolean startUse();
     abstract public void stopUse();
+    abstract public Boolean isAvailable();
+
 }

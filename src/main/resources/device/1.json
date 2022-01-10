@@ -1,0 +1,10 @@
+[
+  {
+    "name": "device_name",
+    "deviceType": "WINDOW_BLIND",
+    "activeConsumption": 10.0,
+    "idleConsumption": 5.0,
+    "consumptionType": "WH",
+    "durability": 0.95
+  }
+]

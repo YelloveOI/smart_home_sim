@@ -21,5 +21,6 @@ public abstract class DeviceState {
     public abstract Double getCurrentConsumption();
     public abstract ConsumptionType getConsumptionType();
     public abstract Boolean isBroken();
+    public abstract Boolean isAvailable();
 
 }

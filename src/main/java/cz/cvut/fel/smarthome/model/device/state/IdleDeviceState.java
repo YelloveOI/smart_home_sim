@@ -47,4 +47,8 @@ public class IdleDeviceState extends DeviceState {
         return false;
     }
 
+    @Override
+    public Boolean isAvailable() {
+        return true;
+    }
 }

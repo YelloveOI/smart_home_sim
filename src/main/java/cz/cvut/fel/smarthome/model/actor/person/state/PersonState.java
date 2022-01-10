@@ -11,6 +11,9 @@ public abstract class PersonState {
         this.person = person;
     }
 
+
     public abstract void act(Action action);
+    public abstract void goSport();
+    public abstract void goWork();
 
 }
