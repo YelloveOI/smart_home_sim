@@ -1,8 +1,8 @@
 package cz.cvut.fel.smarthome.model.actor.action;
 
 
-import cz.cvut.fel.smarthome.model.actor.Person;
-import cz.cvut.fel.smarthome.model.actor.Pet;
+import cz.cvut.fel.smarthome.model.actor.person.Person;
+import cz.cvut.fel.smarthome.model.actor.pet.Pet;
 
 public abstract class Action<T> {
 

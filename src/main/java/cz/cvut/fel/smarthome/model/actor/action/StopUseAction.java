@@ -1,11 +1,11 @@
 package cz.cvut.fel.smarthome.model.actor.action;
 
-import cz.cvut.fel.smarthome.model.actor.Person;
-import cz.cvut.fel.smarthome.model.actor.Pet;
-import cz.cvut.fel.smarthome.model.auxiliary.IUse;
+import cz.cvut.fel.smarthome.model.actor.person.Person;
+import cz.cvut.fel.smarthome.model.actor.pet.Pet;
+import cz.cvut.fel.smarthome.model.interfaces.IUseable;
 import cz.cvut.fel.smarthome.model.device.Device;
 
-public class StopUseAction extends Action<IUse> {
+public class StopUseAction extends Action<IUseable> {
 
     public StopUseAction(Device subject) {
         super(subject);

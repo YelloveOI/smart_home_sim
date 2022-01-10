@@ -1,5 +1,7 @@
 package cz.cvut.fel.smarthome;
 
+import cz.cvut.fel.smarthome.model.auxiliary.Auxiliary;
+import cz.cvut.fel.smarthome.model.auxiliary.AuxiliaryType;
 import cz.cvut.fel.smarthome.model.location.House;
 import cz.cvut.fel.smarthome.simpleDI.DICompositionPoint;
 import cz.cvut.fel.smarthome.simpleDI.context.ApplicationContext;
@@ -17,5 +19,8 @@ public class SemOmo {
                 .addRoom("Room2", 1, 3);
 
         System.out.println(house);
+
+        Auxiliary auxiliary = new Auxiliary("BIKE", AuxiliaryType.SPORT);
+        auxiliary.startUse();
     }
 }

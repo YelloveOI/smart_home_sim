@@ -1,12 +1,12 @@
 package cz.cvut.fel.smarthome.model.actor.action;
 
-import cz.cvut.fel.smarthome.model.actor.Person;
-import cz.cvut.fel.smarthome.model.actor.Pet;
-import cz.cvut.fel.smarthome.model.auxiliary.IUse;
+import cz.cvut.fel.smarthome.model.actor.person.Person;
+import cz.cvut.fel.smarthome.model.actor.pet.Pet;
+import cz.cvut.fel.smarthome.model.interfaces.IUseable;
 
-public class BadUseAction extends Action<IUse> {
+public class BadUseAction extends Action<IUseable> {
 
-    public BadUseAction(IUse subject) {
+    public BadUseAction(IUseable subject) {
         super(subject);
     }
 

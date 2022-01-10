@@ -1,20 +1,24 @@
 package cz.cvut.fel.smarthome.model.device;
 
-import cz.cvut.fel.smarthome.model.auxiliary.IUse;
+import cz.cvut.fel.smarthome.model.interfaces.IControl;
+import cz.cvut.fel.smarthome.model.interfaces.IData;
+import cz.cvut.fel.smarthome.model.interfaces.IUseable;
 import cz.cvut.fel.smarthome.model.device.state.DeviceState;
 import cz.cvut.fel.smarthome.model.device.state.InactiveDeviceState;
 
-public class Device implements IControl, IData, IUse {
+public class Device implements IControl, IData, IUseable {
 
     private final String name;
+    private final DeviceType deviceType;
     private final Double activeConsumption;
     private final Double idleConsumption;
     private final ConsumptionType consumptionType;
     private DeviceState deviceState;
     private Double durability;
 
-    public Device(String name, Double activeConsumption, Double idleConsumption, ConsumptionType consumptionType) {
+    public Device(String name, DeviceType deviceType, Double activeConsumption, Double idleConsumption, ConsumptionType consumptionType) {
         this.name = name;
+        this.deviceType = deviceType;
         this.activeConsumption = activeConsumption;
         this.idleConsumption = idleConsumption;
         this.consumptionType = consumptionType;
@@ -25,6 +29,10 @@ public class Device implements IControl, IData, IUse {
     public boolean wearOut() {
         durability -= Const.wearOutValue;
         return durability <= 0;
+    }
+
+    public DeviceType getDeviceType() {
+        return deviceType;
     }
 
     public void setDeviceState(DeviceState deviceState) {
@@ -81,4 +89,5 @@ public class Device implements IControl, IData, IUse {
     public void badUse() {
         wearOut();
     }
+
 }

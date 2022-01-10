@@ -1,13 +1,27 @@
 package cz.cvut.fel.smarthome.model.event;
 
-public abstract class Event<T> {
+import cz.cvut.fel.smarthome.model.Listener;
 
-    protected final Class<T> receiverType;
+import java.util.Date;
 
-    public Event(Class<T> receiverType) {
-        this.receiverType = receiverType;
+public abstract class Event {
+
+    private final Date date;
+    private final EventChannel channel;
+
+    public Event(Date date, EventChannel channel) {
+        this.date = date;
+        this.channel = channel;
     }
 
-    
+    public Date getDate() {
+        return date;
+    }
+
+    public void execute() {
+        channel.get(this);
+    }
+
+    abstract public String toString();
 
 }

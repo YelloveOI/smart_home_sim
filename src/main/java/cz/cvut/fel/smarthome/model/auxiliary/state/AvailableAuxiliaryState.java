@@ -17,4 +17,5 @@ public class AvailableAuxiliaryState extends AuxiliaryState {
     @Override
     public void stopUse() {
     }
+
 }
