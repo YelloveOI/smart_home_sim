@@ -1,6 +1,6 @@
 package cz.cvut.fel.smarthome.model.interfaces;
 
-public interface IData {
+public interface IData extends INamed {
 
     Double getCurrentConsumption();
 

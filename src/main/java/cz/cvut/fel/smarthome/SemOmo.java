@@ -1,7 +1,13 @@
 package cz.cvut.fel.smarthome;
 
+import cz.cvut.fel.smarthome.model.actor.action.TurnOnAction;
+import cz.cvut.fel.smarthome.model.actor.person.Person;
+import cz.cvut.fel.smarthome.model.actor.person.PersonRoleType;
 import cz.cvut.fel.smarthome.model.auxiliary.Auxiliary;
 import cz.cvut.fel.smarthome.model.auxiliary.AuxiliaryType;
+import cz.cvut.fel.smarthome.model.device.ConsumptionType;
+import cz.cvut.fel.smarthome.model.device.Device;
+import cz.cvut.fel.smarthome.model.device.DeviceType;
 import cz.cvut.fel.smarthome.model.location.House;
 import cz.cvut.fel.smarthome.simpleDI.DICompositionPoint;
 import cz.cvut.fel.smarthome.simpleDI.context.ApplicationContext;
@@ -20,7 +26,15 @@ public class SemOmo {
 
         System.out.println(house);
 
-        Auxiliary auxiliary = new Auxiliary("BIKE", AuxiliaryType.SPORT);
-        auxiliary.startUse();
+        Device device = new Device(
+                "device_name",
+                DeviceType.WINDOW_BLIND,
+                10d,
+                5d,
+                ConsumptionType.WH
+        );
+
+        Person person = new Person("Vasua", PersonRoleType.FATHER);
+        person.act(new TurnOnAction(device));
     }
 }

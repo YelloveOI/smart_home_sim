@@ -1,10 +1,15 @@
 package cz.cvut.fel.smarthome.model.device;
 
+import cz.cvut.fel.smarthome.model.event.PlainEvent;
+import cz.cvut.fel.smarthome.model.event.ReportContext;
 import cz.cvut.fel.smarthome.model.interfaces.IControl;
 import cz.cvut.fel.smarthome.model.interfaces.IData;
 import cz.cvut.fel.smarthome.model.interfaces.IUseable;
 import cz.cvut.fel.smarthome.model.device.state.DeviceState;
 import cz.cvut.fel.smarthome.model.device.state.InactiveDeviceState;
+
+import java.sql.Date;
+import java.time.LocalDate;
 
 public class Device implements IControl, IData, IUseable {
 
@@ -31,12 +36,17 @@ public class Device implements IControl, IData, IUseable {
         return durability <= 0;
     }
 
+
+
     public DeviceType getDeviceType() {
         return deviceType;
     }
 
     public void setDeviceState(DeviceState deviceState) {
         this.deviceState = deviceState;
+        ReportContext
+                .createReportEvent(this.getClass(), name,"state changed to - " + deviceState.getClass().getSimpleName())
+                .execute();
     }
 
     public Double getActiveConsumption() {

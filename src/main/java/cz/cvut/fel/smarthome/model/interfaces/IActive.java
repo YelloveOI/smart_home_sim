@@ -1,6 +1,6 @@
 package cz.cvut.fel.smarthome.model.interfaces;
 
-public interface IActive {
+public interface IActive extends INamed{
 
     void goSport();
 

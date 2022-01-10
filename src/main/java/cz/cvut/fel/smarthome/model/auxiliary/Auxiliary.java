@@ -2,12 +2,13 @@ package cz.cvut.fel.smarthome.model.auxiliary;
 
 import cz.cvut.fel.smarthome.model.auxiliary.state.AuxiliaryState;
 import cz.cvut.fel.smarthome.model.auxiliary.state.AvailableAuxiliaryState;
-import cz.cvut.fel.smarthome.model.event.EventContext;
+import cz.cvut.fel.smarthome.model.event.ReportContext;
 import cz.cvut.fel.smarthome.model.event.PlainEvent;
 import cz.cvut.fel.smarthome.model.interfaces.IUseable;
 
 import java.sql.Date;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public class Auxiliary implements IUseable {
 
@@ -23,14 +24,10 @@ public class Auxiliary implements IUseable {
         this.state = new AvailableAuxiliaryState(this);
     }
 
-    //TODO!!!
     public void setState(AuxiliaryState state) {
         this.state = state;
-        new PlainEvent(
-                Date.valueOf(LocalDate.now()),
-                EventContext.getReportChannel(),
-                "Auxiliary " + name + " changed state to: " + state.getClass().getSimpleName()
-                ).execute();
+        ReportContext
+                .createReportEvent(this.getClass(), name, " state changed to - " + state.getClass().getSimpleName());
     }
 
     public Integer getScratchesNumber() {

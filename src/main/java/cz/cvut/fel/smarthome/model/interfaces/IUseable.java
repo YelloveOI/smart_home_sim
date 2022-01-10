@@ -1,6 +1,6 @@
 package cz.cvut.fel.smarthome.model.interfaces;
 
-public interface IUseable {
+public interface IUseable extends INamed {
 
     Boolean startUse();
 

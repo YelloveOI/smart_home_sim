@@ -17,6 +17,10 @@ public class Person implements IActor {
         this.personState = new FreePersonState(this);
     }
 
+    public void setPersonState(PersonState personState) {
+        this.personState = personState;
+    }
+
     public String getName() {
         return name;
     }

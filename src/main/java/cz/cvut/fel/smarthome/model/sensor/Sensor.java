@@ -1,10 +1,6 @@
 package cz.cvut.fel.smarthome.model.sensor;
 
-import cz.cvut.fel.smarthome.model.actor.action.Action;
-import cz.cvut.fel.smarthome.model.device.Device;
 import cz.cvut.fel.smarthome.model.event.Event;
-
-import java.util.Set;
 
 public class Sensor {
 
