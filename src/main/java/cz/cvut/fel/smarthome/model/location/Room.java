@@ -1,28 +1,26 @@
 package cz.cvut.fel.smarthome.model.location;
 
-public class Room {
+import java.util.HashSet;
+import java.util.Set;
 
-    private final String name;
-    private final Integer floorNumber;
+public class Room extends Location {
+
+    private final Set<EmbeddedLocation> embeddedLocations;
 
     public Room(String name, Integer floorNumber) {
-        this.name = name;
-        this.floorNumber = floorNumber;
+        super(name, floorNumber);
+        this.embeddedLocations = new HashSet<>();
     }
 
-    public String getName() {
-        return name;
+    public void addEmbedded(EmbeddedLocation location) {
+        embeddedLocations.add(location);
     }
 
-    public Integer getFloorNumber() {
-        return floorNumber;
+    public void removeEmbedded(EmbeddedLocation location) {
+        embeddedLocations.remove(location);
     }
 
-    @Override
-    public String toString() {
-        return "Room{" +
-                "name='" + name + '\'' +
-                ", floorNumber=" + floorNumber +
-                '}';
+    public Set<EmbeddedLocation> getEmbeddedLocations() {
+        return embeddedLocations;
     }
 }

@@ -1,20 +1,15 @@
 package cz.cvut.fel.smarthome;
 
 import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import cz.cvut.fel.smarthome.model.actor.action.TurnOnAction;
 import cz.cvut.fel.smarthome.model.actor.person.Person;
 import cz.cvut.fel.smarthome.model.actor.person.PersonRoleType;
 import cz.cvut.fel.smarthome.model.actor.pet.Pet;
 import cz.cvut.fel.smarthome.model.auxiliary.Auxiliary;
 import cz.cvut.fel.smarthome.model.auxiliary.AuxiliaryType;
-import cz.cvut.fel.smarthome.model.auxiliary.state.AvailableAuxiliaryState;
 import cz.cvut.fel.smarthome.model.device.ConsumptionType;
 import cz.cvut.fel.smarthome.model.device.Device;
 import cz.cvut.fel.smarthome.model.device.DeviceType;
-import cz.cvut.fel.smarthome.model.location.House;
-import cz.cvut.fel.smarthome.repository.AuxiliaryRepositoryImpl;
-import cz.cvut.fel.smarthome.repository.interfaces.AuxiliaryRepository;
 import cz.cvut.fel.smarthome.simpleDI.DICompositionPoint;
 import cz.cvut.fel.smarthome.simpleDI.context.ApplicationContext;
 import lombok.SneakyThrows;

@@ -1,5 +1,6 @@
 package cz.cvut.fel.smarthome.model.device;
 
+import cz.cvut.fel.smarthome.model.AbstractEntity;
 import cz.cvut.fel.smarthome.model.device.state.DeviceState;
 import cz.cvut.fel.smarthome.model.device.state.InactiveDeviceState;
 import cz.cvut.fel.smarthome.model.event.ReportContext;
@@ -7,9 +8,8 @@ import cz.cvut.fel.smarthome.model.interfaces.IControl;
 import cz.cvut.fel.smarthome.model.interfaces.IData;
 import cz.cvut.fel.smarthome.model.interfaces.IUseable;
 
-public class Device implements IControl, IData, IUseable {
+public class Device extends AbstractEntity implements IControl, IData, IUseable {
 
-    private final String name;
     private final DeviceType deviceType;
     private final Double activeConsumption;
     private final Double idleConsumption;
@@ -18,7 +18,7 @@ public class Device implements IControl, IData, IUseable {
     private Double durability;
 
     public Device(String name, DeviceType deviceType, Double activeConsumption, Double idleConsumption, ConsumptionType consumptionType) {
-        this.name = name;
+        super(name);
         this.deviceType = deviceType;
         this.activeConsumption = activeConsumption;
         this.idleConsumption = idleConsumption;
@@ -55,10 +55,6 @@ public class Device implements IControl, IData, IUseable {
 
     public ConsumptionType getConsumptionType() {
         return consumptionType;
-    }
-
-    public String getName() {
-        return name;
     }
 
     @Override

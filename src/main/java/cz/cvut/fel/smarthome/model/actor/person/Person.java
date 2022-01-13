@@ -1,30 +1,29 @@
 package cz.cvut.fel.smarthome.model.actor.person;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import cz.cvut.fel.smarthome.model.AbstractEntity;
+import cz.cvut.fel.smarthome.model.auxiliary.Auxiliary;
+import cz.cvut.fel.smarthome.model.device.Device;
 import cz.cvut.fel.smarthome.model.interfaces.IActive;
 import cz.cvut.fel.smarthome.model.interfaces.IActor;
 import cz.cvut.fel.smarthome.model.actor.action.Action;
 import cz.cvut.fel.smarthome.model.actor.person.state.FreePersonState;
 import cz.cvut.fel.smarthome.model.actor.person.state.PersonState;
+import cz.cvut.fel.smarthome.model.interfaces.IUseable;
 
-public class Person implements IActor, IActive {
+public class Person extends AbstractEntity implements IActor, IActive {
 
-    private final String name;
     private PersonRoleType role;
     transient private PersonState personState;
 
     public Person(String name, PersonRoleType role) {
-        this.name = name;
+        super(name);
         this.role = role;
         this.personState = new FreePersonState(this);
     }
 
     public void setPersonState(PersonState personState) {
         this.personState = personState;
-    }
-
-    public String getName() {
-        return name;
     }
 
     public PersonRoleType getRole() {
@@ -41,13 +40,22 @@ public class Person implements IActor, IActive {
     }
 
     @Override
-    public void goSport() {
-        //TODO finder
+    public void goSport(Auxiliary sportAux) {
+
     }
 
     @Override
-    public void goWork() {
+    public void goWork(Auxiliary workAux) {
 
     }
 
+    @Override
+    public void goProcrastinate(Device procrastinator) {
+
+    }
+
+    @Override
+    public void getFreeFromActivity() {
+
+    }
 }
