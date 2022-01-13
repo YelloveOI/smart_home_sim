@@ -41,6 +41,14 @@ public class SemOmo {
         Auxiliary auxiliary = new Auxiliary("123", AuxiliaryType.SPORT);
 
         Pet pet = new Pet("K'hel Tass");
+        pet.act(new TurnOnAction(device));
+        pet.act(new TurnOnAction(device));
+        pet.act(new TurnOnAction(device));
+        pet.act(new TurnOnAction(device));
+        pet.act(new TurnOnAction(device));
+        pet.act(new TurnOnAction(device));
+        pet.sleep();
+        pet.act(new TurnOnAction(device));
 
         Gson gson = new Gson();
         String json = gson.toJson(person, Person.class);
