@@ -4,6 +4,7 @@ import cz.cvut.fel.smarthome.model.actor.action.Action;
 import cz.cvut.fel.smarthome.model.actor.person.Person;
 import cz.cvut.fel.smarthome.model.auxiliary.Auxiliary;
 import cz.cvut.fel.smarthome.model.device.Device;
+import cz.cvut.fel.smarthome.model.event.EventProcessor;
 import cz.cvut.fel.smarthome.model.event.event_context.PersonEventContext;
 
 public class FreePersonState extends PersonState {
@@ -15,13 +16,13 @@ public class FreePersonState extends PersonState {
     @Override
     public void act(Action action) {
         action.visit(person);
-        PersonEventContext.act(person, action);
+        EventProcessor.getEvent(PersonEventContext.act(person, action));
     }
 
     @Override
     public void goSport(Auxiliary sportAux) {
         if(!sportAux.startUse()) {
-            PersonEventContext.cantUse(person, sportAux);
+            EventProcessor.getEvent(PersonEventContext.cantUse(person, sportAux));
         } else {
             //TODO locator go out of home
             PersonEventContext.goSport(person);
@@ -33,7 +34,7 @@ public class FreePersonState extends PersonState {
     @Override
     public void goWork(Auxiliary workAux) {
         if(!workAux.startUse()) {
-            PersonEventContext.cantUse(person, workAux);
+            EventProcessor.getEvent(PersonEventContext.cantUse(person, workAux));
         } else {
             //TODO locator go out of home
             PersonEventContext.goWork(person);
@@ -45,7 +46,7 @@ public class FreePersonState extends PersonState {
     @Override
     public void goProcrastinate(Device procrastinator) {
         if(!procrastinator.startUse()) {
-            PersonEventContext.cantUse(person, procrastinator);
+            EventProcessor.getEvent(PersonEventContext.cantUse(person, procrastinator));
         } else {
             PersonEventContext.goProcrastinate(person);
             person.setPersonState(new BusyPersonState(person, procrastinator));
@@ -54,7 +55,7 @@ public class FreePersonState extends PersonState {
 
     @Override
     public void getFreeFromActivity() {
-        PersonEventContext.getFree(person);
+        EventProcessor.getEvent(PersonEventContext.getFree(person));
     }
 
 }

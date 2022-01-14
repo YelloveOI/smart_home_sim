@@ -5,9 +5,15 @@ import java.util.Objects;
 public class AbstractEntity {
 
     protected final String name;
+    protected String roomName;
 
     public AbstractEntity(String name) {
         this.name = name;
+        this.roomName = "Outside";
+    }
+
+    public String getRoomName() {
+        return roomName;
     }
 
     public String getName() {

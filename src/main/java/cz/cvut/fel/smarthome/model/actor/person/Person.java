@@ -8,10 +8,6 @@ import cz.cvut.fel.smarthome.model.auxiliary.Auxiliary;
 import cz.cvut.fel.smarthome.model.device.Device;
 import cz.cvut.fel.smarthome.model.interfaces.IActive;
 import cz.cvut.fel.smarthome.model.interfaces.IActor;
-import cz.cvut.fel.smarthome.model.location.Location;
-import cz.cvut.fel.smarthome.model.location.Outside;
-
-import java.util.Objects;
 
 public class Person extends AbstractEntity implements IActor, IActive {
 

@@ -1,6 +1,16 @@
 [
   {
-    "name": "123",
+    "name": "Ski",
+    "destiny": "SPORT",
+    "scratchesNumber": 0
+  },
+  {
+    "name": "Bike1",
+    "destiny": "SPORT",
+    "scratchesNumber": 0
+  },
+  {
+    "name": "Bike2",
     "destiny": "SPORT",
     "scratchesNumber": 0
   }

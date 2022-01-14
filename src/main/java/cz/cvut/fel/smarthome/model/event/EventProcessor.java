@@ -2,7 +2,7 @@ package cz.cvut.fel.smarthome.model.event;
 
 import cz.cvut.fel.smarthome.model.event.event_channel.*;
 
-public class EventChannelContext {
+public class EventProcessor {
 
     private final static EventChannel achtungChannel = new AchtungEventChannel(null);
     private final static EventChannel personChannel = new PersonEventChannel(achtungChannel);

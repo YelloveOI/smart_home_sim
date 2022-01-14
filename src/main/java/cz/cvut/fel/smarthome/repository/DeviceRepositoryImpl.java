@@ -12,6 +12,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.Collection;
 import java.util.HashSet;
+import java.util.Optional;
 import java.util.Set;
 
 public class DeviceRepositoryImpl implements DeviceRepository {
@@ -43,7 +44,7 @@ public class DeviceRepositoryImpl implements DeviceRepository {
     }
 
     @Override
-    public Device find(String s) {
+    public Optional<Device> find(String s) {
         return null;
     }
 

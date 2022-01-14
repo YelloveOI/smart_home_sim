@@ -11,6 +11,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.Collection;
 import java.util.HashSet;
+import java.util.Optional;
 import java.util.Set;
 
 public class PetRepositoryImpl implements PetRepository {
@@ -42,7 +43,7 @@ public class PetRepositoryImpl implements PetRepository {
     }
 
     @Override
-    public Pet find(String s) {
+    public Optional<Pet> find(String s) {
         return null;
     }
 

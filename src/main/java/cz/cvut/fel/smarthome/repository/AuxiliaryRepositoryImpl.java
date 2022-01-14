@@ -48,7 +48,7 @@ public class AuxiliaryRepositoryImpl implements AuxiliaryRepository {
     }
 
     @Override
-    public Auxiliary find(String s) {
+    public Optional<Auxiliary> find(String s) {
         return null;
     }
 

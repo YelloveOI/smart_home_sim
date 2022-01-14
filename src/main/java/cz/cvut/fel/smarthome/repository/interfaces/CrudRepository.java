@@ -1,6 +1,7 @@
 package cz.cvut.fel.smarthome.repository.interfaces;
 
 import java.util.Collection;
+import java.util.Optional;
 
 public interface CrudRepository<ID, T> {
 
@@ -10,7 +11,7 @@ public interface CrudRepository<ID, T> {
 
     void delete(ID id);
 
-    T find(ID id);
+    Optional<T> find(ID id);
 
     Collection<T> findAll();
 

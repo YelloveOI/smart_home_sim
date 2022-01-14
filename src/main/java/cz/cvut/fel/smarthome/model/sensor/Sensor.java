@@ -2,8 +2,8 @@ package cz.cvut.fel.smarthome.model.sensor;
 
 import cz.cvut.fel.smarthome.model.AbstractEntity;
 import cz.cvut.fel.smarthome.model.event.Event;
+import cz.cvut.fel.smarthome.model.event.EventProcessor;
 
-//TODO
 public class Sensor extends AbstractEntity {
 
     private final Event event;
@@ -14,7 +14,7 @@ public class Sensor extends AbstractEntity {
     }
 
     public void trigger() {
-        event.execute();
+        EventProcessor.getEvent(event);
     }
 
 }

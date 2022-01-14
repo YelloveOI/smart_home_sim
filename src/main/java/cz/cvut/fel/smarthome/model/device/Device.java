@@ -3,7 +3,8 @@ package cz.cvut.fel.smarthome.model.device;
 import cz.cvut.fel.smarthome.model.AbstractEntity;
 import cz.cvut.fel.smarthome.model.device.state.DeviceState;
 import cz.cvut.fel.smarthome.model.device.state.InactiveDeviceState;
-import cz.cvut.fel.smarthome.model.event.EventChannelContext;
+import cz.cvut.fel.smarthome.model.event.EventProcessor;
+import cz.cvut.fel.smarthome.model.event.event_context.DeviceEventContext;
 import cz.cvut.fel.smarthome.model.interfaces.IControl;
 import cz.cvut.fel.smarthome.model.interfaces.IData;
 import cz.cvut.fel.smarthome.model.interfaces.IUseable;
@@ -39,10 +40,8 @@ public class Device extends AbstractEntity implements IControl, IData, IUseable 
     }
 
     public void setDeviceState(DeviceState deviceState) {
+        EventProcessor.getEvent(DeviceEventContext.changeState(this, this.deviceState, deviceState));
         this.deviceState = deviceState;
-        EventChannelContext
-                .createReport(this.getClass(), name,"state changed to - " + deviceState.getClass().getSimpleName())
-                .execute();
     }
 
     public Double getActiveConsumption() {

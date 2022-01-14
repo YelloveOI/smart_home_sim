@@ -12,6 +12,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.Collection;
 import java.util.HashSet;
+import java.util.Optional;
 import java.util.Set;
 
 public class PersonRepositoryImpl implements PersonRepository {
@@ -43,7 +44,7 @@ public class PersonRepositoryImpl implements PersonRepository {
     }
 
     @Override
-    public Person find(String s) {
+    public Optional<Person> find(String s) {
         return null;
     }
 
