@@ -3,7 +3,7 @@ package cz.cvut.fel.smarthome.model.device;
 import java.util.Objects;
 import java.util.Set;
 
-//TODO связать storage и device
+//TODO to bind storage & device
 public class Storage {
 
     private final String itemType;

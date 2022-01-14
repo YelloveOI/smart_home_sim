@@ -1,11 +1,10 @@
 package cz.cvut.fel.smarthome.model.actor.person.state;
 
-import cz.cvut.fel.smarthome.model.actor.person.Person;
 import cz.cvut.fel.smarthome.model.actor.action.Action;
+import cz.cvut.fel.smarthome.model.actor.person.Person;
 import cz.cvut.fel.smarthome.model.auxiliary.Auxiliary;
 import cz.cvut.fel.smarthome.model.device.Device;
-import cz.cvut.fel.smarthome.model.event.ReportContext;
-import cz.cvut.fel.smarthome.model.interfaces.IUseable;
+import cz.cvut.fel.smarthome.model.event.event_context.PersonEventContext;
 
 public class FreePersonState extends PersonState {
 
@@ -16,23 +15,16 @@ public class FreePersonState extends PersonState {
     @Override
     public void act(Action action) {
         action.visit(person);
-        ReportContext
-                .createReportEvent(this.getClass(), person.getName(),"takes on a new business")
-                .execute();
+        PersonEventContext.act(person, action);
     }
 
     @Override
     public void goSport(Auxiliary sportAux) {
-        //TODO
         if(!sportAux.startUse()) {
-            ReportContext
-                    .createReportEvent(this.getClass(), person.getName(),"cant use Sport Auxiliary " + sportAux.getName() + " because it's unavailable")
-                    .execute();
+            PersonEventContext.cantUse(person, sportAux);
         } else {
-            //go out of home
-            ReportContext
-                    .createReportEvent(this.getClass(), person.getName(),"going sport")
-                    .execute();
+            //TODO locator go out of home
+            PersonEventContext.goSport(person);
             //activity reporter record
             person.setPersonState(new BusyPersonState(person, sportAux));
         }
@@ -40,16 +32,11 @@ public class FreePersonState extends PersonState {
 
     @Override
     public void goWork(Auxiliary workAux) {
-        //TODO
         if(!workAux.startUse()) {
-            ReportContext
-                    .createReportEvent(this.getClass(), person.getName(),"cant use Work Auxiliary " + workAux.getName() + " because it's unavailable")
-                    .execute();
+            PersonEventContext.cantUse(person, workAux);
         } else {
-            //go out of home
-            ReportContext
-                    .createReportEvent(this.getClass(), person.getName(),"going work")
-                    .execute();
+            //TODO locator go out of home
+            PersonEventContext.goWork(person);
             //activity reporter record
             person.setPersonState(new BusyPersonState(person, workAux));
         }
@@ -57,22 +44,17 @@ public class FreePersonState extends PersonState {
 
     @Override
     public void goProcrastinate(Device procrastinator) {
-        //TODO
         if(!procrastinator.startUse()) {
-            ReportContext
-                    .createReportEvent(this.getClass(), person.getName(),"cant use Device " + procrastinator.getName() + " because it's unavailable")
-                    .execute();
+            PersonEventContext.cantUse(person, procrastinator);
         } else {
-            ReportContext
-                    .createReportEvent(this.getClass(), person.getName(), "start procrastinating with " + procrastinator.getName());
+            PersonEventContext.goProcrastinate(person);
+            person.setPersonState(new BusyPersonState(person, procrastinator));
         }
     }
 
     @Override
     public void getFreeFromActivity() {
-        ReportContext
-                .createReportEvent(this.getClass(), person.getName(),"already free now")
-                .execute();
+        PersonEventContext.getFree(person);
     }
 
 }

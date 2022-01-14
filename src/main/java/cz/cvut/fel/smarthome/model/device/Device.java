@@ -3,7 +3,7 @@ package cz.cvut.fel.smarthome.model.device;
 import cz.cvut.fel.smarthome.model.AbstractEntity;
 import cz.cvut.fel.smarthome.model.device.state.DeviceState;
 import cz.cvut.fel.smarthome.model.device.state.InactiveDeviceState;
-import cz.cvut.fel.smarthome.model.event.ReportContext;
+import cz.cvut.fel.smarthome.model.event.EventChannelContext;
 import cz.cvut.fel.smarthome.model.interfaces.IControl;
 import cz.cvut.fel.smarthome.model.interfaces.IData;
 import cz.cvut.fel.smarthome.model.interfaces.IUseable;
@@ -14,8 +14,8 @@ public class Device extends AbstractEntity implements IControl, IData, IUseable 
     private final Double activeConsumption;
     private final Double idleConsumption;
     private final ConsumptionType consumptionType;
-    transient private DeviceState deviceState;
     private Double durability;
+    transient private DeviceState deviceState;
 
     public Device(String name, DeviceType deviceType, Double activeConsumption, Double idleConsumption, ConsumptionType consumptionType) {
         super(name);
@@ -40,8 +40,8 @@ public class Device extends AbstractEntity implements IControl, IData, IUseable 
 
     public void setDeviceState(DeviceState deviceState) {
         this.deviceState = deviceState;
-        ReportContext
-                .createReportEvent(this.getClass(), name,"state changed to - " + deviceState.getClass().getSimpleName())
+        EventChannelContext
+                .createReport(this.getClass(), name,"state changed to - " + deviceState.getClass().getSimpleName())
                 .execute();
     }
 

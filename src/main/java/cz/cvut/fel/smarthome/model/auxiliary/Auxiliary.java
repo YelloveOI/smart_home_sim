@@ -1,11 +1,9 @@
 package cz.cvut.fel.smarthome.model.auxiliary;
 
-import com.google.gson.annotations.Expose;
 import cz.cvut.fel.smarthome.model.AbstractEntity;
 import cz.cvut.fel.smarthome.model.auxiliary.state.AuxiliaryState;
 import cz.cvut.fel.smarthome.model.auxiliary.state.AvailableAuxiliaryState;
-import cz.cvut.fel.smarthome.model.event.ReportContext;
-import cz.cvut.fel.smarthome.model.event.PlainEvent;
+import cz.cvut.fel.smarthome.model.event.EventChannelContext;
 import cz.cvut.fel.smarthome.model.interfaces.IUseable;
 
 public class Auxiliary extends AbstractEntity implements IUseable {
@@ -23,8 +21,8 @@ public class Auxiliary extends AbstractEntity implements IUseable {
 
     public void setState(AuxiliaryState state) {
         this.state = state;
-        ReportContext
-                .createReportEvent(this.getClass(), name, " state changed to - " + state.getClass().getSimpleName());
+        EventChannelContext
+                .createReport(this.getClass(), name, " state changed to - " + state.getClass().getSimpleName());
     }
 
     public Integer getScratchesNumber() {

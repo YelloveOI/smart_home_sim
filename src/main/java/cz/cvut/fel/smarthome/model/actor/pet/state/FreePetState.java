@@ -2,7 +2,7 @@ package cz.cvut.fel.smarthome.model.actor.pet.state;
 
 import cz.cvut.fel.smarthome.model.actor.action.Action;
 import cz.cvut.fel.smarthome.model.actor.pet.Pet;
-import cz.cvut.fel.smarthome.model.event.ReportContext;
+import cz.cvut.fel.smarthome.model.event.EventChannelContext;
 
 public class FreePetState extends PetState{
 
@@ -13,16 +13,16 @@ public class FreePetState extends PetState{
     @Override
     public void act(Action action) {
         action.visit(pet);
-        pet.getMoreTired();
-        ReportContext
-                .createReportEvent(this.getClass(), pet.getName(),"pet did some activity!")
+//        pet.getMoreTired();
+        EventChannelContext
+                .createReport(this.getClass(), pet.getName(),"pet did some activity!")
                 .execute();
     }
 
     @Override
     public void sleep() {
-        ReportContext
-                .createReportEvent(this.getClass(), pet.getName(),"not tired")
+        EventChannelContext
+                .createReport(this.getClass(), pet.getName(),"not tired")
                 .execute();
     }
 }

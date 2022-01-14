@@ -1,14 +1,15 @@
 package cz.cvut.fel.smarthome.model.event;
 
+import cz.cvut.fel.smarthome.model.event.event_channel.EventChannel;
+
 import java.time.LocalDateTime;
-import java.util.Date;
 
 public class PlainEvent extends Event {
 
     private final String description;
 
-    public PlainEvent(Class senderClass, String senderName, LocalDateTime date, EventChannel channel, String description) {
-        super(senderClass, senderName, date, channel);
+    public PlainEvent(Class senderClass, String senderName, LocalDateTime date, String description, Integer priority) {
+        super(senderClass, senderName, date, priority);
         this.description = description;
     }
 

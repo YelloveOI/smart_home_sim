@@ -6,10 +6,12 @@ import java.util.Set;
 public class Room extends Location {
 
     private final Set<EmbeddedLocation> embeddedLocations;
+    private final Integer floorNumber;
 
     public Room(String name, Integer floorNumber) {
-        super(name, floorNumber);
+        super(name);
         this.embeddedLocations = new HashSet<>();
+        this.floorNumber = floorNumber;
     }
 
     public void addEmbedded(EmbeddedLocation location) {
@@ -22,5 +24,9 @@ public class Room extends Location {
 
     public Set<EmbeddedLocation> getEmbeddedLocations() {
         return embeddedLocations;
+    }
+
+    public Integer getFloorNumber() {
+        return floorNumber;
     }
 }

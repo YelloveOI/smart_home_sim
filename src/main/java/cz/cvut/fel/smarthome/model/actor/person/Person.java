@@ -1,15 +1,17 @@
 package cz.cvut.fel.smarthome.model.actor.person;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import cz.cvut.fel.smarthome.model.AbstractEntity;
+import cz.cvut.fel.smarthome.model.actor.action.Action;
+import cz.cvut.fel.smarthome.model.actor.person.state.FreePersonState;
+import cz.cvut.fel.smarthome.model.actor.person.state.PersonState;
 import cz.cvut.fel.smarthome.model.auxiliary.Auxiliary;
 import cz.cvut.fel.smarthome.model.device.Device;
 import cz.cvut.fel.smarthome.model.interfaces.IActive;
 import cz.cvut.fel.smarthome.model.interfaces.IActor;
-import cz.cvut.fel.smarthome.model.actor.action.Action;
-import cz.cvut.fel.smarthome.model.actor.person.state.FreePersonState;
-import cz.cvut.fel.smarthome.model.actor.person.state.PersonState;
-import cz.cvut.fel.smarthome.model.interfaces.IUseable;
+import cz.cvut.fel.smarthome.model.location.Location;
+import cz.cvut.fel.smarthome.model.location.Outside;
+
+import java.util.Objects;
 
 public class Person extends AbstractEntity implements IActor, IActive {
 
@@ -41,21 +43,22 @@ public class Person extends AbstractEntity implements IActor, IActive {
 
     @Override
     public void goSport(Auxiliary sportAux) {
-
+        personState.goSport(sportAux);
     }
 
     @Override
     public void goWork(Auxiliary workAux) {
-
+        personState.goWork(workAux);
     }
 
     @Override
     public void goProcrastinate(Device procrastinator) {
-
+        personState.goProcrastinate(procrastinator);
     }
 
     @Override
     public void getFreeFromActivity() {
-
+        personState.getFreeFromActivity();
     }
+
 }

@@ -1,7 +1,7 @@
 package cz.cvut.fel.smarthome.model.auxiliary.state;
 
 import cz.cvut.fel.smarthome.model.auxiliary.Auxiliary;
-import cz.cvut.fel.smarthome.model.event.ReportContext;
+import cz.cvut.fel.smarthome.model.event.EventChannelContext;
 
 public class AvailableAuxiliaryState extends AuxiliaryState {
 
@@ -12,8 +12,8 @@ public class AvailableAuxiliaryState extends AuxiliaryState {
     @Override
     public Boolean startUse() {
         auxiliary.setState(new UnavailableAuxiliaryState(auxiliary));
-        ReportContext
-                .createReportEvent(this.getClass(), auxiliary.getName(),"is used")
+        EventChannelContext
+                .createReport(this.getClass(), auxiliary.getName(),"is used")
                 .execute();
         return true;
     }

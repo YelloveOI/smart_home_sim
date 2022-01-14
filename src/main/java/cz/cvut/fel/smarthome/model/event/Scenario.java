@@ -1,14 +1,15 @@
 package cz.cvut.fel.smarthome.model.event;
 
+import cz.cvut.fel.smarthome.model.event.event_channel.EventChannel;
+
 import java.time.LocalDateTime;
-import java.util.Date;
 
 public class Scenario extends Event {
 
     //TODO add actions and processing
 
     public Scenario(Class senderClass, String senderName, LocalDateTime date, EventChannel channel) {
-        super(senderClass, senderName, date, channel);
+        super(senderClass, senderName, date, channel, priority);
     }
 
     @Override

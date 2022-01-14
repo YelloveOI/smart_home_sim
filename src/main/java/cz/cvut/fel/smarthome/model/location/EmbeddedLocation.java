@@ -8,7 +8,7 @@ public class EmbeddedLocation extends Location {
     private final Device embeddedDevice;
 
     public EmbeddedLocation(String name, Room room, Device embeddedDevice) {
-        super(name, room.getFloorNumber());
+        super(name);
         this.room = room;
         this.embeddedDevice = embeddedDevice;
     }

@@ -1,20 +1,19 @@
 package cz.cvut.fel.smarthome.model.event;
 
 import java.time.LocalDateTime;
-import java.util.Date;
 
 public abstract class Event {
 
     private final Class senderClass;
     private final String senderName;
     private final LocalDateTime date;
-    private final EventChannel channel;
+    private final Integer priority;
 
-    public Event(Class senderClass, String senderName, LocalDateTime date, EventChannel channel) {
+    public Event(Class senderClass, String senderName, LocalDateTime date, Integer priority) {
         this.senderClass = senderClass;
         this.senderName = senderName;
         this.date = date;
-        this.channel = channel;
+        this.priority = priority;
     }
 
     public LocalDateTime getDate() {
@@ -29,8 +28,8 @@ public abstract class Event {
         return senderName;
     }
 
-    public void execute() {
-        channel.get(this);
+    public Integer getPriority() {
+        return priority;
     }
 
     abstract public String toString();

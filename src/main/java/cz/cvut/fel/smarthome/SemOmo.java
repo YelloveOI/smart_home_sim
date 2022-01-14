@@ -20,12 +20,7 @@ public class SemOmo {
         DICompositionPoint compositionPoint = new DICompositionPoint();
         ApplicationContext context = compositionPoint.run();
 
-        House house = new House("Happy Home", 2)
-                .addGarage("G1", 0)
-                .addRoom("Room1", 0, 2)
-                .addRoom("Room2", 1, 3);
 
-        System.out.println(house);
 
         Device device = new Device(
                 "device_name",
@@ -47,7 +42,6 @@ public class SemOmo {
         pet.act(new TurnOnAction(device));
         pet.act(new TurnOnAction(device));
         pet.act(new TurnOnAction(device));
-        pet.sleep();
         pet.act(new TurnOnAction(device));
 
         Gson gson = new Gson();

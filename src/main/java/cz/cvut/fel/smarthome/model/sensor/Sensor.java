@@ -1,14 +1,15 @@
 package cz.cvut.fel.smarthome.model.sensor;
 
+import cz.cvut.fel.smarthome.model.AbstractEntity;
 import cz.cvut.fel.smarthome.model.event.Event;
 
-public class Sensor {
+//TODO
+public class Sensor extends AbstractEntity {
 
-    private final String name;
     private final Event event;
 
     public Sensor(String name, Event event) {
-        this.name = name;
+        super(name);
         this.event = event;
     }
 
