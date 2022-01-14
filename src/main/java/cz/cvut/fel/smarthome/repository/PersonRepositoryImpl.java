@@ -15,41 +15,15 @@ import java.util.HashSet;
 import java.util.Optional;
 import java.util.Set;
 
-public class PersonRepositoryImpl implements PersonRepository {
-
-    private final Set<Person> personPool;
+public class PersonRepositoryImpl extends AbstractJSONRepo<String, Person> implements PersonRepository {
 
     public PersonRepositoryImpl() throws FileNotFoundException {
         Gson gson = new Gson();
         BufferedReader br = new BufferedReader(new FileReader("src/main/resources/person/1.json"));
-        personPool = new HashSet<Person>(gson.fromJson(br, Collection.class));
-        for(Person p : personPool) {
+        pool = new HashSet<Person>(gson.fromJson(br, Collection.class));
+        for(Person p : pool) {
             p.setPersonState(new FreePersonState(p));
         }
     }
 
-    @Override
-    public Person create(Person entity) {
-        return null;
-    }
-
-    @Override
-    public Person update(Person entity) {
-        return null;
-    }
-
-    @Override
-    public void delete(String s) {
-
-    }
-
-    @Override
-    public Optional<Person> find(String s) {
-        return null;
-    }
-
-    @Override
-    public Collection<Person> findAll() {
-        return null;
-    }
 }

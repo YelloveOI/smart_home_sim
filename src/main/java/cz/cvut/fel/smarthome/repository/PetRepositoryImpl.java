@@ -14,7 +14,7 @@ import java.util.HashSet;
 import java.util.Optional;
 import java.util.Set;
 
-public class PetRepositoryImpl implements PetRepository {
+public class PetRepositoryImpl extends AbstractJSONRepo<String, Pet> implements PetRepository {
 
     private final Set<Pet> petPool;
 
@@ -27,28 +27,4 @@ public class PetRepositoryImpl implements PetRepository {
         }
     }
 
-    @Override
-    public Pet create(Pet entity) {
-        return null;
-    }
-
-    @Override
-    public Pet update(Pet entity) {
-        return null;
-    }
-
-    @Override
-    public void delete(String s) {
-
-    }
-
-    @Override
-    public Optional<Pet> find(String s) {
-        return null;
-    }
-
-    @Override
-    public Collection<Pet> findAll() {
-        return null;
-    }
 }

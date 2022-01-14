@@ -13,47 +13,22 @@ import java.io.FileReader;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class AuxiliaryRepositoryImpl implements AuxiliaryRepository {
-
-    private final Set<Auxiliary> auxiliaryPool;
+public class AuxiliaryRepositoryImpl extends AbstractJSONRepo<String, Auxiliary> implements AuxiliaryRepository {
 
     public AuxiliaryRepositoryImpl() throws FileNotFoundException {
         Gson gson = new Gson();
         BufferedReader br = new BufferedReader(new FileReader("src/main/resources/auxiliary/1.json"));
-        auxiliaryPool = new HashSet<Auxiliary>(gson.fromJson(br, Collection.class));
-        for(Auxiliary a : auxiliaryPool) {
+        pool = new HashSet<Auxiliary>(gson.fromJson(br, Collection.class));
+        for(Auxiliary a : pool) {
             a.setState(new AvailableAuxiliaryState(a));
         }
     }
 
-
     @Override
     public Optional<Auxiliary> findFirstByDestinyAndByAvailable(AuxiliaryType type) {
-        return Optional.empty();
-    }
-
-    @Override
-    public Auxiliary create(Auxiliary entity) {
-        return null;
-    }
-
-    @Override
-    public Auxiliary update(Auxiliary entity) {
-        return null;
-    }
-
-    @Override
-    public void delete(String s) {
-
-    }
-
-    @Override
-    public Optional<Auxiliary> find(String s) {
-        return null;
-    }
-
-    @Override
-    public Collection<Auxiliary> findAll() {
-        return null;
+        return pool.stream()
+                .filter(v -> v.getDestiny().equals(type))
+                .filter(Auxiliary::isAvailable)
+                .findFirst();
     }
 }
