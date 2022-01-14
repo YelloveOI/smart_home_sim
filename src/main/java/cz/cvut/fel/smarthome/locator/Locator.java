@@ -21,31 +21,22 @@ import java.util.concurrent.ConcurrentHashMap;
 //TODO
 public class Locator {
 
-    @Inject
-    private AuxiliaryRepository auxiliaryRepo;
-    @Inject
-    private DeviceRepository deviceRepo;
-    @Inject
-    private PersonRepository personRepo;
-    @Inject
-    private PetRepository petRepo;
-
     private final Map<AbstractEntity, Location> entityMap;
     private final House house;
 
+    //TODO how to init
     public Locator(House house) {
         this.house = house;
         this.entityMap = new ConcurrentHashMap<>();
     }
 
-    public Boolean locateAuxiliary(String auxiliaryName, String locationName) {
-        Optional<Auxiliary> tempAux = auxiliaryRepo.find(auxiliaryName);
+    public Boolean locateAuxiliary(Auxiliary auxiliary, String locationName) {
         Optional<Location> tempLoc = house.findByName(locationName);
-        if(tempAux.isPresent() && tempLoc.isPresent()) {
-            if(entityMap.containsKey(tempAux.get())) {
-                entityMap.replace(tempAux.get(), tempLoc.get());
+        if(tempLoc.isPresent()) {
+            if(entityMap.containsKey(auxiliary)) {
+                entityMap.replace(auxiliary, tempLoc.get());
             } else {
-                entityMap.put(tempAux.get(), tempLoc.get());
+                entityMap.put(auxiliary, tempLoc.get());
             }
 
             return true;
@@ -54,14 +45,13 @@ public class Locator {
         return false;
     }
 
-    public Boolean locateDevice(String deviceName, String locationName) {
-        Optional<Device> tempDev = deviceRepo.find(deviceName);
+    public Boolean locateDevice(Device device, String locationName) {
         Optional<Location> tempLoc = house.findByName(locationName);
-        if(tempDev.isPresent() && tempLoc.isPresent()) {
-            if(entityMap.containsKey(tempDev.get())) {
-                entityMap.replace(tempDev.get(), tempLoc.get());
+        if(tempLoc.isPresent()) {
+            if(entityMap.containsKey(device)) {
+                entityMap.replace(device, tempLoc.get());
             } else {
-                entityMap.put(tempDev.get(), tempLoc.get());
+                entityMap.put(device, tempLoc.get());
             }
 
             return true;
@@ -70,14 +60,13 @@ public class Locator {
         return false;
     }
 
-    public Boolean locatePerson(String personName, String locationName) {
-        Optional<Person> tempPer = personRepo.find(personName);
+    public Boolean locatePerson(Person person, String locationName) {
         Optional<Location> tempLoc = house.findByName(locationName);
-        if(tempPer.isPresent() && tempLoc.isPresent()) {
-            if(entityMap.containsKey(tempPer.get())) {
-                entityMap.replace(tempPer.get(), tempLoc.get());
+        if(tempLoc.isPresent()) {
+            if(entityMap.containsKey(person)) {
+                entityMap.replace(person, tempLoc.get());
             } else {
-                entityMap.put(tempPer.get(), tempLoc.get());
+                entityMap.put(person, tempLoc.get());
             }
 
             return true;
@@ -86,14 +75,13 @@ public class Locator {
         return false;
     }
 
-    public Boolean locatePet(String petName, String locationName) {
-        Optional<Pet> tempPet = petRepo.find(petName);
+    public Boolean locatePet(Pet pet, String locationName) {
         Optional<Location> tempLoc = house.findByName(locationName);
-        if(tempPet.isPresent() && tempLoc.isPresent()) {
-            if(entityMap.containsKey(tempPet.get())) {
-                entityMap.replace(tempPet.get(), tempLoc.get());
+        if(tempLoc.isPresent()) {
+            if(entityMap.containsKey(pet)) {
+                entityMap.replace(pet, tempLoc.get());
             } else {
-                entityMap.put(tempPet.get(), tempLoc.get());
+                entityMap.put(pet, tempLoc.get());
             }
 
             return true;
@@ -102,39 +90,15 @@ public class Locator {
         return false;
     }
 
-    public Boolean locatePerson(String personName) {
-        Optional<Person> tempPer = personRepo.find(personName);
-        Optional<Location> tempLoc = house.findByName("HALL");
-        if(tempPer.isPresent()) {
-            if(entityMap.containsKey(tempPer.get())) {
-                entityMap.replace(tempPer.get(), tempLoc.get());
-            } else {
-                entityMap.put(tempPer.get(), tempLoc.get());
-            }
-
-            return true;
-        }
-
-        return false;
+    public Boolean locatePerson(Person person) {
+        return locatePerson(person, "HALL");
     }
 
-    public Boolean locatePet(String petName) {
-        Optional<Pet> tempPet = petRepo.find(petName);
-        Optional<Location> tempLoc = house.findByName("HALL");
-        if(tempPet.isPresent()) {
-            if(entityMap.containsKey(tempPet.get())) {
-                entityMap.replace(tempPet.get(), tempLoc.get());
-            } else {
-                entityMap.put(tempPet.get(), tempLoc.get());
-            }
-
-            return true;
-        }
-
-        return false;
+    public Boolean locatePet(Pet pet) {
+        return locatePet(pet, "HALL");
     }
 
-    public Boolean kick(String personName) {
-        return locatePerson(personName, "OUTSIDE");
+    public Boolean kick(Person person) {
+        return locatePerson(person, "OUTSIDE");
     }
 }

@@ -8,8 +8,8 @@ public class Scenario extends Event {
 
     //TODO add actions and processing
 
-    public Scenario(Class senderClass, String senderName, LocalDateTime date, EventChannel channel) {
-        super(senderClass, senderName, date, channel, priority);
+    public Scenario(Class senderClass, String senderName, LocalDateTime date) {
+        super(senderClass, senderName, date, 1);
     }
 
     @Override
@@ -25,11 +25,6 @@ public class Scenario extends Event {
     @Override
     public String getSenderName() {
         return super.getSenderName();
-    }
-
-    @Override
-    public void execute() {
-        super.execute();
     }
 
     @Override

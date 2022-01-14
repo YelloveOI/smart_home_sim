@@ -12,9 +12,10 @@ public class AvailableAuxiliaryState extends AuxiliaryState {
     @Override
     public Boolean startUse() {
         auxiliary.setState(new UnavailableAuxiliaryState(auxiliary));
-        EventProcessor
-                .createReport(this.getClass(), auxiliary.getName(),"is used")
-                .execute();
+        //TODO
+//        EventProcessor
+//                .createReport(this.getClass(), auxiliary.getName(),"is used")
+//                .execute();
         return true;
     }
 
