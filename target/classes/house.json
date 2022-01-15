@@ -3,7 +3,7 @@
     "garagesQuantity":1,
     "roomsQuantity":5,
     "embeddedQuantity":2,
-    "floorsQuantity":0,
+    "floorsQuantity":2,
     "locations": [
       {"floorNumber":0,"name":"ROOM2"},
       {"carSeatsQuantity":2,"floorNumber":0,"name":"GARAGE1"},
@@ -12,6 +12,29 @@
       {"floorNumber":1,"name":"ROOM5"},
       {"room":{"floorNumber":0,"name":"ROOM2"},"name":"EMB2"},
       {"floorNumber":1,"name":"ROOM4"},
+      {"name":"OUTSIDE"},
+      {"floorNumber":0,"name":"ROOM1"},
+      {"room":{"floorNumber":0,"name":"ROOM1"},"name":"EMB1"}
+    ],
+    "name":"HOUSE1"
+  },
+  {
+    "garagesQuantity":1,
+    "roomsQuantity":7,
+    "embeddedQuantity":4,
+    "floorsQuantity":3,
+    "locations": [
+      {"floorNumber":0,"name":"ROOM2"},
+      {"carSeatsQuantity":2,"floorNumber":0,"name":"GARAGE1"},
+      {"floorNumber":0,"name":"ROOM3"},
+      {"floorNumber":0,"name":"HALL"},
+      {"floorNumber":1,"name":"ROOM5"},
+      {"room":{"floorNumber":0,"name":"ROOM2"},"name":"EMB2"},
+      {"room":{"floorNumber":0,"name":"ROOM5"},"name":"EMB3"},
+      {"room":{"floorNumber":0,"name":"ROOM4"},"name":"EMB4"},
+      {"floorNumber":1,"name":"ROOM4"},
+      {"floorNumber":3,"name":"ROOM5"},
+      {"floorNumber":3,"name":"ROOM6"},
       {"name":"OUTSIDE"},
       {"floorNumber":0,"name":"ROOM1"},
       {"room":{"floorNumber":0,"name":"ROOM1"},"name":"EMB1"}

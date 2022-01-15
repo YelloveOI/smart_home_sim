@@ -1,0 +1,43 @@
+Plain event from Device device_name1 , date: 2022-01-15T23:29:49.862159900
+	 description: state changed from to InactiveDeviceStatePlain event from Device device_name2 , date: 2022-01-15T23:29:49.877778900
+	 description: state changed from to InactiveDeviceStatePlain event from Device device_name3 , date: 2022-01-15T23:29:49.877778900
+	 description: state changed from to InactiveDeviceStatePlain event from Device device_name8 , date: 2022-01-15T23:29:49.877778900
+	 description: state changed from to InactiveDeviceStatePlain event from Device device_name10 , date: 2022-01-15T23:29:49.877778900
+	 description: state changed from to InactiveDeviceStatePlain event from Device device_name9 , date: 2022-01-15T23:29:49.877778900
+	 description: state changed from to InactiveDeviceStatePlain event from Device device_name4 , date: 2022-01-15T23:29:49.877778900
+	 description: state changed from to InactiveDeviceStatePlain event from Device device_name5 , date: 2022-01-15T23:29:49.877778900
+	 description: state changed from to InactiveDeviceStatePlain event from Device device_name6 , date: 2022-01-15T23:29:49.877778900
+	 description: state changed from to InactiveDeviceStatePlain event from Device device_name7 , date: 2022-01-15T23:29:49.877778900
+	 description: state changed from to InactiveDeviceStatePlain event from Device Car1 , date: 2022-01-15T23:29:49.893402100
+	 description: used by sbdPlain event from Person Wasua , date: 2022-01-15T23:29:49.893402100
+	 description: going workPlain event from Device Ski , date: 2022-01-15T23:29:49.893402100
+	 description: used by sbdPlain event from Person Manya , date: 2022-01-15T23:29:49.893402100
+	 description: going sportPlain event from Device device_name7 , date: 2022-01-15T23:29:49.893402100
+	 description: state changed from to IdleDeviceStatePlain event from Person Tolik , date: 2022-01-15T23:29:49.893402100
+	 description: acts TurnOnActionPlain event from Device device_name7 , date: 2022-01-15T23:29:49.893402100
+	 description: state changed from to ActiveDeviceStatePlain event from Person Tolik , date: 2022-01-15T23:29:49.893402100
+	 description: going procrastinatePlain event from Device device_name2 , date: 2022-01-15T23:29:49.893402100
+	 description: state changed from to IdleDeviceStatePlain event from Person Bolik , date: 2022-01-15T23:29:49.893402100
+	 description: acts TurnOnActionPlain event from Device device_name2 , date: 2022-01-15T23:29:49.893402100
+	 description: state changed from to ActiveDeviceStatePlain event from Person Bolik , date: 2022-01-15T23:29:49.893402100
+	 description: going procrastinatePlain event from Device device_name9 , date: 2022-01-15T23:29:49.893402100
+	 description: state changed from to IdleDeviceStatePlain event from Person Trolik , date: 2022-01-15T23:29:49.893402100
+	 description: acts TurnOnActionPlain event from Device device_name9 , date: 2022-01-15T23:29:49.893402100
+	 description: state changed from to ActiveDeviceStatePlain event from Person Trolik , date: 2022-01-15T23:29:49.893402100
+	 description: going procrastinatePlain event from Device Car1 , date: 2022-01-15T23:29:49.893402100
+	 description: stopped use by sbdPlain event from Person Wasua , date: 2022-01-15T23:29:49.893402100
+	 description: is free nowPlain event from Device device_name7 , date: 2022-01-15T23:29:49.893402100
+	 description: state changed from to IdleDeviceStatePlain event from Person Tolik , date: 2022-01-15T23:29:49.893402100
+	 description: is free nowPlain event from Device Bike2 , date: 2022-01-15T23:29:49.893402100
+	 description: used by sbdPlain event from Person Tolik , date: 2022-01-15T23:29:49.893402100
+	 description: going sportPlain event from Device device_name2 , date: 2022-01-15T23:29:49.893402100
+	 description: state changed from to IdleDeviceStatePlain event from Person Bolik , date: 2022-01-15T23:29:49.893402100
+	 description: is free nowPlain event from Device Ski , date: 2022-01-15T23:29:49.893402100
+	 description: stopped use by sbdPlain event from Person Manya , date: 2022-01-15T23:29:49.893402100
+	 description: is free nowPlain event from Device device_name2 , date: 2022-01-15T23:29:49.893402100
+	 description: state changed from to ActiveDeviceStatePlain event from Person Manya , date: 2022-01-15T23:29:49.893402100
+	 description: going procrastinatePlain event from Device Ski , date: 2022-01-15T23:29:49.893402100
+	 description: used by sbdPlain event from Person Bolik , date: 2022-01-15T23:29:49.893402100
+	 description: going sportPlain event from Device device_name7 , date: 2022-01-15T23:29:49.893402100
+	 description: state changed from to ActiveDeviceStatePlain event from Person Zhmyshenko Valerij Albertovich , date: 2022-01-15T23:29:49.893402100
+	 description: going procrastinate

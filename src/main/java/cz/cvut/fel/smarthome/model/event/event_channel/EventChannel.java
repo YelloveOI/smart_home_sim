@@ -2,6 +2,8 @@ package cz.cvut.fel.smarthome.model.event.event_channel;
 
 import cz.cvut.fel.smarthome.model.event.Event;
 
+import java.io.IOException;
+
 public abstract class EventChannel {
 
     private final Integer priority;
