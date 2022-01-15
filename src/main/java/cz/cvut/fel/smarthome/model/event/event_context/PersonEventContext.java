@@ -36,7 +36,7 @@ public class PersonEventContext {
 
     public static Event cantUse(Person person, IUseable useable) {
         return new PlainEvent(
-                Person.class, person.getName(), LocalDateTime.now(), "cant use " + useable.getName(), 1
+                Person.class, person.getName(), LocalDateTime.now(), "cant use " + useable, 1
         );
     }
 

@@ -39,10 +39,8 @@ public class BusyPersonState extends PersonState {
 
     @Override
     public void getFreeFromActivity() {
-        //TODO locator get home
         nowInUse.stopUse();
         EventProcessor.getEvent(PersonEventContext.getFree(person));
-        //activity reporter record
         person.setPersonState(new FreePersonState(person));
     }
 

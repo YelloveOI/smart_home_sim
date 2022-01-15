@@ -10,7 +10,9 @@ public class ReportEventChannel extends EventChannel {
     }
 
     @Override
-    protected void process(Event e) {
+    protected Boolean process(Event e) {
+        //TODO запись в файл
         System.out.println(e);
+        return true;
     }
 }

@@ -1,6 +1,6 @@
 package cz.cvut.fel.smarthome.service;
 
-import cz.cvut.fel.smarthome.locator.Locator;
+import cz.cvut.fel.smarthome.model.actor.action.TurnOnAction;
 import cz.cvut.fel.smarthome.model.actor.person.Person;
 import cz.cvut.fel.smarthome.model.auxiliary.Auxiliary;
 import cz.cvut.fel.smarthome.model.auxiliary.AuxiliaryType;
@@ -29,24 +29,24 @@ public class PersonService {
     public PersonService() {
     }
 
-    public void goSport(String personName) {
+    public void goSport(String houseName, String personName) {
         Optional<Person> tempPer = personRepo.find(personName);
         Optional<Auxiliary> tempAux = auxiliaryRepo.findFirstByDestinyAndByAvailable(AuxiliaryType.SPORT);
 
         if(tempAux.isPresent() && tempPer.isPresent()) {
             tempPer.get().goSport(tempAux.get());
-            locator.kick(tempPer.get());
+            locator.kick(houseName, tempPer.get());
             personRepo.update(tempPer.get());
         }
     }
 
-    public void goWork(String personName) {
+    public void goWork(String houseName, String personName) {
         Optional<Person> tempPer = personRepo.find(personName);
         Optional<Auxiliary> tempAux = auxiliaryRepo.findFirstByDestinyAndByAvailable(AuxiliaryType.WORK);
 
         if(tempAux.isPresent() && tempPer.isPresent()) {
             tempPer.get().goWork(tempAux.get());
-            locator.kick(tempPer.get());
+            locator.kick(houseName, tempPer.get());
             personRepo.update(tempPer.get());
         }
     }
@@ -55,18 +55,22 @@ public class PersonService {
         Optional<Person> tempPer = personRepo.find(personName);
         Optional<Device> tempDev = deviceRepo.findFirstByIsAvailable();
 
-        if(tempDev.isPresent() && tempPer.isPresent()) {
+        if(tempPer.isPresent()) {
+            if(tempDev.isEmpty()) {
+                tempDev = deviceRepo.findRandom();
+                tempPer.get().act(new TurnOnAction(tempDev.get()));
+            }
             tempPer.get().goProcrastinate(tempDev.get());
             personRepo.update(tempPer.get());
         }
     }
 
-    public void getFreeFromActivity(String personName) {
+    public void getFreeFromActivity(String houseName, String personName) {
         Optional<Person> tempPer = personRepo.find(personName);
 
         if(tempPer.isPresent()) {
             tempPer.get().getFreeFromActivity();
-            locator.locatePerson(tempPer.get());
+            locator.locatePerson(houseName, tempPer.get());
             personRepo.update(tempPer.get());
         }
     }

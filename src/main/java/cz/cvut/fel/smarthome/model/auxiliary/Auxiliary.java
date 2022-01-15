@@ -21,9 +21,6 @@ public class Auxiliary extends AbstractEntity implements IUseable {
 
     public void setState(AuxiliaryState state) {
         this.state = state;
-        //TODO
-//        EventProcessor
-//                .createReport(this.getClass(), name, " state changed to - " + state.getClass().getSimpleName());
     }
 
     public Integer getScratchesNumber() {

@@ -18,13 +18,14 @@ public abstract class EventChannel {
 
     public void notify(Event e) {
         if(e.getPriority() >= priority) {
-            process(e);
-        }
-        if(nextChannel != null) {
-            nextChannel.notify(e);
+            Boolean goNext = process(e);
+            if(nextChannel != null && goNext) {
+                nextChannel.notify(e);
+            }
         }
     }
 
-    protected abstract void process(Event e);
+    //true = go ahead, false = stop
+    protected abstract Boolean process(Event e);
 
 }

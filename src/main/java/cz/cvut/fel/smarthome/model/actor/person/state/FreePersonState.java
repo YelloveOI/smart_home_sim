@@ -24,9 +24,7 @@ public class FreePersonState extends PersonState {
         if(!sportAux.startUse()) {
             EventProcessor.getEvent(PersonEventContext.cantUse(person, sportAux));
         } else {
-            //TODO locator go out of home
-            PersonEventContext.goSport(person);
-            //activity reporter record
+            EventProcessor.getEvent(PersonEventContext.goSport(person));
             person.setPersonState(new BusyPersonState(person, sportAux));
         }
     }
@@ -36,9 +34,7 @@ public class FreePersonState extends PersonState {
         if(!workAux.startUse()) {
             EventProcessor.getEvent(PersonEventContext.cantUse(person, workAux));
         } else {
-            //TODO locator go out of home
-            PersonEventContext.goWork(person);
-            //activity reporter record
+            EventProcessor.getEvent(PersonEventContext.goWork(person));
             person.setPersonState(new BusyPersonState(person, workAux));
         }
     }
@@ -48,7 +44,7 @@ public class FreePersonState extends PersonState {
         if(!procrastinator.startUse()) {
             EventProcessor.getEvent(PersonEventContext.cantUse(person, procrastinator));
         } else {
-            PersonEventContext.goProcrastinate(person);
+            EventProcessor.getEvent(PersonEventContext.goProcrastinate(person));
             person.setPersonState(new BusyPersonState(person, procrastinator));
         }
     }

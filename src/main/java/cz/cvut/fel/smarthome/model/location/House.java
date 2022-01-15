@@ -113,4 +113,6 @@ public class House extends AbstractEntity {
                 .findFirst()
                 .get();
     }
+
+    
 }

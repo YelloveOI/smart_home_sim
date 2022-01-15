@@ -8,4 +8,6 @@ public interface DeviceRepository extends CrudRepository<String, Device> {
 
     Optional<Device> findFirstByIsAvailable();
 
+    Optional<Device> findRandom();
+
 }

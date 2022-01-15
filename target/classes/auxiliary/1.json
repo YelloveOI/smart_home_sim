@@ -13,5 +13,10 @@
     "name": "Bike2",
     "destiny": "SPORT",
     "scratchesNumber": 0
+  },
+  {
+    "name": "Car1",
+    "destiny": "WORK",
+    "scratchesNumber": 0
   }
 ]

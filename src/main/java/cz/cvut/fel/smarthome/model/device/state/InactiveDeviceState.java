@@ -13,7 +13,7 @@ public class InactiveDeviceState extends DeviceState {
         if(device.wearOut()) {
             device.setDeviceState(new BrokenDeviceState(device));
         } else {
-            device.setDeviceState(new ActiveDeviceState(device));
+            device.setDeviceState(new IdleDeviceState(device));
         }
     }
 

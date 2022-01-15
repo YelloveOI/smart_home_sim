@@ -3,7 +3,7 @@ package cz.cvut.fel.smarthome.model.interfaces;
 import cz.cvut.fel.smarthome.model.auxiliary.Auxiliary;
 import cz.cvut.fel.smarthome.model.device.Device;
 
-public interface IActive extends INamed{
+public interface IActive {
 
     void goSport(Auxiliary sportAux);
 

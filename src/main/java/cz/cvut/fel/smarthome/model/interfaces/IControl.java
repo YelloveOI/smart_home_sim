@@ -1,6 +1,6 @@
 package cz.cvut.fel.smarthome.model.interfaces;
 
-public interface IControl extends INamed {
+public interface IControl {
 
     void turnOn();
 

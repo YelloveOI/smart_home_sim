@@ -9,7 +9,7 @@ public class AchtungEventChannel extends EventChannel {
     }
 
     @Override
-    protected void process(Event e) {
-
+    protected Boolean process(Event e) {
+        return false;
     }
 }

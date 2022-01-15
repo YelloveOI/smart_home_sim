@@ -1,4 +1,4 @@
-package cz.cvut.fel.smarthome.locator;
+package cz.cvut.fel.smarthome.service;
 
 import cz.cvut.fel.smarthome.model.AbstractEntity;
 import cz.cvut.fel.smarthome.model.actor.person.Person;
@@ -20,14 +20,13 @@ public class Locator {
     @Inject
     private HouseRepository houseRepository;
     private final Map<AbstractEntity, Location> entityMap;
-    private final House house;
 
-    public Locator(String houseName) {
-        this.house = houseRepository.find(houseName).get();
+    public Locator() {
         this.entityMap = new ConcurrentHashMap<>();
     }
 
-    public Boolean locateAuxiliary(Auxiliary auxiliary, String locationName) {
+    public Boolean locateAuxiliary(String houseName, Auxiliary auxiliary, String locationName) {
+        House house = houseRepository.find(houseName).get();
         Optional<Location> tempLoc = house.findByName(locationName);
         if(tempLoc.isPresent()) {
             if(entityMap.containsKey(auxiliary)) {
@@ -43,7 +42,8 @@ public class Locator {
         return false;
     }
 
-    public Boolean locateDevice(Device device, String locationName) {
+    public Boolean locateDevice(String houseName, Device device, String locationName) {
+        House house = houseRepository.find(houseName).get();
         Optional<Location> tempLoc = house.findByName(locationName);
         if(tempLoc.isPresent()) {
             if(entityMap.containsKey(device)) {
@@ -59,7 +59,8 @@ public class Locator {
         return false;
     }
 
-    public Boolean locatePerson(Person person, String locationName) {
+    public Boolean locatePerson(String houseName, Person person, String locationName) {
+        House house = houseRepository.find(houseName).get();
         Optional<Location> tempLoc = house.findByName(locationName);
         if(tempLoc.isPresent()) {
             if(entityMap.containsKey(person)) {
@@ -75,7 +76,8 @@ public class Locator {
         return false;
     }
 
-    public Boolean locatePet(Pet pet, String locationName) {
+    public Boolean locatePet(String houseName, Pet pet, String locationName) {
+        House house = houseRepository.find(houseName).get();
         Optional<Location> tempLoc = house.findByName(locationName);
         if(tempLoc.isPresent()) {
             if(entityMap.containsKey(pet)) {
@@ -91,15 +93,15 @@ public class Locator {
         return false;
     }
 
-    public Boolean locatePerson(Person person) {
-        return locatePerson(person, "HALL");
+    public Boolean locatePerson(String houseName, Person person) {
+        return locatePerson(houseName, person, "HALL");
     }
 
-    public Boolean locatePet(Pet pet) {
-        return locatePet(pet, "HALL");
+    public Boolean locatePet(String houseName, Pet pet) {
+        return locatePet(houseName, pet, "HALL");
     }
 
-    public Boolean kick(Person person) {
-        return locatePerson(person, "OUTSIDE");
+    public Boolean kick(String houseName, Person person) {
+        return locatePerson(houseName, person, "OUTSIDE");
     }
 }

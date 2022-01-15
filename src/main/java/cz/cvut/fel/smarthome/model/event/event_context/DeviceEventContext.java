@@ -9,10 +9,10 @@ import java.time.LocalDateTime;
 
 public class DeviceEventContext {
 
-    public static Event changeState(Device device, DeviceState from, DeviceState to) {
+    public static Event changeState(Device device, DeviceState to) {
         return new PlainEvent(
                 Device.class, device.getName(), LocalDateTime.now(),
-                "state changed from " + from.getClass().getSimpleName() + " to " + to.getClass().getSimpleName(),
+                "state changed from to " + to.getClass().getSimpleName(),
                 1
         );
     }

@@ -40,7 +40,7 @@ public class Device extends AbstractEntity implements IControl, IData, IUseable 
     }
 
     public void setDeviceState(DeviceState deviceState) {
-        EventProcessor.getEvent(DeviceEventContext.changeState(this, this.deviceState, deviceState));
+        EventProcessor.getEvent(DeviceEventContext.changeState(this, deviceState));
         this.deviceState = deviceState;
     }
 

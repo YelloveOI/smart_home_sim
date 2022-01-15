@@ -2,6 +2,7 @@ package cz.cvut.fel.smarthome.model.auxiliary.state;
 
 import cz.cvut.fel.smarthome.model.auxiliary.Auxiliary;
 import cz.cvut.fel.smarthome.model.event.EventProcessor;
+import cz.cvut.fel.smarthome.model.event.event_context.AuxiliaryEventContext;
 
 public class UnavailableAuxiliaryState extends AuxiliaryState {
 
@@ -11,18 +12,14 @@ public class UnavailableAuxiliaryState extends AuxiliaryState {
 
     @Override
     public Boolean startUse() {
-//        EventProcessor
-//                .createReport(this.getClass(), auxiliary.getName(),"is unavailable")
-//                .execute();
+        EventProcessor.getEvent(AuxiliaryEventContext.imUnavailable(auxiliary));
         return false;
     }
 
     @Override
     public void stopUse() {
         auxiliary.setState(new AvailableAuxiliaryState(auxiliary));
-//        EventProcessor
-//                .createReport(this.getClass(), auxiliary.getName(),"is not used anymore")
-//                .execute();
+        EventProcessor.getEvent(AuxiliaryEventContext.stopUse(auxiliary));
     }
 
     @Override
