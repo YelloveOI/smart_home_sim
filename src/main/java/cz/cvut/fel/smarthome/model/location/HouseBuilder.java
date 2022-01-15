@@ -14,13 +14,15 @@ public class HouseBuilder {
         this.house = new House(houseName);
     }
 
-    public HouseBuilder addRoom(String name, Integer floorNumber) {
-        house.addLocation(new Room(name, floorNumber));
+    public HouseBuilder addGarage(String name, Integer floorNumber, Integer carSeatsQuantity) {
+        house.addLocation(new Garage(name, floorNumber, carSeatsQuantity));
+        house.incGaragesQuantity();
         return this;
     }
 
-    public HouseBuilder removeLocation(String name) {
-        house.removeLocation(name);
+    public HouseBuilder addRoom(String name, Integer floorNumber) {
+        house.addLocation(new Room(name, floorNumber));
+        house.incRoomsQuantity();
         return this;
     }
 
@@ -29,7 +31,8 @@ public class HouseBuilder {
         Optional<Location> temp = house.findByName(roomName);
         if(temp.isPresent()) {
             if(temp.get() instanceof Room) {
-                ((Room) temp.get()).addEmbedded(new EmbeddedLocation(name, (Room) temp.get()));
+                house.addLocation(new EmbeddedLocation(name, (Room) temp.get()));
+                house.incEmbeddedQuantity();
             }
         }
         return this;

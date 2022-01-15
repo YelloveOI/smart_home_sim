@@ -15,15 +15,15 @@ public class TurnOffAction extends Action<IControl> {
     @Override
     public void visit(Person actor) {
         subject.turnOff();
-        EventProcessor
-                .createReport(this.getClass(), actor.getName(),"turning off " + subject.getClass().getSimpleName() + " " + subject.getName())
-                .execute();
+//        EventProcessor
+//                .createReport(this.getClass(), actor.getName(),"turning off " + subject.getClass().getSimpleName() + " " + subject.getName())
+//                .execute();
     }
 
     @Override
     public void visit(Pet actor) {
-        EventProcessor
-                .createReport(this.getClass(), actor.getName(),"try to control " + subject.getClass().getSimpleName() + " " + subject.getName())
-                .execute();
+//        EventProcessor
+//                .createReport(this.getClass(), actor.getName(),"try to control " + subject.getClass().getSimpleName() + " " + subject.getName())
+//                .execute();
     }
 }

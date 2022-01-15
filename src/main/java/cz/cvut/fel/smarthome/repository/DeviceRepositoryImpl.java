@@ -27,4 +27,10 @@ public class DeviceRepositoryImpl extends AbstractJSONRepo<String, Device> imple
         }
     }
 
+    @Override
+    public Optional<Device> findFirstByIsAvailable() {
+        return pool.stream()
+                .filter(Device::isAvailable)
+                .findFirst();
+    }
 }

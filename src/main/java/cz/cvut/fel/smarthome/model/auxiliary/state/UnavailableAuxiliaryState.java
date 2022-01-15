@@ -11,18 +11,18 @@ public class UnavailableAuxiliaryState extends AuxiliaryState {
 
     @Override
     public Boolean startUse() {
-        EventProcessor
-                .createReport(this.getClass(), auxiliary.getName(),"is unavailable")
-                .execute();
+//        EventProcessor
+//                .createReport(this.getClass(), auxiliary.getName(),"is unavailable")
+//                .execute();
         return false;
     }
 
     @Override
     public void stopUse() {
         auxiliary.setState(new AvailableAuxiliaryState(auxiliary));
-        EventProcessor
-                .createReport(this.getClass(), auxiliary.getName(),"is not used anymore")
-                .execute();
+//        EventProcessor
+//                .createReport(this.getClass(), auxiliary.getName(),"is not used anymore")
+//                .execute();
     }
 
     @Override

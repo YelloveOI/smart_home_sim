@@ -23,11 +23,6 @@ public class PlainEvent extends Event {
     }
 
     @Override
-    public void execute() {
-        super.execute();
-    }
-
-    @Override
     public String toString() {
         return "Plain event from "+ getSenderClass().getSimpleName() + " " + getSenderName() + " " + ", date: " + getDate() + "\n\t description: " + description;
     }

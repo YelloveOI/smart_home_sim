@@ -14,15 +14,15 @@ public class FreePetState extends PetState{
     public void act(Action action) {
         action.visit(pet);
 //        pet.getMoreTired();
-        EventProcessor
-                .createReport(this.getClass(), pet.getName(),"pet did some activity!")
-                .execute();
+//        EventProcessor
+//                .createReport(this.getClass(), pet.getName(),"pet did some activity!")
+//                .execute();
     }
 
     @Override
     public void sleep() {
-        EventProcessor
-                .createReport(this.getClass(), pet.getName(),"not tired")
-                .execute();
+//        EventProcessor
+//                .createReport(this.getClass(), pet.getName(),"not tired")
+//                .execute();
     }
 }

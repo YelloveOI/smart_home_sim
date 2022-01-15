@@ -14,16 +14,16 @@ public class TurnOnAction extends Action<Device> {
     @Override
     public void visit(Person actor) {
         subject.turnOn();
-        EventProcessor
-                .createReport(this.getClass(), actor.getName(),"turning on " + subject.getClass().getSimpleName() + " " + subject.getName())
-                .execute();
+//        EventProcessor
+//                .createReport(this.getClass(), actor.getName(),"turning on " + subject.getClass().getSimpleName() + " " + subject.getName())
+//                .execute();
     }
 
     @Override
     public void visit(Pet actor) {
         subject.wearOut();
-        EventProcessor
-                .createReport(this.getClass(), actor.getName(),"try to control and accidentally scratched " + subject.getClass().getSimpleName() + " " + subject.getName())
-                .execute();
+//        EventProcessor
+//                .createReport(this.getClass(), actor.getName(),"try to control and accidentally scratched " + subject.getClass().getSimpleName() + " " + subject.getName())
+//                .execute();
     }
 }

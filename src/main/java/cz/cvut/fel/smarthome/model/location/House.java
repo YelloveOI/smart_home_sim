@@ -20,6 +20,26 @@ public class House extends AbstractEntity {
         this.locations = new HashSet<>();
         this.locations.add(new Room("HALL", 0));
         this.locations.add(new Location("OUTSIDE"));
+        this.garagesQuantity = 0;
+        this.roomsQuantity = 0;
+        this.embeddedQuantity = 0;
+        this.floorsQuantity = 0;
+    }
+
+    public void incGaragesQuantity() {
+        garagesQuantity++;
+    }
+
+    public void incRoomsQuantity() {
+        roomsQuantity++;
+    }
+
+    public void incEmbeddedQuantity() {
+        embeddedQuantity++;
+    }
+
+    public void setFloorsQuantity(Integer floorsQuantity) {
+        this.floorsQuantity = floorsQuantity;
     }
 
     public void addLocation(Location location) {

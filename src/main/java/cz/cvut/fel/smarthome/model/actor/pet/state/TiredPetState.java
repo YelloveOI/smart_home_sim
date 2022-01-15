@@ -11,17 +11,17 @@ public class TiredPetState extends PetState{
 
     @Override
     public void act(Action action) {
-        EventProcessor
-                .createReport(this.getClass(), pet.getName(),"too tired to do anything")
-                .execute();
+//        EventProcessor
+//                .createReport(this.getClass(), pet.getName(),"too tired to do anything")
+//                .execute();
     }
 
     @Override
     public void sleep() {
 //        pet.setTireMeter(5);
 //        pet.setPetState(new FreePetState(pet));
-        EventProcessor
-                .createReport(this.getClass(), pet.getName(),"pet slept and is now refreshed")
-                .execute();
+//        EventProcessor
+//                .createReport(this.getClass(), pet.getName(),"pet slept and is now refreshed")
+//                .execute();
     }
 }

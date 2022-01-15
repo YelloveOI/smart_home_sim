@@ -7,6 +7,6 @@ import java.util.Optional;
 
 public interface AuxiliaryRepository extends CrudRepository<String, Auxiliary> {
 
-    public Optional<Auxiliary> findFirstByDestinyAndByAvailable(AuxiliaryType type);
+    Optional<Auxiliary> findFirstByDestinyAndByAvailable(AuxiliaryType type);
 
 }

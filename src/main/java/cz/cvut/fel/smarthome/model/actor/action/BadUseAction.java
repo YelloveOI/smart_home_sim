@@ -14,17 +14,18 @@ public class BadUseAction extends Action<IUseable> {
     @Override
     public void visit(Person actor) {
         subject.badUse();
-        EventProcessor
-                .createReport(this.getClass(), actor.getName(),"accidentally dropped a bottle of beer on " + subject.getClass().getSimpleName() + " " + subject.getName())
-                .execute();
+        //TODO
+//        EventProcessor
+//                .createReport(this.getClass(), actor.getName(),"accidentally dropped a bottle of beer on " + subject.getClass().getSimpleName() + " " + subject.getName())
+//                .execute();
     }
 
     @Override
     public void visit(Pet actor) {
         subject.badUse();
         subject.badUse();
-        EventProcessor
-                .createReport(this.getClass(), actor.getName(),"nasty scratched " + subject.getClass().getSimpleName() + " " + subject.getName())
-                .execute();
+//        EventProcessor
+//                .createReport(this.getClass(), actor.getName(),"nasty scratched " + subject.getClass().getSimpleName() + " " + subject.getName())
+//                .execute();
     }
 }

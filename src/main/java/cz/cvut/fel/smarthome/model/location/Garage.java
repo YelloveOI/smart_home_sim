@@ -1,27 +1,12 @@
 package cz.cvut.fel.smarthome.model.location;
 
-import cz.cvut.fel.smarthome.model.auxiliary.Auxiliary;
-
-import java.util.Set;
-
 public class Garage extends Room {
 
-    private final Set<Auxiliary> auxiliaries;
+    private final Integer carSeatsQuantity;
 
-    public Garage(String name, Integer floorNumber, Integer carSeatsQuantity, Set<Auxiliary> auxiliaries) {
+    public Garage(String name, Integer floorNumber, Integer carSeatsQuantity) {
         super(name, floorNumber);
-        this.auxiliaries = auxiliaries;
+        this.carSeatsQuantity = carSeatsQuantity;
     }
 
-    public void addAuxiliary(Auxiliary auxiliary) {
-        auxiliaries.add(auxiliary);
-    }
-
-    public void removeAuxiliary(Auxiliary auxiliary) {
-        auxiliaries.remove(auxiliary);
-    }
-
-    public Set<Auxiliary> getAuxiliaries() {
-        return auxiliaries;
-    }
 }
