@@ -104,4 +104,5 @@ public class Locator {
     public Boolean kick(String houseName, Person person) {
         return locatePerson(houseName, person, "OUTSIDE");
     }
+
 }

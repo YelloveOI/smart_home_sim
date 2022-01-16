@@ -22,7 +22,7 @@ public class ReportEventChannel extends EventChannel {
         } catch (Exception ex) {
             System.out.println("cant reach file to log");
         }
-        System.out.println(e);
+//        System.out.println(e);
         return true;
     }
 }

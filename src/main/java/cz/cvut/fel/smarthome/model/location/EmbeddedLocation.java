@@ -15,4 +15,8 @@ public class EmbeddedLocation extends Location {
         return room;
     }
 
+
+    public String toString() {
+        return "Embedded Location " + getName() + " located in " + room.getName();
+    }
 }

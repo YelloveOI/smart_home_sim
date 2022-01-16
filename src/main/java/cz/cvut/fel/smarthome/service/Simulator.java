@@ -7,6 +7,8 @@ public class Simulator {
 
     @Inject
     private PersonService personService;
+    @Inject
+    private Locator locator;
 
 
     public void doSmth1() {

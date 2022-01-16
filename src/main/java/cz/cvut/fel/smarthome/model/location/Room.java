@@ -15,4 +15,11 @@ public class Room extends Location {
     public Integer getFloorNumber() {
         return floorNumber;
     }
+
+    @Override
+    public String toString() {
+        return "Room " + getName();
+    }
+
+
 }
