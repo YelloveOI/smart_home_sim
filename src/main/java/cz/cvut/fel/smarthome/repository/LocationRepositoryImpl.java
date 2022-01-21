@@ -2,7 +2,6 @@ package cz.cvut.fel.smarthome.repository;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import cz.cvut.fel.smarthome.model.entities.location.House;
 import cz.cvut.fel.smarthome.model.entities.location.Location;
 import cz.cvut.fel.smarthome.repository.interfaces.LocationRepository;
 
@@ -21,4 +20,5 @@ public class LocationRepositoryImpl extends AbstractJSONRepo<String, Location> i
         Type setType = new TypeToken<Set<Location>>() {}.getType();
         pool = new HashSet<Location>(gson.fromJson(br, setType));
     }
+
 }

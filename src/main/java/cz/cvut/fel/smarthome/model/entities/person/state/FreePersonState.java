@@ -4,6 +4,7 @@ import cz.cvut.fel.smarthome.model.action.Action;
 import cz.cvut.fel.smarthome.model.entities.person.Person;
 import cz.cvut.fel.smarthome.model.event.EventProcessor;
 import cz.cvut.fel.smarthome.model.event.event_context.PersonEventContext;
+import cz.cvut.fel.smarthome.model.interfaces.IUseable;
 
 public class FreePersonState extends PersonState {
 
@@ -18,8 +19,9 @@ public class FreePersonState extends PersonState {
     }
 
     @Override
-    public void becomeBusy() {
+    public void becomeBusy(IUseable useable) {
         person.setPersonState(new BusyPersonState(person));
+        person.setInUse(useable);
     }
 
     @Override

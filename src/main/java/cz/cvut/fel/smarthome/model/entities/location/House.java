@@ -2,6 +2,7 @@ package cz.cvut.fel.smarthome.model.entities.location;
 
 import cz.cvut.fel.smarthome.model.entities.AbstractEntity;
 
+//TODO
 public class House extends AbstractEntity<String> {
 
     private final Integer floorQuantity;

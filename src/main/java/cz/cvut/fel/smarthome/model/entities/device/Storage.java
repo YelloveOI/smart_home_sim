@@ -1,39 +1,42 @@
 package cz.cvut.fel.smarthome.model.entities.device;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Objects;
 
-//TODO to bind storage & device
+
+//TODO bind with device (solve repo's conflicts)
 public class Storage {
 
-    private final String itemType;
-    private int quantity;
+    private final Map<String, Integer> itemMap;
 
-    public Storage(String itemType) {
-        this.itemType = itemType;
-        this.quantity = 0;
+    public Storage() {
+        this.itemMap = new HashMap<>();
     }
 
     public boolean get(String item) {
-        if(quantity > 0) {
-            if(Objects.equals(itemType, item)) {
-                quantity--;
-                return true;
+        if(itemMap.containsKey(item)) {
+            itemMap.replace(item, itemMap.get(item)-1);
+            if(itemMap.get(item) <= 0) {
+                itemMap.remove(item);
             }
+
+            return true;
         }
 
         return false;
     }
 
-    public boolean put(String item) {
-        if(Objects.equals(item, itemType)) {
-            quantity++;
-            return true;
+    public void put(String item) {
+        if(itemMap.containsKey(item)) {
+           itemMap.replace(item, itemMap.get(item)+1);
+        } else {
+            itemMap.put(item, 1);
         }
-        return false;
     }
 
     public boolean isEmpty() {
-        return quantity <= 0;
+        return itemMap.isEmpty();
     }
 
 }

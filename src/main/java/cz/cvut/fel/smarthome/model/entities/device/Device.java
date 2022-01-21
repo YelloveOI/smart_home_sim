@@ -9,9 +9,10 @@ import cz.cvut.fel.smarthome.model.event.EventProcessor;
 import cz.cvut.fel.smarthome.model.event.event_context.DeviceEventContext;
 import cz.cvut.fel.smarthome.model.interfaces.IControl;
 import cz.cvut.fel.smarthome.model.interfaces.IData;
+import cz.cvut.fel.smarthome.model.interfaces.ILocateable;
 import cz.cvut.fel.smarthome.model.interfaces.IUseable;
 
-public class Device extends AbstractEntity implements IControl, IData, IUseable {
+public class Device extends AbstractEntity<String> implements IControl, IData, IUseable, ILocateable {
 
     private final DeviceType deviceType;
     private final Double activeConsumption;
@@ -37,14 +38,6 @@ public class Device extends AbstractEntity implements IControl, IData, IUseable 
         return durability <= 0;
     }
 
-    public String getLocation() {
-        return location;
-    }
-
-    public void setLocation(String location) {
-        this.location = location;
-    }
-
     public DeviceType getDeviceType() {
         return deviceType;
     }
@@ -64,6 +57,16 @@ public class Device extends AbstractEntity implements IControl, IData, IUseable 
 
     public ConsumptionType getConsumptionType() {
         return consumptionType;
+    }
+
+    @Override
+    public String getLocation() {
+        return location;
+    }
+
+    @Override
+    public void setLocation(String location) {
+        this.location = location;
     }
 
     @Override

@@ -2,7 +2,7 @@ package cz.cvut.fel.smarthome.model.interfaces;
 
 public interface IActive {
 
-    void becomeBusy();
+    void becomeBusy(IUseable useable);
 
     void getFree();
 

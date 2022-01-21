@@ -5,6 +5,7 @@ import cz.cvut.fel.smarthome.model.entities.person.Person;
 import cz.cvut.fel.smarthome.model.entities.auxiliary.Auxiliary;
 import cz.cvut.fel.smarthome.model.entities.auxiliary.AuxiliaryType;
 import cz.cvut.fel.smarthome.model.entities.device.Device;
+import cz.cvut.fel.smarthome.model.interfaces.ILocateable;
 import cz.cvut.fel.smarthome.repository.interfaces.AuxiliaryRepository;
 import cz.cvut.fel.smarthome.repository.interfaces.DeviceRepository;
 import cz.cvut.fel.smarthome.repository.interfaces.PersonRepository;
@@ -29,24 +30,44 @@ public class PersonService {
     public PersonService() {
     }
 
-    public void goSport(String houseName, String personName) {
+    public void goSport(String personName) {
         Optional<Person> tempPer = personRepo.find(personName);
         Optional<Auxiliary> tempAux = auxiliaryRepo.findFirstByDestinyAndByAvailable(AuxiliaryType.SPORT);
 
         if(tempAux.isPresent() && tempPer.isPresent()) {
-            tempPer.get().goSport(tempAux.get());
-            locator.kick(houseName, tempPer.get());
+            if(!tempPer.get().isFree()) {
+                getFree(personName);
+            }
+            tempPer.get().becomeBusy(tempAux.get());
+            tempAux.get().startUse();
+            locator.delocate(tempPer.get());
+            locator.delocate(tempAux.get());
+            tempPer.get().setLocation("OUTSIDE");
+            tempAux.get().setLocation("OUTSIDE");
+            locator.locate(tempAux.get());
+            locator.locate(tempPer.get());
+            auxiliaryRepo.update(tempAux.get());
             personRepo.update(tempPer.get());
         }
     }
 
-    public void goWork(String houseName, String personName) {
+    public void goWork(String personName) {
         Optional<Person> tempPer = personRepo.find(personName);
         Optional<Auxiliary> tempAux = auxiliaryRepo.findFirstByDestinyAndByAvailable(AuxiliaryType.WORK);
 
         if(tempAux.isPresent() && tempPer.isPresent()) {
-            tempPer.get().goWork(tempAux.get());
-            locator.kick(houseName, tempPer.get());
+            if(!tempPer.get().isFree()) {
+                getFree(personName);
+            }
+            tempPer.get().becomeBusy(tempAux.get());
+            tempAux.get().startUse();
+            locator.delocate(tempPer.get());
+            locator.delocate(tempAux.get());
+            tempPer.get().setLocation("OUTSIDE");
+            tempAux.get().setLocation("OUTSIDE");
+            locator.locate(tempAux.get());
+            locator.locate(tempPer.get());
+            auxiliaryRepo.update(tempAux.get());
             personRepo.update(tempPer.get());
         }
     }
@@ -55,22 +76,31 @@ public class PersonService {
         Optional<Person> tempPer = personRepo.find(personName);
         Optional<Device> tempDev = deviceRepo.findFirstByIsAvailable();
 
-        if(tempPer.isPresent()) {
-            if(tempDev.isEmpty()) {
-                tempDev = deviceRepo.findRandom();
-                tempPer.get().act(new TurnOnAction(tempDev.get()));
+        if(tempPer.isPresent() && tempDev.isPresent()) {
+            if(!tempPer.get().isFree()) {
+                getFree(personName);
             }
-            tempPer.get().goProcrastinate(tempDev.get());
+            tempPer.get().becomeBusy(tempDev.get());
+            tempDev.get().startUse();
+            locator.delocate(tempPer.get());
+            tempPer.get().setLocation(tempDev.get().getLocation());
+            locator.locate(tempPer.get());
+            deviceRepo.update(tempDev.get());
             personRepo.update(tempPer.get());
         }
     }
 
-    public void getFreeFromActivity(String houseName, String personName) {
+    public void getFree(String personName) {
         Optional<Person> tempPer = personRepo.find(personName);
 
         if(tempPer.isPresent()) {
-            tempPer.get().getFreeFromActivity();
-            locator.locatePerson(houseName, tempPer.get());
+            tempPer.get().getInUse().stopUse();
+            locator.delocate(tempPer.get());
+            locator.delocate((ILocateable) tempPer.get().getInUse());
+            tempPer.get().setLocation("HALL");
+            ((ILocateable) tempPer.get().getInUse()).locateBack;
+            locator.locate(tempPer.get());
+            tempPer.get().getFree();
             personRepo.update(tempPer.get());
         }
     }

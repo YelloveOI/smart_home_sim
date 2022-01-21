@@ -6,11 +6,14 @@ import cz.cvut.fel.smarthome.model.interfaces.IActive;
 import cz.cvut.fel.smarthome.model.interfaces.IActor;
 import cz.cvut.fel.smarthome.model.entities.person.state.FreePersonState;
 import cz.cvut.fel.smarthome.model.entities.person.state.PersonState;
+import cz.cvut.fel.smarthome.model.interfaces.ILocateable;
+import cz.cvut.fel.smarthome.model.interfaces.IUseable;
 
-public class Person extends AbstractEntity<String> implements IActor, IActive {
+public class Person extends AbstractEntity<String> implements IActor, IActive, ILocateable {
 
     private final PersonRoleType role;
     private String location;
+    private IUseable inUse;
     transient private PersonState personState;
 
     public Person(String name, PersonRoleType role, String location) {
@@ -18,15 +21,9 @@ public class Person extends AbstractEntity<String> implements IActor, IActive {
         this.role = role;
         this.location = location;
         this.personState = new FreePersonState(this);
+        this.inUse = null;
     }
 
-    public String getLocation() {
-        return location;
-    }
-
-    public void setLocation(String location) {
-        this.location = location;
-    }
 
     public void setPersonState(PersonState personState) {
         this.personState = personState;
@@ -36,14 +33,32 @@ public class Person extends AbstractEntity<String> implements IActor, IActive {
         return role;
     }
 
+    public IUseable getInUse() {
+        return inUse;
+    }
+
+    public void setInUse(IUseable inUse) {
+        this.inUse = inUse;
+    }
+
+    @Override
+    public String getLocation() {
+        return location;
+    }
+
+    @Override
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
     @Override
     public void act(Action action) {
         personState.act(action);
     }
 
     @Override
-    public void becomeBusy() {
-        personState.becomeBusy();
+    public void becomeBusy(IUseable useable) {
+        personState.becomeBusy(useable);
     }
 
     @Override

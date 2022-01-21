@@ -5,12 +5,17 @@ import cz.cvut.fel.smarthome.model.entities.auxiliary.state.AuxiliaryState;
 import cz.cvut.fel.smarthome.model.entities.auxiliary.state.AvailableAuxiliaryState;
 import cz.cvut.fel.smarthome.model.entities.location.Location;
 import cz.cvut.fel.smarthome.model.entities.location.LocationType;
+import cz.cvut.fel.smarthome.model.interfaces.ILocateable;
 import cz.cvut.fel.smarthome.model.interfaces.IUseable;
 
-public class Auxiliary extends AbstractEntity<String> implements IUseable {
+public class Auxiliary extends AbstractEntity<String> implements IUseable, ILocateable {
+
+    //TODO
+    //как возвращать auxy на место???
 
     private final AuxiliaryType destiny;
     private String location;
+    private final String preferedLocation;
     private Integer scratchesNumber;
     transient private AuxiliaryState state;
 
@@ -20,14 +25,7 @@ public class Auxiliary extends AbstractEntity<String> implements IUseable {
         this.scratchesNumber = 0;
         this.state = new AvailableAuxiliaryState(this);
         this.location = location;
-    }
-
-    public String getLocation() {
-        return location;
-    }
-
-    public void setLocation(String location) {
-        this.location = location;
+        this.preferedLocation = location;
     }
 
     public void setState(AuxiliaryState state) {
@@ -40,6 +38,20 @@ public class Auxiliary extends AbstractEntity<String> implements IUseable {
 
     public AuxiliaryType getDestiny() {
         return destiny;
+    }
+
+    public void locateBack() {
+        location = preferedLocation;
+    }
+
+    @Override
+    public String getLocation() {
+        return location;
+    }
+
+    @Override
+    public void setLocation(String location) {
+        this.location = location;
     }
 
     @Override

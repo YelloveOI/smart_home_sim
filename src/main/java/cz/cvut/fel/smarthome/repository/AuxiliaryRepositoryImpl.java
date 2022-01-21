@@ -13,7 +13,6 @@ import java.io.FileReader;
 import java.lang.reflect.Type;
 import java.util.*;
 
-//TODO обработка Location
 public class AuxiliaryRepositoryImpl extends AbstractJSONRepo<String, Auxiliary> implements AuxiliaryRepository {
 
     public AuxiliaryRepositoryImpl() throws FileNotFoundException {

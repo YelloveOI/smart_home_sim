@@ -12,7 +12,6 @@ import java.io.FileReader;
 import java.lang.reflect.Type;
 import java.util.*;
 
-//TODO обработка Location
 public class DeviceRepositoryImpl extends AbstractJSONRepo<String, Device> implements DeviceRepository {
 
 
