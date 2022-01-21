@@ -2,7 +2,6 @@ package cz.cvut.fel.smarthome.model.entities.sensor;
 
 import cz.cvut.fel.smarthome.model.entities.AbstractEntity;
 import cz.cvut.fel.smarthome.model.event.Event;
-import cz.cvut.fel.smarthome.model.event.EventProcessor;
 import cz.cvut.fel.smarthome.model.interfaces.ILocateable;
 
 public class Sensor extends AbstractEntity<String> implements ILocateable {

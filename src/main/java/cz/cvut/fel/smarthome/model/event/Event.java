@@ -2,17 +2,15 @@ package cz.cvut.fel.smarthome.model.event;
 
 import java.time.LocalDateTime;
 
-public abstract class Event {
+public abstract class Event<T> {
 
-    private final Class senderClass;
-    private final String senderName;
+    private final T sender;
     private final LocalDateTime date;
     private final Integer priority;
 
-    public Event(Class senderClass, String senderName, LocalDateTime date, Integer priority) {
-        this.senderClass = senderClass;
-        this.senderName = senderName;
-        this.date = date;
+    public Event(T sender, Integer priority) {
+        this.sender = sender;
+        this.date = LocalDateTime.now();
         this.priority = priority;
     }
 
@@ -20,12 +18,8 @@ public abstract class Event {
         return date;
     }
 
-    public Class getSenderClass() {
-        return senderClass;
-    }
-
-    public String getSenderName() {
-        return senderName;
+    public T getSender() {
+        return sender;
     }
 
     public Integer getPriority() {

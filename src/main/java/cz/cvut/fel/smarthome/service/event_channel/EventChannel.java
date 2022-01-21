@@ -1,8 +1,6 @@
-package cz.cvut.fel.smarthome.model.event.event_channel;
+package cz.cvut.fel.smarthome.service.event_channel;
 
 import cz.cvut.fel.smarthome.model.event.Event;
-
-import java.io.IOException;
 
 public abstract class EventChannel {
 

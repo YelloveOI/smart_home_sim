@@ -4,9 +4,9 @@ import cz.cvut.fel.smarthome.model.entities.person.Person;
 import cz.cvut.fel.smarthome.model.entities.pet.Pet;
 import cz.cvut.fel.smarthome.model.interfaces.IUseable;
 
-public class BadUseAction extends Action<IUseable> {
+public class MisuseAction extends Action<IUseable> {
 
-    public BadUseAction(IUseable subject) {
+    public MisuseAction(IUseable subject) {
         super(subject);
     }
 

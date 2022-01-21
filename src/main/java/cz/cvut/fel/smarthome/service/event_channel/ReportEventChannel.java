@@ -1,11 +1,9 @@
-package cz.cvut.fel.smarthome.model.event.event_channel;
+package cz.cvut.fel.smarthome.service.event_channel;
 
 import cz.cvut.fel.smarthome.model.event.Event;
-import cz.cvut.fel.smarthome.model.event.event_channel.EventChannel;
 
 import java.io.File;
 import java.io.FileWriter;
-import java.io.IOException;
 
 public class ReportEventChannel extends EventChannel {
 
@@ -22,7 +20,9 @@ public class ReportEventChannel extends EventChannel {
         } catch (Exception ex) {
             System.out.println("cant reach file to log");
         }
-//        System.out.println(e);
+
+        System.out.println(e);
+
         return true;
     }
 }

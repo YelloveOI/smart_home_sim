@@ -40,12 +40,16 @@ public class PersonService {
             }
             tempPer.get().becomeBusy(tempAux.get());
             tempAux.get().startUse();
+
             locator.delocate(tempPer.get());
             locator.delocate(tempAux.get());
+
             tempPer.get().setLocation("OUTSIDE");
             tempAux.get().setLocation("OUTSIDE");
+
             locator.locate(tempAux.get());
             locator.locate(tempPer.get());
+
             auxiliaryRepo.update(tempAux.get());
             personRepo.update(tempPer.get());
         }
@@ -61,12 +65,16 @@ public class PersonService {
             }
             tempPer.get().becomeBusy(tempAux.get());
             tempAux.get().startUse();
+
             locator.delocate(tempPer.get());
             locator.delocate(tempAux.get());
+
             tempPer.get().setLocation("OUTSIDE");
             tempAux.get().setLocation("OUTSIDE");
+
             locator.locate(tempAux.get());
             locator.locate(tempPer.get());
+
             auxiliaryRepo.update(tempAux.get());
             personRepo.update(tempPer.get());
         }
@@ -82,9 +90,11 @@ public class PersonService {
             }
             tempPer.get().becomeBusy(tempDev.get());
             tempDev.get().startUse();
+
             locator.delocate(tempPer.get());
             tempPer.get().setLocation(tempDev.get().getLocation());
             locator.locate(tempPer.get());
+
             deviceRepo.update(tempDev.get());
             personRepo.update(tempPer.get());
         }
@@ -94,13 +104,17 @@ public class PersonService {
         Optional<Person> tempPer = personRepo.find(personName);
 
         if(tempPer.isPresent()) {
-            tempPer.get().getInUse().stopUse();
             locator.delocate(tempPer.get());
             locator.delocate((ILocateable) tempPer.get().getInUse());
+
+            tempPer.get().getInUse().stopUse();
             tempPer.get().setLocation("HALL");
-            ((ILocateable) tempPer.get().getInUse()).locateBack;
+
             locator.locate(tempPer.get());
+            locator.locate((ILocateable) tempPer.get().getInUse());
+
             tempPer.get().getFree();
+
             personRepo.update(tempPer.get());
         }
     }
