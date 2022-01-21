@@ -2,10 +2,8 @@ package cz.cvut.fel.smarthome.repository;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import cz.cvut.fel.smarthome.model.auxiliary.Auxiliary;
-import cz.cvut.fel.smarthome.model.auxiliary.state.AvailableAuxiliaryState;
-import cz.cvut.fel.smarthome.model.device.Device;
-import cz.cvut.fel.smarthome.model.device.state.InactiveDeviceState;
+import cz.cvut.fel.smarthome.model.entities.device.Device;
+import cz.cvut.fel.smarthome.model.entities.device.state.InactiveDeviceState;
 import cz.cvut.fel.smarthome.repository.interfaces.DeviceRepository;
 
 import java.io.BufferedReader;
@@ -14,6 +12,7 @@ import java.io.FileReader;
 import java.lang.reflect.Type;
 import java.util.*;
 
+//TODO обработка Location
 public class DeviceRepositoryImpl extends AbstractJSONRepo<String, Device> implements DeviceRepository {
 
 

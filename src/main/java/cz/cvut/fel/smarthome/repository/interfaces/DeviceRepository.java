@@ -1,6 +1,6 @@
 package cz.cvut.fel.smarthome.repository.interfaces;
 
-import cz.cvut.fel.smarthome.model.device.Device;
+import cz.cvut.fel.smarthome.model.entities.device.Device;
 
 import java.util.Optional;
 

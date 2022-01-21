@@ -1,8 +1,8 @@
 package cz.cvut.fel.smarthome.model.event.event_context;
 
-import cz.cvut.fel.smarthome.model.actor.action.Action;
-import cz.cvut.fel.smarthome.model.actor.person.Person;
-import cz.cvut.fel.smarthome.model.actor.pet.Pet;
+import cz.cvut.fel.smarthome.model.action.Action;
+import cz.cvut.fel.smarthome.model.entities.person.Person;
+import cz.cvut.fel.smarthome.model.entities.pet.Pet;
 import cz.cvut.fel.smarthome.model.event.Event;
 import cz.cvut.fel.smarthome.model.event.PlainEvent;
 

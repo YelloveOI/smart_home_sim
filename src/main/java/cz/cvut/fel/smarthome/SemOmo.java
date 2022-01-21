@@ -1,6 +1,5 @@
 package cz.cvut.fel.smarthome;
 
-import cz.cvut.fel.smarthome.model.location.Room;
 import cz.cvut.fel.smarthome.service.Simulator;
 import cz.cvut.fel.smarthome.simpleDI.DICompositionPoint;
 import cz.cvut.fel.smarthome.simpleDI.context.ApplicationContext;

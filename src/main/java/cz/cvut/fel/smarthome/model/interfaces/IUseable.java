@@ -8,6 +8,6 @@ public interface IUseable {
 
     void stopUse();
 
-    void badUse();
+    void misuse();
 
 }

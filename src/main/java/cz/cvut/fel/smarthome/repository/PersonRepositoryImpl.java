@@ -2,21 +2,18 @@ package cz.cvut.fel.smarthome.repository;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import cz.cvut.fel.smarthome.model.actor.person.Person;
-import cz.cvut.fel.smarthome.model.actor.person.state.FreePersonState;
-import cz.cvut.fel.smarthome.model.device.Device;
-import cz.cvut.fel.smarthome.model.device.state.InactiveDeviceState;
+import cz.cvut.fel.smarthome.model.entities.person.Person;
+import cz.cvut.fel.smarthome.model.entities.person.state.FreePersonState;
 import cz.cvut.fel.smarthome.repository.interfaces.PersonRepository;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.lang.reflect.Type;
-import java.util.Collection;
 import java.util.HashSet;
-import java.util.Optional;
 import java.util.Set;
 
+//TODO обработка Location
 public class PersonRepositoryImpl extends AbstractJSONRepo<String, Person> implements PersonRepository {
 
     public PersonRepositoryImpl() throws FileNotFoundException {

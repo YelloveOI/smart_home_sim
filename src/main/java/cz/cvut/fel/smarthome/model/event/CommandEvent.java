@@ -1,6 +1,6 @@
 package cz.cvut.fel.smarthome.model.event;
 
-import cz.cvut.fel.smarthome.model.actor.action.Action;
+import cz.cvut.fel.smarthome.model.action.Action;
 
 import java.time.LocalDateTime;
 

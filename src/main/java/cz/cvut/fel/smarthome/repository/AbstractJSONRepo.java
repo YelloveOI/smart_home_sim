@@ -1,13 +1,13 @@
 package cz.cvut.fel.smarthome.repository;
 
-import cz.cvut.fel.smarthome.model.AbstractEntity;
+import cz.cvut.fel.smarthome.model.entities.AbstractEntity;
 import cz.cvut.fel.smarthome.repository.interfaces.CrudRepository;
 
 import java.util.Collection;
 import java.util.Optional;
 import java.util.Set;
 
-public abstract class AbstractJSONRepo<ID, T extends AbstractEntity> implements CrudRepository<ID, T> {
+public abstract class AbstractJSONRepo<ID, T extends AbstractEntity<ID>> implements CrudRepository<ID, T> {
 
     protected Set<T> pool;
 
@@ -32,7 +32,7 @@ public abstract class AbstractJSONRepo<ID, T extends AbstractEntity> implements 
     @Override
     public void delete(ID id) {
         Optional<T> temp = pool.stream()
-                .filter(v -> v.getName().equals(id))
+                .filter(v -> v.getId().equals(id))
                 .findFirst();
         temp.ifPresent(pool::remove);
     }
@@ -40,7 +40,7 @@ public abstract class AbstractJSONRepo<ID, T extends AbstractEntity> implements 
     @Override
     public Optional<T> find(ID id) {
         return pool.stream()
-                .filter(v -> v.getName().equals(id))
+                .filter(v -> v.getId().equals(id))
                 .findFirst();
     }
 

@@ -1,7 +1,7 @@
 package cz.cvut.fel.smarthome.repository.interfaces;
 
-import cz.cvut.fel.smarthome.model.auxiliary.Auxiliary;
-import cz.cvut.fel.smarthome.model.auxiliary.AuxiliaryType;
+import cz.cvut.fel.smarthome.model.entities.auxiliary.Auxiliary;
+import cz.cvut.fel.smarthome.model.entities.auxiliary.AuxiliaryType;
 
 import java.util.Optional;
 

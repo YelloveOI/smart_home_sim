@@ -2,19 +2,18 @@ package cz.cvut.fel.smarthome.repository;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import cz.cvut.fel.smarthome.model.auxiliary.Auxiliary;
-import cz.cvut.fel.smarthome.model.auxiliary.AuxiliaryType;
-import cz.cvut.fel.smarthome.model.auxiliary.state.AvailableAuxiliaryState;
+import cz.cvut.fel.smarthome.model.entities.auxiliary.Auxiliary;
+import cz.cvut.fel.smarthome.model.entities.auxiliary.AuxiliaryType;
+import cz.cvut.fel.smarthome.model.entities.auxiliary.state.AvailableAuxiliaryState;
 import cz.cvut.fel.smarthome.repository.interfaces.AuxiliaryRepository;
 
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.lang.reflect.Type;
 import java.util.*;
-import java.util.stream.Collectors;
 
+//TODO обработка Location
 public class AuxiliaryRepositoryImpl extends AbstractJSONRepo<String, Auxiliary> implements AuxiliaryRepository {
 
     public AuxiliaryRepositoryImpl() throws FileNotFoundException {

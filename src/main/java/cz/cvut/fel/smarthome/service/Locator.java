@@ -1,12 +1,12 @@
 package cz.cvut.fel.smarthome.service;
 
-import cz.cvut.fel.smarthome.model.AbstractEntity;
-import cz.cvut.fel.smarthome.model.actor.person.Person;
-import cz.cvut.fel.smarthome.model.actor.pet.Pet;
-import cz.cvut.fel.smarthome.model.auxiliary.Auxiliary;
-import cz.cvut.fel.smarthome.model.device.Device;
-import cz.cvut.fel.smarthome.model.location.House;
-import cz.cvut.fel.smarthome.model.location.Location;
+import cz.cvut.fel.smarthome.model.entities.AbstractEntity;
+import cz.cvut.fel.smarthome.model.entities.person.Person;
+import cz.cvut.fel.smarthome.model.entities.pet.Pet;
+import cz.cvut.fel.smarthome.model.entities.auxiliary.Auxiliary;
+import cz.cvut.fel.smarthome.model.entities.device.Device;
+import cz.cvut.fel.smarthome.model.entities.location.House;
+import cz.cvut.fel.smarthome.model.entities.location.Location;
 import cz.cvut.fel.smarthome.repository.interfaces.HouseRepository;
 import cz.cvut.fel.smarthome.simpleDI.annotation.Inject;
 

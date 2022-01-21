@@ -1,10 +1,10 @@
 package cz.cvut.fel.smarthome.service;
 
-import cz.cvut.fel.smarthome.model.actor.action.TurnOnAction;
-import cz.cvut.fel.smarthome.model.actor.person.Person;
-import cz.cvut.fel.smarthome.model.auxiliary.Auxiliary;
-import cz.cvut.fel.smarthome.model.auxiliary.AuxiliaryType;
-import cz.cvut.fel.smarthome.model.device.Device;
+import cz.cvut.fel.smarthome.model.action.TurnOnAction;
+import cz.cvut.fel.smarthome.model.entities.person.Person;
+import cz.cvut.fel.smarthome.model.entities.auxiliary.Auxiliary;
+import cz.cvut.fel.smarthome.model.entities.auxiliary.AuxiliaryType;
+import cz.cvut.fel.smarthome.model.entities.device.Device;
 import cz.cvut.fel.smarthome.repository.interfaces.AuxiliaryRepository;
 import cz.cvut.fel.smarthome.repository.interfaces.DeviceRepository;
 import cz.cvut.fel.smarthome.repository.interfaces.PersonRepository;
