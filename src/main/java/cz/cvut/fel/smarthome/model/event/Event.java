@@ -10,12 +10,18 @@ public abstract class Event<T extends AbstractEntity> {
     private final LocalDateTime date;
     private final Integer priority;
     private final EventType eventType;
+    private final String description;
 
-    public Event(T sender, Integer priority, EventType eventType) {
+    public Event(T sender, Integer priority, EventType eventType, String description) {
         this.sender = sender;
+        this.description = description;
         this.date = LocalDateTime.now();
         this.priority = priority;
         this.eventType = eventType;
+    }
+
+    public String getDescription() {
+        return description;
     }
 
     public EventType getEventType() {

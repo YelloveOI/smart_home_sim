@@ -2,6 +2,7 @@ package cz.cvut.fel.smarthome.repository;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import cz.cvut.fel.smarthome.model.entities.device.Device;
 import cz.cvut.fel.smarthome.model.entities.person.Person;
 import cz.cvut.fel.smarthome.model.entities.person.state.FreePersonState;
 import cz.cvut.fel.smarthome.repository.interfaces.PersonRepository;
@@ -12,6 +13,7 @@ import java.io.FileReader;
 import java.lang.reflect.Type;
 import java.util.HashSet;
 import java.util.Optional;
+import java.util.Random;
 import java.util.Set;
 
 public class PersonRepositoryImpl extends AbstractJSONRepo<String, Person> implements PersonRepository {
@@ -27,8 +29,15 @@ public class PersonRepositoryImpl extends AbstractJSONRepo<String, Person> imple
     }
 
     @Override
-    public Optional<Person> findFirstByIsFree() {
-        return Optional.empty();
-        //TODO
+    public Optional<Person> findRandomByIsFree() {
+        Random rnd = new Random();
+
+        return pool.stream()
+                .filter(Person::isFree)
+                .sorted((v1, v2) -> {
+                    if(v1.equals(v2)) return 0;
+                    return (rnd.nextBoolean()) ? 1 : -1;
+                })
+                .findFirst();
     }
 }

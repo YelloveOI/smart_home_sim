@@ -12,6 +12,6 @@ public abstract class PetState {
     }
 
     abstract public void act(Action action);
-    abstract public void sleep();
+    abstract public Boolean isHungry();
 
 }

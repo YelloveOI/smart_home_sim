@@ -1,16 +1,15 @@
 package cz.cvut.fel.smarthome.service;
 
 import cz.cvut.fel.smarthome.model.action.TurnOnAction;
+import cz.cvut.fel.smarthome.model.entities.device.storage_device.StorageDevice;
+import cz.cvut.fel.smarthome.model.entities.device.storage_device.StorageDeviceType;
 import cz.cvut.fel.smarthome.model.entities.person.Person;
 import cz.cvut.fel.smarthome.model.entities.auxiliary.Auxiliary;
 import cz.cvut.fel.smarthome.model.entities.auxiliary.AuxiliaryType;
 import cz.cvut.fel.smarthome.model.entities.device.Device;
 import cz.cvut.fel.smarthome.model.entities.pet.Pet;
 import cz.cvut.fel.smarthome.model.interfaces.ILocateable;
-import cz.cvut.fel.smarthome.repository.interfaces.AuxiliaryRepository;
-import cz.cvut.fel.smarthome.repository.interfaces.DeviceRepository;
-import cz.cvut.fel.smarthome.repository.interfaces.PersonRepository;
-import cz.cvut.fel.smarthome.repository.interfaces.PetRepository;
+import cz.cvut.fel.smarthome.repository.interfaces.*;
 import cz.cvut.fel.smarthome.simpleDI.annotation.Inject;
 
 import java.util.Optional;
@@ -27,6 +26,8 @@ public class PersonService {
     private PersonRepository personRepo;
     @Inject
     private PetRepository petRepo;
+    @Inject
+    private StorageDeviceRepository storageRepo;
 
     public PersonService() {
     }
@@ -83,7 +84,7 @@ public class PersonService {
 
     public void goProcrastinate(String personName) {
         Optional<Person> tempPer = personRepo.find(personName);
-        Optional<Device> tempDev = deviceRepo.findFirstByIsAvailable();
+        Optional<Device> tempDev = deviceRepo.findRandomByIsAvailable();
 
         if(tempPer.isPresent() && tempDev.isPresent()) {
             if(!tempPer.get().isFree()) {
@@ -125,17 +126,20 @@ public class PersonService {
         Optional<Pet> tempPet = petRepo.find(petName);
 
         if(tempPer.isPresent() && tempPet.isPresent()) {
-            Optional<Device> foodStorage = deviceRepo.findFoodStorage();
+            Optional<StorageDevice> foodStorage = storageRepo.findRandomByStorageDeviceType(StorageDeviceType.FRIDGE);
 
             if(foodStorage.isPresent()) {
                 locator.delocate(tempPer.get());
                 tempPer.get().setLocation(foodStorage.get().getLocation());
                 locator.locate(tempPer.get());
-                //TODO foodStorage.get()
-                locator.delocate(tempPer.get());
-                tempPer.get().setLocation(tempPet.get().getLocation());
-                locator.locate(tempPer.get());
-                //TODO feedPet()
+                if(foodStorage.get().get("FOOD")) {
+                    locator.delocate(tempPer.get());
+                    tempPer.get().setLocation(tempPet.get().getLocation());
+                    locator.locate(tempPer.get());
+                    tempPet.get().feed();
+                } else {
+                    //TODO go to shop;
+                }
             }
         }
     }

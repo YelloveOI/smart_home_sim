@@ -5,6 +5,7 @@ import com.google.gson.reflect.TypeToken;
 import cz.cvut.fel.smarthome.model.entities.device.Device;
 import cz.cvut.fel.smarthome.model.entities.device.state.InactiveDeviceState;
 import cz.cvut.fel.smarthome.model.entities.device.storage_device.StorageDevice;
+import cz.cvut.fel.smarthome.model.entities.device.storage_device.StorageDeviceType;
 import cz.cvut.fel.smarthome.repository.interfaces.StorageDeviceRepository;
 
 import java.io.BufferedReader;
@@ -12,6 +13,8 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.lang.reflect.Type;
 import java.util.HashSet;
+import java.util.Optional;
+import java.util.Random;
 import java.util.Set;
 
 public class StorageDeviceRepositoryImpl extends AbstractJSONRepo<String, StorageDevice> implements StorageDeviceRepository {
@@ -24,5 +27,18 @@ public class StorageDeviceRepositoryImpl extends AbstractJSONRepo<String, Storag
         for(Device d : pool) {
             d.setDeviceState(new InactiveDeviceState(d));
         }
+    }
+
+    @Override
+    public Optional<StorageDevice> findRandomByStorageDeviceType(StorageDeviceType storageDeviceType) {
+        Random rnd = new Random();
+
+        return pool.stream()
+                .filter(v -> v.getStorageDeviceType().equals(storageDeviceType))
+                .sorted((v1, v2) -> {
+                    if(v1.equals(v2)) return 0;
+                    return (rnd.nextBoolean()) ? 1 : -1;
+                })
+                .findFirst();
     }
 }

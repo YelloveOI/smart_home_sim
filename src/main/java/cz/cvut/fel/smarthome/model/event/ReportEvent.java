@@ -4,13 +4,21 @@ import cz.cvut.fel.smarthome.model.entities.AbstractEntity;
 
 public class ReportEvent<T extends AbstractEntity> extends Event<T> {
 
-    public ReportEvent(T sender, EventType eventType) {
-        super(sender, 1, eventType);
+    public ReportEvent(T sender, EventType eventType, String description) {
+        super(sender, 1, eventType, description);
     }
 
     @Override
     public String toString() {
-        //TODO
-        return "";
+        StringBuilder sb = new StringBuilder();
+        return sb
+                .append("REPORT:\t sender ")
+                .append(getSender().getId())
+                .append(" of class ")
+                .append(getSender().getClass().getSimpleName())
+                .append(" reports: ")
+                .append(getDescription())
+                .append("\n")
+                .toString();
     }
 }

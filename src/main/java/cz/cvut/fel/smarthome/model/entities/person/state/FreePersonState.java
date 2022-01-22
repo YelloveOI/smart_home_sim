@@ -2,7 +2,6 @@ package cz.cvut.fel.smarthome.model.entities.person.state;
 
 import cz.cvut.fel.smarthome.model.action.Action;
 import cz.cvut.fel.smarthome.model.entities.person.Person;
-import cz.cvut.fel.smarthome.model.event.event_context.PersonEventContext;
 import cz.cvut.fel.smarthome.model.interfaces.IUseable;
 
 public class FreePersonState extends PersonState {
@@ -14,7 +13,6 @@ public class FreePersonState extends PersonState {
     @Override
     public void act(Action action) {
         action.visit(person);
-        EventProcessor.getEvent(PersonEventContext.act(person, action));
     }
 
     @Override

@@ -6,10 +6,6 @@ import java.util.Optional;
 
 public interface DeviceRepository extends CrudRepository<String, Device> {
 
-    Optional<Device> findFirstByIsAvailable();
-
-    Optional<Device> findRandom();
-
-    Optional<Device> findFoodStorage();
+    Optional<Device> findRandomByIsAvailable();
 
 }

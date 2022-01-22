@@ -6,6 +6,6 @@ import java.util.Optional;
 
 public interface PersonRepository extends CrudRepository<String, Person> {
 
-    Optional<Person> findFirstByIsFree();
+    Optional<Person> findRandomByIsFree();
 
 }

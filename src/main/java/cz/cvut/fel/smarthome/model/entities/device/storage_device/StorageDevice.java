@@ -3,6 +3,8 @@ package cz.cvut.fel.smarthome.model.entities.device.storage_device;
 import cz.cvut.fel.smarthome.model.entities.device.ConsumptionType;
 import cz.cvut.fel.smarthome.model.entities.device.Device;
 import cz.cvut.fel.smarthome.model.entities.device.DeviceType;
+import cz.cvut.fel.smarthome.model.entities.device.state.ActiveDeviceState;
+import cz.cvut.fel.smarthome.model.entities.device.state.IdleDeviceState;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -24,6 +26,11 @@ public class StorageDevice extends Device {
         super(name, deviceType, activeConsumption, idleConsumption, consumptionType, location);
         this.storageDeviceType = storageDeviceType;
         this.itemMap = new HashMap<>();
+        setDeviceState(new IdleDeviceState(this));
+    }
+
+    public StorageDeviceType getStorageDeviceType() {
+        return storageDeviceType;
     }
 
     public boolean get(String item) {

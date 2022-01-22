@@ -26,24 +26,16 @@ public class DeviceRepositoryImpl extends AbstractJSONRepo<String, Device> imple
     }
 
     @Override
-    public Optional<Device> findFirstByIsAvailable() {
-        return pool.stream()
-                .filter(Device::isAvailable)
-                .findFirst();
-    }
-
-    @Override
-    public Optional<Device> findRandom() {
+    public Optional<Device> findRandomByIsAvailable() {
         Random rnd = new Random();
 
         return pool.stream()
-                .skip(rnd.nextInt(pool.size()))
+                .filter(Device::isAvailable)
+                .sorted((v1, v2) -> {
+                    if(v1.equals(v2)) return 0;
+                    return (rnd.nextBoolean()) ? 1 : -1;
+                })
                 .findFirst();
     }
 
-    @Override
-    public Optional<Device> findFoodStorage() {
-        return Optional.empty();
-        //TODO
-    }
 }
