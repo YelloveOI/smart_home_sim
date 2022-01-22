@@ -3,10 +3,13 @@ package cz.cvut.fel.smarthome.service;
 import cz.cvut.fel.smarthome.model.action.Action;
 import cz.cvut.fel.smarthome.model.interfaces.IActor;
 
-public class System implements IActor {
+public class SmartHomeService {
 
-    @Override
-    public void act(Action action) {
+    public void closeBlinds() {
+
+    }
+
+    public void openBlinds() {
 
     }
 

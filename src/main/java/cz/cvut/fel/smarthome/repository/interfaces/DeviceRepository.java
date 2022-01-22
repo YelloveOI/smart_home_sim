@@ -10,4 +10,6 @@ public interface DeviceRepository extends CrudRepository<String, Device> {
 
     Optional<Device> findRandom();
 
+    Optional<Device> findFoodStorage();
+
 }

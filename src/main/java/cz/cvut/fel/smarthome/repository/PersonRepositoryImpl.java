@@ -11,9 +11,9 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.lang.reflect.Type;
 import java.util.HashSet;
+import java.util.Optional;
 import java.util.Set;
 
-//TODO обработка Location
 public class PersonRepositoryImpl extends AbstractJSONRepo<String, Person> implements PersonRepository {
 
     public PersonRepositoryImpl() throws FileNotFoundException {
@@ -26,4 +26,9 @@ public class PersonRepositoryImpl extends AbstractJSONRepo<String, Person> imple
         }
     }
 
+    @Override
+    public Optional<Person> findFirstByIsFree() {
+        return Optional.empty();
+        //TODO
+    }
 }

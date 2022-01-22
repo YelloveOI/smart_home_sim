@@ -1,22 +1,11 @@
 package cz.cvut.fel.smarthome.model.event;
 
-public class SmartEvent<T> extends Event<T> {
+import cz.cvut.fel.smarthome.model.entities.AbstractEntity;
 
-    private final EventType eventType;
-    private final String description;
+public class SmartEvent<T extends AbstractEntity> extends Event<T> {
 
-    public SmartEvent(T sender, EventType eventType, String description) {
-        super(sender, 2);
-        this.eventType = eventType;
-        this.description = description;
-    }
-
-    public EventType getEventType() {
-        return eventType;
-    }
-
-    public String getDescription() {
-        return description;
+    public SmartEvent(T sender, EventType eventType) {
+        super(sender, 2, eventType);
     }
 
     @Override

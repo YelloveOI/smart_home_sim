@@ -12,7 +12,6 @@ import java.lang.reflect.Type;
 import java.util.HashSet;
 import java.util.Set;
 
-//TODO обработка Location
 public class HouseRepositoryImpl extends AbstractJSONRepo<String, House> implements HouseRepository {
 
     public HouseRepositoryImpl() throws FileNotFoundException {

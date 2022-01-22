@@ -32,11 +32,18 @@ public class DeviceRepositoryImpl extends AbstractJSONRepo<String, Device> imple
                 .findFirst();
     }
 
+    @Override
     public Optional<Device> findRandom() {
         Random rnd = new Random();
 
         return pool.stream()
                 .skip(rnd.nextInt(pool.size()))
                 .findFirst();
+    }
+
+    @Override
+    public Optional<Device> findFoodStorage() {
+        return Optional.empty();
+        //TODO
     }
 }

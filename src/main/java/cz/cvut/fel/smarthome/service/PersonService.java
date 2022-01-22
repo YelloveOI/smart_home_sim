@@ -5,6 +5,7 @@ import cz.cvut.fel.smarthome.model.entities.person.Person;
 import cz.cvut.fel.smarthome.model.entities.auxiliary.Auxiliary;
 import cz.cvut.fel.smarthome.model.entities.auxiliary.AuxiliaryType;
 import cz.cvut.fel.smarthome.model.entities.device.Device;
+import cz.cvut.fel.smarthome.model.entities.pet.Pet;
 import cz.cvut.fel.smarthome.model.interfaces.ILocateable;
 import cz.cvut.fel.smarthome.repository.interfaces.AuxiliaryRepository;
 import cz.cvut.fel.smarthome.repository.interfaces.DeviceRepository;
@@ -116,6 +117,26 @@ public class PersonService {
             tempPer.get().getFree();
 
             personRepo.update(tempPer.get());
+        }
+    }
+
+    public void feedPet(String petName)  {
+        Optional<Person> tempPer = personRepo.findFirstByIsFree();
+        Optional<Pet> tempPet = petRepo.find(petName);
+
+        if(tempPer.isPresent() && tempPet.isPresent()) {
+            Optional<Device> foodStorage = deviceRepo.findFoodStorage();
+
+            if(foodStorage.isPresent()) {
+                locator.delocate(tempPer.get());
+                tempPer.get().setLocation(foodStorage.get().getLocation());
+                locator.locate(tempPer.get());
+                //TODO foodStorage.get()
+                locator.delocate(tempPer.get());
+                tempPer.get().setLocation(tempPet.get().getLocation());
+                locator.locate(tempPer.get());
+                //TODO feedPet()
+            }
         }
     }
 
