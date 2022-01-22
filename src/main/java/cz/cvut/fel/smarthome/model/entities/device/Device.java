@@ -3,7 +3,6 @@ package cz.cvut.fel.smarthome.model.entities.device;
 import cz.cvut.fel.smarthome.model.entities.AbstractEntity;
 import cz.cvut.fel.smarthome.model.entities.device.state.DeviceState;
 import cz.cvut.fel.smarthome.model.entities.device.state.InactiveDeviceState;
-import cz.cvut.fel.smarthome.model.event.event_context.DeviceEventContext;
 import cz.cvut.fel.smarthome.model.interfaces.IControl;
 import cz.cvut.fel.smarthome.model.interfaces.IData;
 import cz.cvut.fel.smarthome.model.interfaces.ILocateable;
@@ -19,7 +18,14 @@ public class Device extends AbstractEntity<String> implements IControl, IData, I
     private String location;
     transient private DeviceState deviceState;
 
-    public Device(String name, DeviceType deviceType, Double activeConsumption, Double idleConsumption, ConsumptionType consumptionType, String location) {
+    public Device(
+            String name,
+            DeviceType deviceType,
+            Double activeConsumption,
+            Double idleConsumption,
+            ConsumptionType consumptionType,
+            String location
+    ) {
         super(name);
         this.deviceType = deviceType;
         this.activeConsumption = activeConsumption;
@@ -40,7 +46,6 @@ public class Device extends AbstractEntity<String> implements IControl, IData, I
     }
 
     public void setDeviceState(DeviceState deviceState) {
-        EventProcessor.getEvent(DeviceEventContext.changeState(this, deviceState));
         this.deviceState = deviceState;
     }
 

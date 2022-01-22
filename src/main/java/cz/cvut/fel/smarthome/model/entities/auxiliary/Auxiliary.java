@@ -10,9 +10,6 @@ import cz.cvut.fel.smarthome.model.interfaces.IUseable;
 
 public class Auxiliary extends AbstractEntity<String> implements IUseable, ILocateable {
 
-    //TODO
-    //как возвращать auxy на место???
-
     private final AuxiliaryType destiny;
     private String location;
     private final String preferedLocation;
