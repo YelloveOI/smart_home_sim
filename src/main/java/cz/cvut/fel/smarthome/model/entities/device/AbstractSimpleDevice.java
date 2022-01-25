@@ -9,23 +9,23 @@ import cz.cvut.fel.smarthome.model.entities.basic.interfaces.ILocateable;
 
 import java.util.Set;
 
-public abstract class SimpleDevice extends AbstractEntity<String> implements IConsumer, ILocateable {
+public abstract class AbstractSimpleDevice extends AbstractEntity<String> {
 
     //TODO state as class
-    private final Set<String> stateSet;
-    private final Set<Consumer> consumerSet;
-    private final Locatable locatable;
-    private String currentState;
+    protected final Set<String> stateSet;
+    protected final Consumer consumer;
+    protected final Locatable locatable;
+    protected String currentState;
 
-    public SimpleDevice(String id, Set<String> stateSet, Set<Consumer> consumerSet, String defaultState, Locatable locatable) {
+    public AbstractSimpleDevice(String id, Set<String> stateSet, Consumer consumer, String defaultState, Locatable locatable) {
         super(id);
         this.stateSet = stateSet;
-        this.consumerSet = consumerSet;
+        this.consumer = consumer;
         this.currentState = defaultState;
         this.locatable = locatable;
     }
 
-    abstract void command(Command command);
+    abstract Boolean command(Command command);
 
     //TODO data as class
     public String getData() {
@@ -37,13 +37,8 @@ public abstract class SimpleDevice extends AbstractEntity<String> implements ICo
                 .append(locatable)
                 .append("\n\t Current state: ")
                 .append(currentState)
-                .append("\n\t Consumption:");
-
-        for(Consumer c : consumerSet) {
-            sb
-                    .append("\n\t\t")
-                    .append(c);
-        }
+                .append("\n\t")
+                .append(consumer);
 
         return sb.toString();
     }

@@ -7,12 +7,12 @@ import cz.cvut.fel.smarthome.model.entities.basic.interfaces.IUsable;
 
 import java.util.Set;
 
-public abstract class UsableDevice extends SimpleDevice implements IUsable {
+public abstract class AbstractUsableDevice extends AbstractSimpleDevice {
 
-    private final Usable usable;
+    protected final Usable usable;
 
-    public UsableDevice(String id, Set<String> stateSet, Set<Consumer> consumerSet, String defaultState, Locatable locatable, Usable usable) {
-        super(id, stateSet, consumerSet, defaultState, locatable);
+    public AbstractUsableDevice(String id, Set<String> stateSet, Consumer consumer, String defaultState, Locatable locatable, Usable usable) {
+        super(id, stateSet, consumer, defaultState, locatable);
         this.usable = usable;
     }
 
@@ -26,4 +26,6 @@ public abstract class UsableDevice extends SimpleDevice implements IUsable {
 
         return sb.toString();
     }
+
+    public abstract void repair();
 }

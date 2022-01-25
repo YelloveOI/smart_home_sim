@@ -1,6 +1,6 @@
 package cz.cvut.fel.smarthome.model.action;
 
-import cz.cvut.fel.smarthome.model.entities.person.Person;
+import cz.cvut.fel.smarthome.model.entities.movable.Alive;
 import cz.cvut.fel.smarthome.model.entities.pet.Pet;
 import cz.cvut.fel.smarthome.model.entities.basic.interfaces.IUsable;
 
@@ -11,13 +11,13 @@ public class MisuseAction extends Action<IUsable> {
     }
 
     @Override
-    public void visit(Person actor) {
-        subject.misuse();
+    public void visit(Alive actor) {
+        subject.use();
     }
 
     @Override
     public void visit(Pet actor) {
-        subject.misuse();
-        subject.misuse();
+        subject.use();
+        subject.use();
     }
 }

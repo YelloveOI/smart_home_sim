@@ -9,11 +9,11 @@ import java.util.Set;
 public class Location extends AbstractEntity<String> {
 
     private final LocationType locationType;
-    private final Set<ILocateable> locateables;
+    private final Set<ILocateable> locatables;
 
     public Location(String s, LocationType locationType) {
         super(s);
-        this.locateables = new HashSet<>();
+        this.locatables = new HashSet<>();
         this.locationType = locationType;
     }
 
@@ -21,16 +21,16 @@ public class Location extends AbstractEntity<String> {
         return locationType;
     }
 
-    public void addLocateable(ILocateable locateable) {
-        locateables.add(locateable);
+    public void addLocatable(ILocateable locateable) {
+        locatables.add(locateable);
     }
 
-    public void removeLocateable(ILocateable locateable) {
-        locateables.remove(locateable);
+    public void removeLocatable(ILocateable locateable) {
+        locatables.remove(locateable);
     }
 
-    public Set<ILocateable> getLocateables() {
-        return locateables;
+    public Set<ILocateable> getLocatables() {
+        return locatables;
     }
 
 }

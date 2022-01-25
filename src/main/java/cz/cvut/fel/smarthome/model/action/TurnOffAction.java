@@ -1,6 +1,6 @@
 package cz.cvut.fel.smarthome.model.action;
 
-import cz.cvut.fel.smarthome.model.entities.person.Person;
+import cz.cvut.fel.smarthome.model.entities.movable.Alive;
 import cz.cvut.fel.smarthome.model.entities.pet.Pet;
 
 public class TurnOffAction extends Action<IControl> {
@@ -10,7 +10,7 @@ public class TurnOffAction extends Action<IControl> {
     }
 
     @Override
-    public void visit(Person actor) {
+    public void visit(Alive actor) {
         subject.turnOff();
     }
 

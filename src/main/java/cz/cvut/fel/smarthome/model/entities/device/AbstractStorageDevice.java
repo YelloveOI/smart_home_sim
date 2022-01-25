@@ -7,12 +7,13 @@ import cz.cvut.fel.smarthome.model.entities.basic.interfaces.IStorage;
 
 import java.util.Set;
 
-public abstract class StorageDevice extends SimpleDevice implements IStorage {
+//TODO нужен ли вообще storage как basic?
+public abstract class AbstractStorageDevice extends AbstractSimpleDevice implements IStorage {
 
-    private final Storage storage;
+    protected final Storage storage;
 
-    public StorageDevice(String id, Set<String> stateSet, Set<Consumer> consumerSet, String defaultState, Locatable locatable, Storage storage) {
-        super(id, stateSet, consumerSet, defaultState, locatable);
+    public AbstractStorageDevice(String id, Set<String> stateSet, Consumer consumer, String defaultState, Locatable locatable, Storage storage) {
+        super(id, stateSet, consumer, defaultState, locatable);
         this.storage = storage;
     }
 
@@ -23,7 +24,7 @@ public abstract class StorageDevice extends SimpleDevice implements IStorage {
                 .append(super.getData())
                 .append("\n\t")
                 .append(storage);
-        
+
         return sb.toString();
     }
 }

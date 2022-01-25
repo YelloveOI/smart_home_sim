@@ -1,8 +1,8 @@
 package cz.cvut.fel.smarthome.service;
 
-import cz.cvut.fel.smarthome.model.entities.device.StorageDevice;
-import cz.cvut.fel.smarthome.model.entities.person.Person;
-import cz.cvut.fel.smarthome.model.entities.Auxiliary;
+import cz.cvut.fel.smarthome.model.entities.device.AbstractStorageDevice;
+import cz.cvut.fel.smarthome.model.entities.movable.Alive;
+import cz.cvut.fel.smarthome.model.entities.auxiliary.Auxiliary;
 import cz.cvut.fel.smarthome.model.entities.pet.Pet;
 import cz.cvut.fel.smarthome.model.entities.basic.interfaces.ILocateable;
 import cz.cvut.fel.smarthome.repository.interfaces.*;
@@ -29,7 +29,7 @@ public class PersonService {
     }
 
     public void goSport(String personName) {
-        Optional<Person> tempPer = personRepo.find(personName);
+        Optional<Alive> tempPer = personRepo.find(personName);
         Optional<Auxiliary> tempAux = auxiliaryRepo.findFirstByDestinyAndByAvailable(AuxiliaryType.SPORT);
 
         if(tempAux.isPresent() && tempPer.isPresent()) {
@@ -54,7 +54,7 @@ public class PersonService {
     }
 
     public void goWork(String personName) {
-        Optional<Person> tempPer = personRepo.find(personName);
+        Optional<Alive> tempPer = personRepo.find(personName);
         Optional<Auxiliary> tempAux = auxiliaryRepo.findFirstByDestinyAndByAvailable(AuxiliaryType.WORK);
 
         if(tempAux.isPresent() && tempPer.isPresent()) {
@@ -79,7 +79,7 @@ public class PersonService {
     }
 
     public void goProcrastinate(String personName) {
-        Optional<Person> tempPer = personRepo.find(personName);
+        Optional<Alive> tempPer = personRepo.find(personName);
         Optional<DeviceOLD> tempDev = deviceRepo.findRandomByIsAvailable();
 
         if(tempPer.isPresent() && tempDev.isPresent()) {
@@ -99,7 +99,7 @@ public class PersonService {
     }
 
     public void getFree(String personName) {
-        Optional<Person> tempPer = personRepo.find(personName);
+        Optional<Alive> tempPer = personRepo.find(personName);
 
         if(tempPer.isPresent()) {
             locator.delocate(tempPer.get());
@@ -118,11 +118,11 @@ public class PersonService {
     }
 
     public void feedPet(String petName)  {
-        Optional<Person> tempPer = personRepo.findFirstByIsFree();
+        Optional<Alive> tempPer = personRepo.findFirstByIsFree();
         Optional<Pet> tempPet = petRepo.find(petName);
 
         if(tempPer.isPresent() && tempPet.isPresent()) {
-            Optional<StorageDevice> foodStorage = storageRepo.findRandomByStorageDeviceType(StorageDeviceType.FRIDGE);
+            Optional<AbstractStorageDevice> foodStorage = storageRepo.findRandomByStorageDeviceType(StorageDeviceType.FRIDGE);
 
             if(foodStorage.isPresent()) {
                 locator.delocate(tempPer.get());

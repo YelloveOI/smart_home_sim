@@ -1,11 +1,11 @@
 package cz.cvut.fel.smarthome.repository.interfaces;
 
-import cz.cvut.fel.smarthome.model.entities.person.Person;
+import cz.cvut.fel.smarthome.model.entities.movable.Alive;
 
 import java.util.Optional;
 
-public interface PersonRepository extends CrudRepository<String, Person> {
+public interface PersonRepository extends CrudRepository<String, Alive> {
 
-    Optional<Person> findRandomByIsFree();
+    Optional<Alive> findRandomByIsFree();
 
 }

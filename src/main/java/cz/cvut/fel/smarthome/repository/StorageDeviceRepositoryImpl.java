@@ -3,7 +3,7 @@ package cz.cvut.fel.smarthome.repository;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import cz.cvut.fel.smarthome.model.entities.device.abstract_device.state.InactiveDeviceState;
-import cz.cvut.fel.smarthome.model.entities.device.StorageDevice;
+import cz.cvut.fel.smarthome.model.entities.device.AbstractStorageDevice;
 import cz.cvut.fel.smarthome.repository.interfaces.StorageDeviceRepository;
 
 import java.io.BufferedReader;
@@ -15,20 +15,20 @@ import java.util.Optional;
 import java.util.Random;
 import java.util.Set;
 
-public class StorageDeviceRepositoryImpl extends AbstractJSONRepo<String, StorageDevice> implements StorageDeviceRepository {
+public class StorageDeviceRepositoryImpl extends AbstractJSONRepo<String, AbstractStorageDevice> implements StorageDeviceRepository {
 
     public StorageDeviceRepositoryImpl() throws FileNotFoundException {
         Gson gson = new Gson();
         BufferedReader br = new BufferedReader(new FileReader("src/main/resources/storage_device/1.json"));
-        Type setType = new TypeToken<Set<StorageDevice>>() {}.getType();
-        pool = new HashSet<StorageDevice>(gson.fromJson(br, setType));
+        Type setType = new TypeToken<Set<AbstractStorageDevice>>() {}.getType();
+        pool = new HashSet<AbstractStorageDevice>(gson.fromJson(br, setType));
         for(DeviceOLD d : pool) {
             d.setDeviceState(new InactiveDeviceState(d));
         }
     }
 
     @Override
-    public Optional<StorageDevice> findRandomByStorageDeviceType(StorageDeviceType storageDeviceType) {
+    public Optional<AbstractStorageDevice> findRandomByStorageDeviceType(StorageDeviceType storageDeviceType) {
         Random rnd = new Random();
 
         return pool.stream()

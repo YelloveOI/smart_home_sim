@@ -6,13 +6,14 @@ import cz.cvut.fel.smarthome.model.entities.basic.interfaces.ILocateable;
 
 public class Sensor extends AbstractEntity<String> implements ILocateable {
 
+    //TODO
     private final Event event;
-    private final Locatable locateable;
+    private final Locatable locatable;
 
     public Sensor(String name, Event event, String preferredLocation) {
         super(name);
         this.event = event;
-        this.locateable = new Locatable(preferredLocation);
+        this.locatable = new Locatable(preferredLocation);
     }
 
     public void trigger() {
@@ -21,16 +22,16 @@ public class Sensor extends AbstractEntity<String> implements ILocateable {
 
     @Override
     public String getLocation() {
-        return locateable.getLocation();
+        return locatable.getLocation();
     }
 
     @Override
     public void setLocation(String location) {
-        locateable.setLocation(location);
+        locatable.setLocation(location);
     }
 
     @Override
     public void locateBack() {
-        locateable.locateBack();
+        locatable.locateBack();
     }
 }

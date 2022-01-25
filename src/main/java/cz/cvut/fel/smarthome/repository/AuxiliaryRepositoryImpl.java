@@ -2,7 +2,7 @@ package cz.cvut.fel.smarthome.repository;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import cz.cvut.fel.smarthome.model.entities.Auxiliary;
+import cz.cvut.fel.smarthome.model.entities.auxiliary.Auxiliary;
 import cz.cvut.fel.smarthome.model.entities.auxiliary.state.AvailableAuxiliaryState;
 import cz.cvut.fel.smarthome.repository.interfaces.AuxiliaryRepository;
 

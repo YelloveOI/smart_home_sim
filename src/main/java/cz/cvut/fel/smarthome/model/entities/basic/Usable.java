@@ -6,33 +6,16 @@ public class Usable implements IUsable {
 
     private final Integer maxDurability;
     private Integer durability;
-    private Boolean isAvailable;
     private Boolean isBroken;
 
     public Usable(Integer maxDurability) {
         this.durability = maxDurability;
         this.maxDurability = maxDurability;
-        this.isAvailable = true;
         this.isBroken = false;
     }
 
     @Override
-    public Boolean startUse() {
-        misuse();
-        if(isAvailable && !isBroken) {
-            isAvailable = false;
-            return true;
-        }
-        return false;
-    }
-
-    @Override
-    public void stopUse() {
-        isAvailable = true;
-    }
-
-    @Override
-    public void misuse() {
+    public void use() {
         durability--;
         if(durability <= 0) {
             isBroken = true;
@@ -45,11 +28,6 @@ public class Usable implements IUsable {
     }
 
     @Override
-    public Boolean isAvailable() {
-        return isAvailable;
-    }
-
-    @Override
     public Boolean isBroken() {
         return isBroken;
     }
@@ -57,13 +35,7 @@ public class Usable implements IUsable {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("Usable:");
-
-        if(isAvailable) {
-            sb.append("\tAVAILABLE");
-        } else {
-            sb.append("\tNOT AVAILABLE");
-        }
+        sb.append("Physical state:");
 
         if(isBroken) {
             sb.append("\tBROKEN");

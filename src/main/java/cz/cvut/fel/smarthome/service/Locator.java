@@ -19,7 +19,7 @@ public class Locator {
     public void locate(ILocateable locateable) {
         Optional<Location> location = locationRepository.find(locateable.getLocation());
         if(location.isPresent()) {
-            location.get().addLocateable(locateable);
+            location.get().addLocatable(locateable);
             locationRepository.update(location.get());
         }
     }
@@ -27,7 +27,7 @@ public class Locator {
     public void delocate(ILocateable locateable) {
         Optional<Location> location = locationRepository.find(locateable.getLocation());
         if(location.isPresent()) {
-            location.get().removeLocateable(locateable);
+            location.get().removeLocatable(locateable);
             locationRepository.update(location.get());
         }
     }
