@@ -53,4 +53,24 @@ public class Usable implements IUsable {
     public Boolean isBroken() {
         return isBroken;
     }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Usable:");
+
+        if(isAvailable) {
+            sb.append("\tAVAILABLE");
+        } else {
+            sb.append("\tNOT AVAILABLE");
+        }
+
+        if(isBroken) {
+            sb.append("\tBROKEN");
+        } else {
+            sb.append("\tNOT BROKEN");
+        }
+
+        return sb.toString();
+    }
 }

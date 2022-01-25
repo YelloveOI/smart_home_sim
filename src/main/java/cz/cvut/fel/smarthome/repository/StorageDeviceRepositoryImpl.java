@@ -2,7 +2,6 @@ package cz.cvut.fel.smarthome.repository;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import cz.cvut.fel.smarthome.model.entities.device.DeviceOLD;
 import cz.cvut.fel.smarthome.model.entities.device.abstract_device.state.InactiveDeviceState;
 import cz.cvut.fel.smarthome.model.entities.device.StorageDevice;
 import cz.cvut.fel.smarthome.repository.interfaces.StorageDeviceRepository;

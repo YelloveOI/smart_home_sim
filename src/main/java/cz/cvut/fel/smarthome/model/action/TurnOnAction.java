@@ -2,7 +2,6 @@ package cz.cvut.fel.smarthome.model.action;
 
 import cz.cvut.fel.smarthome.model.entities.person.Person;
 import cz.cvut.fel.smarthome.model.entities.pet.Pet;
-import cz.cvut.fel.smarthome.model.entities.device.DeviceOLD;
 
 public class TurnOnAction extends Action<DeviceOLD> {
 

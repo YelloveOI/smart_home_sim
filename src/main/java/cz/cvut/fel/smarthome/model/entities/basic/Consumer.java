@@ -46,4 +46,10 @@ public class Consumer implements IConsumer {
             clock = LocalDateTime.now();
         }
     }
+
+    @Override
+    public String toString() {
+        return "Consumed:\t" + getConsumed() + unit;
+    }
+
 }

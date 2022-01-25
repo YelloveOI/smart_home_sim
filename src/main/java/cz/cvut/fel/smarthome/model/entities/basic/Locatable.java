@@ -26,4 +26,9 @@ public class Locatable implements ILocateable {
     public void locateBack() {
         location = preferredLocation;
     }
+
+    @Override
+    public String toString() {
+        return "Location:\t" + location;
+    }
 }

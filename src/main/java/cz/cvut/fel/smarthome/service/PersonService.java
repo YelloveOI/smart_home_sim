@@ -3,7 +3,6 @@ package cz.cvut.fel.smarthome.service;
 import cz.cvut.fel.smarthome.model.entities.device.StorageDevice;
 import cz.cvut.fel.smarthome.model.entities.person.Person;
 import cz.cvut.fel.smarthome.model.entities.Auxiliary;
-import cz.cvut.fel.smarthome.model.entities.device.DeviceOLD;
 import cz.cvut.fel.smarthome.model.entities.pet.Pet;
 import cz.cvut.fel.smarthome.model.entities.basic.interfaces.ILocateable;
 import cz.cvut.fel.smarthome.repository.interfaces.*;

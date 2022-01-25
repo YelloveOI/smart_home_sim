@@ -1,11 +1,15 @@
 package cz.cvut.fel.smarthome.model.entities.basic.interfaces;
 
+import java.util.Set;
+
 public interface IStorage {
 
-    Boolean get();
+    Boolean get(String itemType);
 
-    void put(Integer itemQuantity);
+    Boolean put(String itemType, Integer itemQuantity);
 
     Boolean isEmpty();
+
+    Integer getQuantityOf(String itemType);
 
 }

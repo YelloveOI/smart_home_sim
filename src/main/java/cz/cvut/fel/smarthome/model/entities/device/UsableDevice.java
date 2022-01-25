@@ -1,46 +1,29 @@
 package cz.cvut.fel.smarthome.model.entities.device;
 
+import cz.cvut.fel.smarthome.model.entities.basic.Consumer;
+import cz.cvut.fel.smarthome.model.entities.basic.Locatable;
 import cz.cvut.fel.smarthome.model.entities.basic.Usable;
 import cz.cvut.fel.smarthome.model.entities.basic.interfaces.IUsable;
 
-public class UsableDevice extends DeviceOLD implements IUsable {
+import java.util.Set;
+
+public abstract class UsableDevice extends SimpleDevice implements IUsable {
 
     private final Usable usable;
-    //TODO manual, repair mech
 
-    public UsableDevice(String name, Double activeConsumption, String preferredLocation, Integer durability) {
-        super(name, activeConsumption, preferredLocation);
-        this.usable = new Usable(durability);
+    public UsableDevice(String id, Set<String> stateSet, Set<Consumer> consumerSet, String defaultState, Locatable locatable, Usable usable) {
+        super(id, stateSet, consumerSet, defaultState, locatable);
+        this.usable = usable;
     }
 
     @Override
-    public Boolean isAvailable() {
-        return usable.isAvailable() && isActive();
+    public String getData() {
+        StringBuilder sb = new StringBuilder();
+        sb
+                .append(super.getData())
+                .append("\n\t")
+                .append(usable);
+
+        return sb.toString();
     }
-
-    @Override
-    public Boolean isBroken() {
-        return usable.isBroken();
-    }
-
-    @Override
-    public Boolean startUse() {
-        if(isActive()) {
-            return usable.startUse();
-        }
-
-        return false;
-    }
-
-    @Override
-    public void stopUse() {
-        usable.stopUse();
-    }
-
-    @Override
-    public void misuse() {
-        usable.misuse();
-    }
-
-
 }

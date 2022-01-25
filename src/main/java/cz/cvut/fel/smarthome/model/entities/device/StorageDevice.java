@@ -1,29 +1,29 @@
 package cz.cvut.fel.smarthome.model.entities.device;
 
+import cz.cvut.fel.smarthome.model.entities.basic.Consumer;
+import cz.cvut.fel.smarthome.model.entities.basic.Locatable;
 import cz.cvut.fel.smarthome.model.entities.basic.Storage;
 import cz.cvut.fel.smarthome.model.entities.basic.interfaces.IStorage;
 
-public class StorageDevice extends DeviceOLD implements IStorage {
+import java.util.Set;
+
+public abstract class StorageDevice extends SimpleDevice implements IStorage {
 
     private final Storage storage;
 
-    public StorageDevice(String name, Double activeConsumption, String preferredLocation, Integer itemQuantity) {
-        super(name, activeConsumption, preferredLocation);
-        this.storage = new Storage(itemQuantity);
+    public StorageDevice(String id, Set<String> stateSet, Set<Consumer> consumerSet, String defaultState, Locatable locatable, Storage storage) {
+        super(id, stateSet, consumerSet, defaultState, locatable);
+        this.storage = storage;
     }
 
     @Override
-    public Boolean get() {
-        return storage.get();
-    }
-
-    @Override
-    public void put(Integer itemQuantity) {
-        storage.put(itemQuantity);
-    }
-
-    @Override
-    public Boolean isEmpty() {
-        return storage.isEmpty();
+    public String getData() {
+        StringBuilder sb = new StringBuilder();
+        sb
+                .append(super.getData())
+                .append("\n\t")
+                .append(storage);
+        
+        return sb.toString();
     }
 }
