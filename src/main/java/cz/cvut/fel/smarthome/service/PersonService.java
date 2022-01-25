@@ -1,14 +1,11 @@
 package cz.cvut.fel.smarthome.service;
 
-import cz.cvut.fel.smarthome.model.action.TurnOnAction;
-import cz.cvut.fel.smarthome.model.entities.device.storage_device.StorageDevice;
-import cz.cvut.fel.smarthome.model.entities.device.storage_device.StorageDeviceType;
+import cz.cvut.fel.smarthome.model.entities.device.StorageDevice;
 import cz.cvut.fel.smarthome.model.entities.person.Person;
-import cz.cvut.fel.smarthome.model.entities.auxiliary.Auxiliary;
-import cz.cvut.fel.smarthome.model.entities.auxiliary.AuxiliaryType;
-import cz.cvut.fel.smarthome.model.entities.device.Device;
+import cz.cvut.fel.smarthome.model.entities.Auxiliary;
+import cz.cvut.fel.smarthome.model.entities.device.DeviceOLD;
 import cz.cvut.fel.smarthome.model.entities.pet.Pet;
-import cz.cvut.fel.smarthome.model.interfaces.ILocateable;
+import cz.cvut.fel.smarthome.model.entities.basic.interfaces.ILocateable;
 import cz.cvut.fel.smarthome.repository.interfaces.*;
 import cz.cvut.fel.smarthome.simpleDI.annotation.Inject;
 
@@ -84,7 +81,7 @@ public class PersonService {
 
     public void goProcrastinate(String personName) {
         Optional<Person> tempPer = personRepo.find(personName);
-        Optional<Device> tempDev = deviceRepo.findRandomByIsAvailable();
+        Optional<DeviceOLD> tempDev = deviceRepo.findRandomByIsAvailable();
 
         if(tempPer.isPresent() && tempDev.isPresent()) {
             if(!tempPer.get().isFree()) {
@@ -132,7 +129,7 @@ public class PersonService {
                 locator.delocate(tempPer.get());
                 tempPer.get().setLocation(foodStorage.get().getLocation());
                 locator.locate(tempPer.get());
-                if(foodStorage.get().get("FOOD")) {
+                if(foodStorage.get().get()) {
                     locator.delocate(tempPer.get());
                     tempPer.get().setLocation(tempPet.get().getLocation());
                     locator.locate(tempPer.get());

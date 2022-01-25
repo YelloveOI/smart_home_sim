@@ -2,12 +2,11 @@ package cz.cvut.fel.smarthome.model.action;
 
 import cz.cvut.fel.smarthome.model.entities.person.Person;
 import cz.cvut.fel.smarthome.model.entities.pet.Pet;
-import cz.cvut.fel.smarthome.model.entities.device.Device;
-import cz.cvut.fel.smarthome.model.interfaces.IControl;
+import cz.cvut.fel.smarthome.model.entities.device.DeviceOLD;
 
 public class TurnOffAction extends Action<IControl> {
 
-    public TurnOffAction(Device subject) {
+    public TurnOffAction(DeviceOLD subject) {
         super(subject);
     }
 

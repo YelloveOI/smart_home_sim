@@ -3,10 +3,10 @@ package cz.cvut.fel.smarthome.model.entities.pet;
 import cz.cvut.fel.smarthome.model.entities.AbstractEntity;
 import cz.cvut.fel.smarthome.model.entities.pet.state.FedPetState;
 import cz.cvut.fel.smarthome.model.entities.pet.state.HungryPetState;
-import cz.cvut.fel.smarthome.model.interfaces.IActor;
+import cz.cvut.fel.smarthome.model.IActor;
 import cz.cvut.fel.smarthome.model.action.Action;
 import cz.cvut.fel.smarthome.model.entities.pet.state.PetState;
-import cz.cvut.fel.smarthome.model.interfaces.ILocateable;
+import cz.cvut.fel.smarthome.model.entities.basic.interfaces.ILocateable;
 
 public class Pet extends AbstractEntity<String> implements IActor, ILocateable {
 

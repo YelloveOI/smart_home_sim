@@ -2,7 +2,6 @@ package cz.cvut.fel.smarthome.repository;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import cz.cvut.fel.smarthome.model.entities.device.Device;
 import cz.cvut.fel.smarthome.model.entities.person.Person;
 import cz.cvut.fel.smarthome.model.entities.person.state.FreePersonState;
 import cz.cvut.fel.smarthome.repository.interfaces.PersonRepository;

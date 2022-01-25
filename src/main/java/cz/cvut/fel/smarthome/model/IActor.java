@@ -1,4 +1,4 @@
-package cz.cvut.fel.smarthome.model.interfaces;
+package cz.cvut.fel.smarthome.model;
 
 import cz.cvut.fel.smarthome.model.action.Action;
 

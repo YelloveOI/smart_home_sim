@@ -2,7 +2,7 @@ package cz.cvut.fel.smarthome.model.entities.person.state;
 
 import cz.cvut.fel.smarthome.model.action.Action;
 import cz.cvut.fel.smarthome.model.entities.person.Person;
-import cz.cvut.fel.smarthome.model.interfaces.IUseable;
+import cz.cvut.fel.smarthome.model.entities.basic.interfaces.IUsable;
 
 public class FreePersonState extends PersonState {
 
@@ -16,9 +16,9 @@ public class FreePersonState extends PersonState {
     }
 
     @Override
-    public void becomeBusy(IUseable useable) {
+    public void becomeBusy(IUsable usable) {
         person.setPersonState(new BusyPersonState(person));
-        person.setInUse(useable);
+        person.setInUse(usable);
     }
 
     @Override
