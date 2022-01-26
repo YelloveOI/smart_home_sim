@@ -1,15 +1,13 @@
 package cz.cvut.fel.smarthome.model.entities.auxiliary;
 
-import cz.cvut.fel.smarthome.model.entities.basic.Locatable;
 import cz.cvut.fel.smarthome.model.entities.basic.Usable;
 
 public class Car extends AbstractAuxiliary {
 
-    public Car(String s, String location, Integer durability) {
+    public Car(String s, Integer durability) {
         super(
                 "CAR_" + s,
-                new Usable(durability),
-                new Locatable(location)
+                new Usable(durability)
         );
     }
 

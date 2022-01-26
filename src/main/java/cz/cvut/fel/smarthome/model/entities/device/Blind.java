@@ -2,20 +2,18 @@ package cz.cvut.fel.smarthome.model.entities.device;
 
 import cz.cvut.fel.smarthome.model.entities.Command;
 import cz.cvut.fel.smarthome.model.entities.basic.Consumer;
-import cz.cvut.fel.smarthome.model.entities.basic.Locatable;
 
 import java.util.Objects;
 import java.util.Set;
 
 public class Blind extends AbstractSimpleDevice {
 
-    public Blind(String id, String location, Double activeConsumption) {
+    public Blind(String id, Double activeConsumption) {
         super(
                 "BLIND_" + id,
                 Set.of("OPEN", "CLOSE", "OFF"),
                 new Consumer(activeConsumption, "W"),
-                "OFF",
-                new Locatable(location)
+                "OFF"
         );
     }
 

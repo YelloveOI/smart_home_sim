@@ -12,7 +12,6 @@ import cz.cvut.fel.smarthome.model.entities.location.LocationType;
 import cz.cvut.fel.smarthome.model.entities.movable.Person;
 import cz.cvut.fel.smarthome.repository.interfaces.*;
 import cz.cvut.fel.smarthome.simpleDI.annotation.Inject;
-import cz.cvut.fel.smarthome.test.B;
 
 public class Configurator {
 
@@ -41,13 +40,13 @@ public class Configurator {
         aliveRepository.create(p3);
         aliveRepository.create(p4);
 
-        House house = new House("HOUSE", 2, 3, 1, 0);
+        House house = new House("HOUSE", 2, 3, 1, 0, embeddedMap, locations);
         houseRepository.create(house);
 
-        Blind b1 = new Blind("b1", "room1", 5.2);
-        Blind b2 = new Blind("b2", "room1", 5.2);
-        Blind b3 = new Blind("b3", "room1", 5.2);
-        Blind b4 = new Blind("b4", "room1", 5.2);
+        Blind b1 = new Blind("b1",  5.2);
+        Blind b2 = new Blind("b2",  5.2);
+        Blind b3 = new Blind("b3",  5.2);
+        Blind b4 = new Blind("b4",  5.2);
         DaylightSensor ds1 = new DaylightSensor("ds1", "room1", 1.2);
         simpleDeviceRepository.create(b1);
         simpleDeviceRepository.create(b2);
@@ -58,13 +57,13 @@ public class Configurator {
         Fridge f1 = new Fridge("f1", "room2", 20.1);
         storageDeviceRepository.create(f1);
 
-        TV tv1 = new TV("tv1", "room1", 12.4);
-        TV tv2 = new TV("tv2", "room2", 9.5);
+        TV tv1 = new TV("tv1", 12.4);
+        TV tv2 = new TV("tv2",9.5);
         usableDeviceRepository.create(tv1);
         usableDeviceRepository.create(tv2);
 
-        Car c1 = new Car("c1", "garage", 100);
-        SportInventory bike = new SportInventory("bike", "room2", 50);
+        Car c1 = new Car("c1", 100);
+        SportInventory bike = new SportInventory("bike", 50);
         auxiliaryRepository.create(bike);
         auxiliaryRepository.create(c1);
 

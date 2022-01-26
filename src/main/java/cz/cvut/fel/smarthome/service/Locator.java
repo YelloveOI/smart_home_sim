@@ -1,7 +1,6 @@
 package cz.cvut.fel.smarthome.service;
 
 import cz.cvut.fel.smarthome.model.entities.location.Location;
-import cz.cvut.fel.smarthome.model.entities.basic.interfaces.ILocateable;
 import cz.cvut.fel.smarthome.repository.interfaces.LocationRepository;
 import cz.cvut.fel.smarthome.simpleDI.annotation.Inject;
 

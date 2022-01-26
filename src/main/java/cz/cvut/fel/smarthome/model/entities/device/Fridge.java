@@ -2,7 +2,6 @@ package cz.cvut.fel.smarthome.model.entities.device;
 
 import cz.cvut.fel.smarthome.model.entities.Command;
 import cz.cvut.fel.smarthome.model.entities.basic.Consumer;
-import cz.cvut.fel.smarthome.model.entities.basic.Locatable;
 import cz.cvut.fel.smarthome.model.entities.basic.Storage;
 
 import java.util.Objects;
@@ -16,7 +15,6 @@ public class Fridge extends AbstractStorageDevice {
                 Set.of("OFF", "ON"),
                 new Consumer(activeConsumption, "W"),
                 "OFF",
-                new Locatable(location),
                 new Storage(Set.of("FOOD"))
         );
     }

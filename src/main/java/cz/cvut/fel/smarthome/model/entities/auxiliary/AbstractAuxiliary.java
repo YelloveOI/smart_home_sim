@@ -1,20 +1,17 @@
 package cz.cvut.fel.smarthome.model.entities.auxiliary;
 
 import cz.cvut.fel.smarthome.model.entities.basic.AbstractEntity;
-import cz.cvut.fel.smarthome.model.entities.basic.Locatable;
 import cz.cvut.fel.smarthome.model.entities.basic.Usable;
 
 public abstract class AbstractAuxiliary extends AbstractEntity<String> {
 
     protected final Usable usable;
-    protected final Locatable locatable;
 
     protected Boolean isAvailable;
 
-    public AbstractAuxiliary(String s, Usable usable, Locatable locatable) {
+    public AbstractAuxiliary(String s, Usable usable) {
         super(s);
         this.usable = usable;
-        this.locatable = locatable;
         this.isAvailable = true;
     }
 
@@ -25,7 +22,6 @@ public abstract class AbstractAuxiliary extends AbstractEntity<String> {
         if(isAvailable) {
             usable.use();
             isAvailable = false;
-            locatable.setLocation("OUTSIDE");
             return true;
         }
         return false;
@@ -34,13 +30,13 @@ public abstract class AbstractAuxiliary extends AbstractEntity<String> {
     public void stopUse() {
         if(!isAvailable) {
             isAvailable = true;
-            locatable.locateBack();
         }
     }
 
     public abstract void repair();
 
-    public String getData() {
+    @Override
+    public String toString() {
         StringBuilder sb = new StringBuilder();
         sb
                 .append("> Auxiliary")

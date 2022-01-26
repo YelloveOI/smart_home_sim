@@ -2,7 +2,6 @@ package cz.cvut.fel.smarthome.model.entities.device;
 
 import cz.cvut.fel.smarthome.model.entities.Command;
 import cz.cvut.fel.smarthome.model.entities.basic.Consumer;
-import cz.cvut.fel.smarthome.model.entities.basic.Locatable;
 import cz.cvut.fel.smarthome.model.entities.basic.Usable;
 
 import java.util.Objects;
@@ -10,13 +9,12 @@ import java.util.Set;
 
 public class TV extends AbstractUsableDevice {
 
-    public TV(String id, String location, Double activeConsumption) {
+    public TV(String id, Double activeConsumption) {
         super(
                 "TV_" + id,
                 Set.of("IDLE", "OFF", "PLAYING", "BROKEN"),
                 new Consumer(activeConsumption, "W"),
                 "OFF",
-                new Locatable(location),
                 new Usable(100)
         );
     }

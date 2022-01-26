@@ -1,7 +1,6 @@
 package cz.cvut.fel.smarthome.model.entities.device;
 
 import cz.cvut.fel.smarthome.model.entities.basic.Consumer;
-import cz.cvut.fel.smarthome.model.entities.basic.Locatable;
 import cz.cvut.fel.smarthome.model.entities.basic.Storage;
 import cz.cvut.fel.smarthome.model.entities.basic.interfaces.IStorage;
 
@@ -12,16 +11,16 @@ public abstract class AbstractStorageDevice extends AbstractSimpleDevice impleme
 
     protected final Storage storage;
 
-    public AbstractStorageDevice(String id, Set<String> stateSet, Consumer consumer, String defaultState, Locatable locatable, Storage storage) {
-        super(id, stateSet, consumer, defaultState, locatable);
+    public AbstractStorageDevice(String id, Set<String> stateSet, Consumer consumer, String defaultState, Storage storage) {
+        super(id, stateSet, consumer, defaultState);
         this.storage = storage;
     }
 
     @Override
-    public String getData() {
+    public String toString() {
         StringBuilder sb = new StringBuilder();
         sb
-                .append(super.getData())
+                .append(super.toString())
                 .append("\n\t")
                 .append(storage);
 
