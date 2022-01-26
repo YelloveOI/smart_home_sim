@@ -8,7 +8,6 @@ import java.util.stream.Collectors;
 
 public class SimpleDeviceRepositoryImpl extends AbstractRepo<String, AbstractSimpleDevice> implements SimpleDeviceRepository {
 
-
     @Override
     public Set<AbstractSimpleDevice> findAllByPredicate(String predicate) {
         return pool.stream()

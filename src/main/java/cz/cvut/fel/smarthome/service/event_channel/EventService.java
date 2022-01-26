@@ -1,4 +1,4 @@
-package cz.cvut.fel.smarthome.service;
+package cz.cvut.fel.smarthome.service.event_channel;
 //
 //import cz.cvut.fel.smarthome.model.event.Event;
 //import cz.cvut.fel.smarthome.service.event_channel.PersonEventChannel;

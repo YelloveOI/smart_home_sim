@@ -9,7 +9,7 @@ import java.util.Set;
 
 public class DaylightSensor extends AbstractSimpleDevice {
 
-    public DaylightSensor(String id, String location, Double activeConsumption) {
+    public DaylightSensor(String id, Double activeConsumption) {
         super(
                 "SENSOR_" + id,
                 Set.of("OFF", "LIGHT", "DARK"),
@@ -20,17 +20,6 @@ public class DaylightSensor extends AbstractSimpleDevice {
 
     @Override
     public String getCurrentState() {
-        Random rnd = new Random();
-        if(Objects.equals(currentState, "LIGHT")) {
-            if(rnd.nextInt(3) == 1) {
-                currentState = "DARK";
-            }
-        } else {
-            if(rnd.nextInt(3) == 1) {
-                currentState = "LIGHT";
-            }
-        }
-
         return currentState;
     }
 
@@ -39,7 +28,12 @@ public class DaylightSensor extends AbstractSimpleDevice {
         switch(command) {
             case ON -> {
                 if(Objects.equals(currentState, "OFF")) {
-                    currentState = "ON";
+                    Random rnd = new Random();
+                    if(rnd.nextBoolean()) {
+                        currentState = "LIGHT";
+                    } else {
+                        currentState = "DARK";
+                    }
                     consumer.powerButton();
                     return true;
                 }
@@ -48,6 +42,16 @@ public class DaylightSensor extends AbstractSimpleDevice {
                 if(Objects.equals(currentState, "ON")) {
                     currentState = "OFF";
                     consumer.powerButton();
+                    return true;
+                }
+            }
+            case TRIGGER -> {
+                if(Objects.equals(currentState, "LIGHT")) {
+                    currentState = "DARK";
+                    return true;
+                }
+                if(Objects.equals(currentState, "DARK")) {
+                    currentState = "LIGHT";
                     return true;
                 }
             }

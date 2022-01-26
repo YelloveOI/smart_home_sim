@@ -5,6 +5,8 @@ public interface IActive {
     //TODO activity as class
     String getCurrentActivity();
 
-    Boolean setActivity(String activity, Integer timeInSecond);
+    void startActivity(String activity);
+
+    void stopActivity();
 
 }

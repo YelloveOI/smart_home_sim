@@ -6,6 +6,4 @@ import java.util.Optional;
 
 public interface AuxiliaryRepository extends CrudRepository<String, AbstractAuxiliary> {
 
-    Optional<AbstractAuxiliary> findRandomCarByIsAvailable();
-
 }

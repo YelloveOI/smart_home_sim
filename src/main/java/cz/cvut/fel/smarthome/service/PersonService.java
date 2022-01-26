@@ -8,6 +8,7 @@ import cz.cvut.fel.smarthome.model.entities.movable.AbstractAlive;
 import cz.cvut.fel.smarthome.model.entities.movable.Person;
 import cz.cvut.fel.smarthome.repository.interfaces.*;
 import cz.cvut.fel.smarthome.simpleDI.annotation.Inject;
+import javassist.NotFoundException;
 
 import java.util.Optional;
 
@@ -16,69 +17,47 @@ public class PersonService {
     @Inject
     private AliveRepository aliveRepository;
     @Inject
-    private StorageDeviceRepository storageDeviceRepository;
-    @Inject
-    private UsableDeviceRepository usableDeviceRepository;
-    @Inject
-    private SimpleDeviceRepository simpleDeviceRepository;
-    @Inject
-    private AuxiliaryRepository auxiliaryRepository;
+    private Locator locator;
 
-    public PersonService() {
-    }
+    private AbstractAlive getPerson(String personID) throws NotFoundException {
+        Optional<AbstractAlive> person = aliveRepository.find(personID);
 
-    public Boolean goWork(String personName, String carName) {
-        Optional<AbstractAlive> person = aliveRepository.find(personName);
-        Optional<AbstractAuxiliary> car = auxiliaryRepository.find(carName);
-
-        if(person.isEmpty() || car.isEmpty()) {
-            //TODO exception
-            return false;
+        if(person.isEmpty()) {
+            throw new NotFoundException("Can't find person with id: " + personID);
         }
 
-        //TODO locator's job
-        person.get().order(Order.WORK);
-        car.get().use();
-
-        return true;
+        return person.get();
     }
 
-    public Boolean goSport(String personName, String sportInventoryName) {
-        Optional<AbstractAlive> person = aliveRepository.find(personName);
-        Optional<AbstractAuxiliary> sportInventory = auxiliaryRepository.find(sportInventoryName);
+    public Boolean goWork(String personID) throws NotFoundException {
+        AbstractAlive person = getPerson(personID);
 
-        if(person.isEmpty() || sportInventory.isEmpty()) {
-            //TODO exception
-            return false;
-        }
-
-        //TODO locator's job
-        person.get().order(Order.SPORT);
-        sportInventory.get().use();
-
-        return true;
+        locator.deallocate(person);
+        return person.order(Order.WORK);
     }
 
-    public Boolean goProcrastinate(String personName, String usableDeviceName) {
-        Optional<AbstractAlive> person = aliveRepository.find(personName);
-        Optional<AbstractUsableDevice> usableDevice = usableDeviceRepository.find(usableDeviceName);
+    public Boolean goSport(String personID) throws NotFoundException {
+        AbstractAlive person = getPerson(personID);
 
-        if(person.isEmpty() || usableDevice.isEmpty()) {
-            //TODO exception
-            return false;
-        }
-
-        //TODO locator's job
-        person.get().order(Order.BUSY_5);
-        usableDevice.get().command(Command.ON);
-        usableDevice.get().command(Command.PLAY);
-
-        return true;
+        locator.deallocate(person);
+        return person.order(Order.SPORT);
     }
 
-    public Boolean repairUsable(String personName, String usableName) {
-        //TODO
-        return false;
+    public Boolean goProcrastinate(String personID) throws NotFoundException {
+        AbstractAlive person = getPerson(personID);
+
+        return person.order(Order.PROCRASTINATE);
+    }
+
+    public void move(String personID, String locationName) throws NotFoundException {
+        AbstractAlive person = getPerson(personID);
+        locator.allocate(person, locationName);
+    }
+
+    public void stopActivity(String personID) throws NotFoundException {
+        AbstractAlive person = getPerson(personID);
+        person.order(Order.GET_FREE);
+        locator.locateBack(person);
     }
 
 }

@@ -8,11 +8,12 @@ public abstract class AbstractAlive extends AbstractEntity<String> {
 
     protected final Active active;
 
-    public AbstractAlive(String name, String assignedLocation) {
+    public AbstractAlive(String name) {
         super(name);
         this.active = new Active();
     }
 
+    //true = alive doing requested order, false = nothing changed (it's busy)
     abstract public Boolean order(Order order);
 
 }

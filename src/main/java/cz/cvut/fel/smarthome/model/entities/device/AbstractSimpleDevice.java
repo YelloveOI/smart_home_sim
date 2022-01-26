@@ -20,6 +20,7 @@ public abstract class AbstractSimpleDevice extends AbstractEntity<String> {
         this.currentState = defaultState;
     }
 
+    //true = state changed, false = state not changed
     abstract public Boolean command(Command command);
 
     public String getCurrentState() {

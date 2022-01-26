@@ -18,6 +18,7 @@ public abstract class AbstractAuxiliary extends AbstractEntity<String> {
     public Boolean use() {
         if(usable.isBroken()) {
             isAvailable = false;
+            return false;
         }
         if(isAvailable) {
             usable.use();
@@ -27,10 +28,21 @@ public abstract class AbstractAuxiliary extends AbstractEntity<String> {
         return false;
     }
 
-    public void stopUse() {
+    public Boolean stopUse() {
+        if(usable.isBroken()) {
+            isAvailable = false;
+            return false;
+        }
         if(!isAvailable) {
             isAvailable = true;
+            return true;
         }
+
+        return false;
+    }
+
+    public Boolean isBroken() {
+        return usable.isBroken();
     }
 
     public abstract void repair();

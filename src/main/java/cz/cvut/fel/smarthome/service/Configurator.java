@@ -7,6 +7,7 @@ import cz.cvut.fel.smarthome.model.entities.device.DaylightSensor;
 import cz.cvut.fel.smarthome.model.entities.device.Fridge;
 import cz.cvut.fel.smarthome.model.entities.device.TV;
 import cz.cvut.fel.smarthome.model.entities.location.House;
+import cz.cvut.fel.smarthome.model.entities.location.HouseBuilder;
 import cz.cvut.fel.smarthome.model.entities.location.Location;
 import cz.cvut.fel.smarthome.model.entities.location.LocationType;
 import cz.cvut.fel.smarthome.model.entities.movable.Person;
@@ -20,8 +21,6 @@ public class Configurator {
     @Inject
     private HouseRepository houseRepository;
     @Inject
-    private LocationRepository locationRepository;
-    @Inject
     private SimpleDeviceRepository simpleDeviceRepository;
     @Inject
     private StorageDeviceRepository storageDeviceRepository;
@@ -31,23 +30,20 @@ public class Configurator {
     private AuxiliaryRepository auxiliaryRepository;
 
     public void config1() {
-        Person p1 = new Person("Ivan", "room1");
-        Person p2 = new Person("Robert", "room2");
-        Person p3 = new Person("Kate", "room3");
-        Person p4 = new Person("Strasidlo", "room1");
+        Person p1 = new Person("Ivan");
+        Person p2 = new Person("Robert");
+        Person p3 = new Person("Kate");
+        Person p4 = new Person("Strasidlo");
         aliveRepository.create(p1);
         aliveRepository.create(p2);
         aliveRepository.create(p3);
         aliveRepository.create(p4);
 
-        House house = new House("HOUSE", 2, 3, 1, 0, embeddedMap, locations);
-        houseRepository.create(house);
-
         Blind b1 = new Blind("b1",  5.2);
         Blind b2 = new Blind("b2",  5.2);
         Blind b3 = new Blind("b3",  5.2);
         Blind b4 = new Blind("b4",  5.2);
-        DaylightSensor ds1 = new DaylightSensor("ds1", "room1", 1.2);
+        DaylightSensor ds1 = new DaylightSensor("ds1",1.2);
         simpleDeviceRepository.create(b1);
         simpleDeviceRepository.create(b2);
         simpleDeviceRepository.create(b3);
@@ -67,28 +63,32 @@ public class Configurator {
         auxiliaryRepository.create(bike);
         auxiliaryRepository.create(c1);
 
-        Location room1 = new Location("room1", LocationType.ROOM);
-        Location room2 = new Location("room2", LocationType.ROOM);
-        Location room3 = new Location("room3", LocationType.ROOM);
-        Location garage = new Location("garage", LocationType.GARAGE);
-        room1.addEntity(p1);
-        room1.addEntity(p4);
-        room1.addEntity(b1);
-        room1.addEntity(b2);
-        room1.addEntity(b3);
-        room1.addEntity(b4);
-        room1.addEntity(ds1);
-        room1.addEntity(tv1);
-        room2.addEntity(p2);
-        room2.addEntity(bike);
-        room2.addEntity(f1);
-        room2.addEntity(tv2);
-        room3.addEntity(p3);
-        garage.addEntity(c1);
-        locationRepository.create(room1);
-        locationRepository.create(room2);
-        locationRepository.create(room3);
-        locationRepository.create(garage);
+        HouseBuilder hb = new HouseBuilder();
+        House house = hb
+                .addRoom("room1")
+                .addRoom("room2")
+                .addRoom("room3")
+                .addGarage("garage1")
+                .addEmbedded("window1", "room1")
+                .addEmbedded("window2", "room1")
+                .addEmbedded("window3", "room2")
+                .addEmbedded("window4", "room2")
+                .setHouseName("SMART_HOUSE")
+                .build();
+
+        house.allocateEntity(p1, "room1");
+        house.allocateEntity(p2, "room2");
+        house.allocateEntity(p3, "room3");
+        house.allocateEntity(p4, "room4");
+        house.allocateEntity(b1, "window1");
+        house.allocateEntity(b2, "window2");
+        house.allocateEntity(b3, "window3");
+        house.allocateEntity(b4, "window4");
+        house.allocateEntity(f1, "room2");
+        house.allocateEntity(tv1, "room1");
+        house.allocateEntity(tv2, "room2");
+        house.allocateEntity(c1, "garage1");
+        houseRepository.create(house);
     }
 
 }

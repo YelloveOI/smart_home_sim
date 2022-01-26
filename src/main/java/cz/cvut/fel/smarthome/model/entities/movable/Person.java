@@ -3,6 +3,7 @@ package cz.cvut.fel.smarthome.model.entities.movable;
 import cz.cvut.fel.smarthome.model.entities.Order;
 import cz.cvut.fel.smarthome.model.event.Event;
 
+import java.util.Objects;
 import java.util.PriorityQueue;
 import java.util.Queue;
 
@@ -10,8 +11,8 @@ public class Person extends AbstractAlive {
 
     private final Queue<Event> receivedEvents;
 
-    public Person(String name, String assignedLocation) {
-        super("PERSON_" + name, assignedLocation);
+    public Person(String name) {
+        super("PERSON_" + name);
         receivedEvents = new PriorityQueue<>();
     }
 
@@ -23,36 +24,34 @@ public class Person extends AbstractAlive {
         return receivedEvents.poll();
     }
 
+    public String getCurrentActivity() {
+        return active.getCurrentActivity();
+    }
+
     @Override
     public Boolean order(Order order) {
-        if(active.getCurrentActivity() != "FREE") {
+        if(!Objects.equals(active.getCurrentActivity(), "FREE")) {
             return false;
         }
         switch(order) {
             case WORK -> {
-                locatable.setLocation("OUTSIDE");
-                active.setActivity("WORK", 20);
+                active.startActivity("WORK");
                 return true;
             }
             case SPORT -> {
-                locatable.setLocation("OUTSIDE");
-                active.setActivity("SPORT", 5);
+                active.startActivity("SPORT");
                 return true;
             }
             case PROCRASTINATE -> {
-                active.setActivity("PROCRASTINATE", 5);
+                active.startActivity("PROCRASTINATE");
                 return true;
             }
-            case BUSY_5 -> {
-                active.setActivity("PROCESS_EVENT", 5);
+            case PROCESS_EVENT -> {
+                active.startActivity("PROCESS_EVENT");
                 return true;
             }
-            case BUSY_10 -> {
-                active.setActivity("PROCESS_EVENT", 10);
-                return true;
-            }
-            case BUSY_25 -> {
-                active.setActivity("PROCESS_EVENT", 25);
+            case GET_FREE -> {
+                active.stopActivity();
                 return true;
             }
         }

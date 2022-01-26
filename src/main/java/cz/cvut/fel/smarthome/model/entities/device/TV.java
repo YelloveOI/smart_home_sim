@@ -50,10 +50,6 @@ public class TV extends AbstractUsableDevice {
             case PLAY -> {
                 if(Objects.equals(currentState,"IDLE")) {
                     usable.use();
-                    if(usable.isBroken()) {
-                        currentState = "BROKEN";
-                        return false;
-                    }
                     currentState = "PLAYING";
                     return true;
                 }
@@ -61,10 +57,6 @@ public class TV extends AbstractUsableDevice {
             case STOP -> {
                 if(Objects.equals(currentState,"PLAYING")) {
                     usable.use();
-                    if(usable.isBroken()) {
-                        currentState = "BROKEN";
-                        return false;
-                    }
                     currentState = "IDLE";
                     return true;
                 }

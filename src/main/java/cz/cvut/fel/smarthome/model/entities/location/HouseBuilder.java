@@ -1,11 +1,9 @@
 package cz.cvut.fel.smarthome.model.entities.location;
 
+import cz.cvut.fel.smarthome.model.entities.basic.AbstractEntity;
 import cz.cvut.fel.smarthome.model.exception.ConfigurationException;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Objects;
-import java.util.Set;
+import java.util.*;
 
 public class HouseBuilder {
 
@@ -15,14 +13,21 @@ public class HouseBuilder {
     private Integer embeddedQuantity;
     private Set<Location> locations;
     private Map<Location, String> embeddedMap;
+    private Map<AbstractEntity, String> preferredLocations;
 
     public HouseBuilder() {
-        this.locations = Set.of(new Location("OUTSIDE", LocationType.OUTSIDE));
+        this.locations = new HashSet<>();
         this.embeddedMap = new HashMap<>();
+        this.preferredLocations = new HashMap<>();
         this.roomQuantity = 0;
         this.garageQuantity = 0;
         this.embeddedQuantity = 0;
         this.houseName = "HOUSE_SMART";
+        this.locations.add(new Location("OUTSIDE", LocationType.OUTSIDE));
+    }
+
+    public void addPreferredLocation(AbstractEntity entity, String locationName) {
+        preferredLocations.put(entity, locationName);
     }
 
     public HouseBuilder setHouseName(String houseName) {
@@ -30,7 +35,7 @@ public class HouseBuilder {
         return this;
     }
 
-    public HouseBuilder addRoom(String name, Integer floorNumber) {
+    public HouseBuilder addRoom(String name) {
         roomQuantity++;
         locations.add(new Location("ROOM_" + name, LocationType.ROOM));
         return this;
@@ -62,7 +67,17 @@ public class HouseBuilder {
             }
         }
 
-        return new House(houseName, roomQuantity, garageQuantity, embeddedQuantity, embeddedMap, locations);
+        for(String s : preferredLocations.values()) {
+            if(
+                    locations.stream()
+                            .map(Location::getId)
+                            .noneMatch(v -> v.contains(s))
+            ) {
+                throw new ConfigurationException("Bad preferred location for some entity");
+            }
+        }
+
+        return new House(houseName, roomQuantity, garageQuantity, embeddedQuantity, embeddedMap, locations, preferredLocations);
     }
 
 }
