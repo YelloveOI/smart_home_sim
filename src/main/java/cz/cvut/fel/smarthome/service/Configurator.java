@@ -1,5 +1,7 @@
 package cz.cvut.fel.smarthome.service;
 
+import cz.cvut.fel.smarthome.model.entities.auxiliary.Car;
+import cz.cvut.fel.smarthome.model.entities.auxiliary.SportInventory;
 import cz.cvut.fel.smarthome.model.entities.device.Blind;
 import cz.cvut.fel.smarthome.model.entities.device.DaylightSensor;
 import cz.cvut.fel.smarthome.model.entities.device.Fridge;
@@ -26,6 +28,8 @@ public class Configurator {
     private StorageDeviceRepository storageDeviceRepository;
     @Inject
     private UsableDeviceRepository usableDeviceRepository;
+    @Inject
+    private AuxiliaryRepository auxiliaryRepository;
 
     public void config1() {
         Person p1 = new Person("Ivan", "room1");
@@ -36,15 +40,6 @@ public class Configurator {
         aliveRepository.create(p2);
         aliveRepository.create(p3);
         aliveRepository.create(p4);
-
-        Location room1 = new Location("room1", LocationType.ROOM);
-        Location room2 = new Location("room2", LocationType.ROOM);
-        Location room3 = new Location("room3", LocationType.ROOM);
-        Location garage = new Location("garage", LocationType.GARAGE);
-        locationRepository.create(room1);
-        locationRepository.create(room2);
-        locationRepository.create(room3);
-        locationRepository.create(garage);
 
         House house = new House("HOUSE", 2, 3, 1, 0);
         houseRepository.create(house);
@@ -67,6 +62,34 @@ public class Configurator {
         TV tv2 = new TV("tv2", "room2", 9.5);
         usableDeviceRepository.create(tv1);
         usableDeviceRepository.create(tv2);
+
+        Car c1 = new Car("c1", "garage", 100);
+        SportInventory bike = new SportInventory("bike", "room2", 50);
+        auxiliaryRepository.create(bike);
+        auxiliaryRepository.create(c1);
+
+        Location room1 = new Location("room1", LocationType.ROOM);
+        Location room2 = new Location("room2", LocationType.ROOM);
+        Location room3 = new Location("room3", LocationType.ROOM);
+        Location garage = new Location("garage", LocationType.GARAGE);
+        room1.addEntity(p1);
+        room1.addEntity(p4);
+        room1.addEntity(b1);
+        room1.addEntity(b2);
+        room1.addEntity(b3);
+        room1.addEntity(b4);
+        room1.addEntity(ds1);
+        room1.addEntity(tv1);
+        room2.addEntity(p2);
+        room2.addEntity(bike);
+        room2.addEntity(f1);
+        room2.addEntity(tv2);
+        room3.addEntity(p3);
+        garage.addEntity(c1);
+        locationRepository.create(room1);
+        locationRepository.create(room2);
+        locationRepository.create(room3);
+        locationRepository.create(garage);
     }
 
 }
