@@ -33,7 +33,7 @@ public abstract class AbstractSimpleDevice extends AbstractEntity<String> {
     public String getData() {
         StringBuilder sb = new StringBuilder();
         sb
-                .append("> Simple Device: ")
+                .append("> Device: ")
                 .append(id)
                 .append("\n\t")
                 .append(locatable)

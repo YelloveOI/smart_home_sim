@@ -19,8 +19,8 @@ public class Person extends AbstractAlive {
         receivedEvents.add(event);
     }
 
-    public Boolean isEventQueueEmpty() {
-        return receivedEvents.isEmpty();
+    public Event getEvent() {
+        return receivedEvents.poll();
     }
 
     @Override

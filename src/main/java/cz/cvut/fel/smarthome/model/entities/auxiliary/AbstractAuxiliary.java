@@ -11,15 +11,11 @@ public abstract class AbstractAuxiliary extends AbstractEntity<String> {
 
     protected Boolean isAvailable;
 
-    public AbstractAuxiliary(String name, String location, Integer durability) {
-        super(name);
-        this.usable = new Usable(durability);
-        this.locatable = new Locatable(location);
+    public AbstractAuxiliary(String s, Usable usable, Locatable locatable) {
+        super(s);
+        this.usable = usable;
+        this.locatable = locatable;
         this.isAvailable = true;
-    }
-
-    public Boolean isAvailable() {
-        return isAvailable;
     }
 
     public Boolean use() {
@@ -43,5 +39,22 @@ public abstract class AbstractAuxiliary extends AbstractEntity<String> {
     }
 
     public abstract void repair();
+
+    public String getData() {
+        StringBuilder sb = new StringBuilder();
+        sb
+                .append("> Auxiliary")
+                .append("\n\t")
+                .append("State:\n\t");
+        if(isAvailable) {
+            sb.append("AVAILABLE");
+        } else {
+            sb.append("NOT_AVAILABLE");
+        }
+        sb.append("\n\t");
+        sb.append(usable);
+
+        return sb.toString();
+    }
 
 }

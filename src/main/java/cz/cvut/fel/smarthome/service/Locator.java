@@ -24,12 +24,5 @@ public class Locator {
         }
     }
 
-    public void delocate(ILocateable locatable) {
-        Optional<Location> location = locationRepository.find(locatable.getLocation());
-        if(location.isPresent()) {
-            location.get().removeLocatable(locatable);
-            locationRepository.update(location.get());
-        }
-    }
 
 }
