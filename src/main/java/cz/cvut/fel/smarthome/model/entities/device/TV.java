@@ -27,7 +27,7 @@ public class TV extends AbstractUsableDevice {
     }
 
     @Override
-    Boolean command(Command command) {
+    public Boolean command(Command command) {
 
         if(usable.isBroken()) {
             currentState = "BROKEN";

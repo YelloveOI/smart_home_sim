@@ -1,6 +1,6 @@
 package cz.cvut.fel.smarthome.model.entities.movable;
 
-import cz.cvut.fel.smarthome.model.entities.AbstractEntity;
+import cz.cvut.fel.smarthome.model.entities.basic.AbstractEntity;
 import cz.cvut.fel.smarthome.model.entities.basic.Active;
 import cz.cvut.fel.smarthome.model.entities.basic.Locatable;
 
@@ -8,8 +8,8 @@ import java.util.Objects;
 
 public abstract class Alive extends AbstractEntity<String> {
 
-    private final Active active;
-    private final Locatable locatable;
+    protected final Active active;
+    protected final Locatable locatable;
 
     public Alive(String name, String assignedLocation) {
         super(name);

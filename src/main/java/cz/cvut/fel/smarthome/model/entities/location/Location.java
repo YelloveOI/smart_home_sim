@@ -1,6 +1,6 @@
 package cz.cvut.fel.smarthome.model.entities.location;
 
-import cz.cvut.fel.smarthome.model.entities.AbstractEntity;
+import cz.cvut.fel.smarthome.model.entities.basic.AbstractEntity;
 import cz.cvut.fel.smarthome.model.entities.basic.interfaces.ILocateable;
 
 import java.util.HashSet;

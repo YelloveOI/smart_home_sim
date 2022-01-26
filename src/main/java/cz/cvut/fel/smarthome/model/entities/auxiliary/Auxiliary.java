@@ -1,6 +1,6 @@
 package cz.cvut.fel.smarthome.model.entities.auxiliary;
 
-import cz.cvut.fel.smarthome.model.entities.AbstractEntity;
+import cz.cvut.fel.smarthome.model.entities.basic.AbstractEntity;
 import cz.cvut.fel.smarthome.model.entities.basic.Locatable;
 import cz.cvut.fel.smarthome.model.entities.basic.Usable;
 

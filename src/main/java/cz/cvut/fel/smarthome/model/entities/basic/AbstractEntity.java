@@ -1,4 +1,4 @@
-package cz.cvut.fel.smarthome.model.entities;
+package cz.cvut.fel.smarthome.model.entities.basic;
 
 import java.util.Objects;
 

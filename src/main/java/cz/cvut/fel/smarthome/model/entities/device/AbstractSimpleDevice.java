@@ -1,11 +1,9 @@
 package cz.cvut.fel.smarthome.model.entities.device;
 
-import cz.cvut.fel.smarthome.model.entities.AbstractEntity;
+import cz.cvut.fel.smarthome.model.entities.basic.AbstractEntity;
 import cz.cvut.fel.smarthome.model.entities.Command;
 import cz.cvut.fel.smarthome.model.entities.basic.Consumer;
 import cz.cvut.fel.smarthome.model.entities.basic.Locatable;
-import cz.cvut.fel.smarthome.model.entities.basic.interfaces.IConsumer;
-import cz.cvut.fel.smarthome.model.entities.basic.interfaces.ILocateable;
 
 import java.util.Set;
 
@@ -25,7 +23,11 @@ public abstract class AbstractSimpleDevice extends AbstractEntity<String> {
         this.locatable = locatable;
     }
 
-    abstract Boolean command(Command command);
+    abstract public Boolean command(Command command);
+
+    public String getCurrentState() {
+        return currentState;
+    }
 
     //TODO data as class
     public String getData() {

@@ -1,6 +1,6 @@
 package cz.cvut.fel.smarthome.model.event;
 
-import cz.cvut.fel.smarthome.model.entities.AbstractEntity;
+import cz.cvut.fel.smarthome.model.entities.basic.AbstractEntity;
 
 public class ReportEvent<T extends AbstractEntity> extends Event<T> {
 

@@ -1,6 +1,6 @@
 package cz.cvut.fel.smarthome.repository;
 
-import cz.cvut.fel.smarthome.model.entities.AbstractEntity;
+import cz.cvut.fel.smarthome.model.entities.basic.AbstractEntity;
 import cz.cvut.fel.smarthome.repository.interfaces.CrudRepository;
 
 import java.util.Collection;

@@ -1,10 +1,10 @@
 package cz.cvut.fel.smarthome.model.event;
 
-import cz.cvut.fel.smarthome.model.entities.AbstractEntity;
+import cz.cvut.fel.smarthome.model.entities.basic.AbstractEntity;
 
 import java.time.LocalDateTime;
 
-public abstract class Event<T extends AbstractEntity> {
+public abstract class Event<T extends AbstractEntity<String>> implements Comparable<Event> {
 
     private final T sender;
     private final LocalDateTime date;
