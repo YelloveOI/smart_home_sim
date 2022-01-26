@@ -1,27 +1,15 @@
-package cz.cvut.fel.smarthome.model.entities.movable;
+package cz.cvut.fel.smarthome.model.entities.alive;
 
 import cz.cvut.fel.smarthome.model.entities.Order;
-import cz.cvut.fel.smarthome.model.event.Event;
 
 import java.util.Objects;
 import java.util.PriorityQueue;
-import java.util.Queue;
 
 public class Person extends AbstractAlive {
-
-    private final Queue<Event> receivedEvents;
 
     public Person(String name) {
         super("PERSON_" + name);
         receivedEvents = new PriorityQueue<>();
-    }
-
-    public void addEvent(Event event) {
-        receivedEvents.add(event);
-    }
-
-    public Event getEvent() {
-        return receivedEvents.poll();
     }
 
     public String getCurrentActivity() {

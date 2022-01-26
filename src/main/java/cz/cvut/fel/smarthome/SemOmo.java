@@ -1,6 +1,5 @@
 package cz.cvut.fel.smarthome;
 
-import cz.cvut.fel.smarthome.service.Configurator;
 import cz.cvut.fel.smarthome.simpleDI.DICompositionPoint;
 import cz.cvut.fel.smarthome.simpleDI.context.ApplicationContext;
 import lombok.SneakyThrows;

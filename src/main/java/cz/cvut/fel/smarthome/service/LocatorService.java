@@ -5,7 +5,7 @@ import cz.cvut.fel.smarthome.repository.interfaces.HouseRepository;
 import cz.cvut.fel.smarthome.simpleDI.annotation.Inject;
 import javassist.NotFoundException;
 
-public class Locator {
+public class LocatorService {
 
     //TODO report events
     @Inject

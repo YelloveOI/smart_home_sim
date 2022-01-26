@@ -13,7 +13,7 @@ public class UsableDeviceService {
     @Inject
     private UsableDeviceRepository usableDeviceRepository;
     @Inject
-    private Locator locator;
+    private LocatorService locatorService;
 
     private AbstractUsableDevice getDevice(String deviceID) throws NotFoundException {
         Optional<AbstractUsableDevice> device = usableDeviceRepository.find(deviceID);

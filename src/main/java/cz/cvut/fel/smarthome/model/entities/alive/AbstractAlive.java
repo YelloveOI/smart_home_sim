@@ -1,4 +1,4 @@
-package cz.cvut.fel.smarthome.model.entities.movable;
+package cz.cvut.fel.smarthome.model.entities.alive;
 
 import cz.cvut.fel.smarthome.model.entities.Order;
 import cz.cvut.fel.smarthome.model.entities.basic.AbstractEntity;

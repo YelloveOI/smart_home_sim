@@ -1,6 +1,6 @@
 package cz.cvut.fel.smarthome.model.action;
 
-import cz.cvut.fel.smarthome.model.entities.movable.AbstractAlive;
+import cz.cvut.fel.smarthome.model.entities.alive.AbstractAlive;
 import cz.cvut.fel.smarthome.model.entities.basic.interfaces.IUsable;
 
 public class MisuseAction extends Action<IUsable> {

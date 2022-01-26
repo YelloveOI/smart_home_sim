@@ -12,7 +12,7 @@ public class AuxiliaryService {
     @Inject
     private AuxiliaryRepository auxiliaryRepository;
     @Inject
-    private Locator locator;
+    private LocatorService locatorService;
 
     private AbstractAuxiliary getAuxiliary(String auxiliaryID) throws NotFoundException {
         Optional<AbstractAuxiliary> auxiliary = auxiliaryRepository.find(auxiliaryID);

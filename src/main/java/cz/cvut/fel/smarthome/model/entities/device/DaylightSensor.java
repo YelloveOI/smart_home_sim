@@ -11,7 +11,7 @@ public class DaylightSensor extends AbstractSimpleDevice {
 
     public DaylightSensor(String id, Double activeConsumption) {
         super(
-                "SENSOR_" + id,
+                "SENSOR_DL_" + id,
                 Set.of("OFF", "LIGHT", "DARK"),
                 new Consumer(activeConsumption, "W"),
                 "OFF"

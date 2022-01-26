@@ -1,4 +1,4 @@
-package cz.cvut.fel.smarthome.service;
+package cz.cvut.fel.smarthome;
 
 import cz.cvut.fel.smarthome.model.entities.auxiliary.Car;
 import cz.cvut.fel.smarthome.model.entities.auxiliary.SportInventory;
@@ -8,9 +8,7 @@ import cz.cvut.fel.smarthome.model.entities.device.Fridge;
 import cz.cvut.fel.smarthome.model.entities.device.TV;
 import cz.cvut.fel.smarthome.model.entities.location.House;
 import cz.cvut.fel.smarthome.model.entities.location.HouseBuilder;
-import cz.cvut.fel.smarthome.model.entities.location.Location;
-import cz.cvut.fel.smarthome.model.entities.location.LocationType;
-import cz.cvut.fel.smarthome.model.entities.movable.Person;
+import cz.cvut.fel.smarthome.model.entities.alive.Person;
 import cz.cvut.fel.smarthome.repository.interfaces.*;
 import cz.cvut.fel.smarthome.simpleDI.annotation.Inject;
 

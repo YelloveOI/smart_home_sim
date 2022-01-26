@@ -1,7 +1,7 @@
 package cz.cvut.fel.smarthome.model.action;
 
 
-import cz.cvut.fel.smarthome.model.entities.movable.AbstractAlive;
+import cz.cvut.fel.smarthome.model.entities.alive.AbstractAlive;
 
 public abstract class Action<T> {
 

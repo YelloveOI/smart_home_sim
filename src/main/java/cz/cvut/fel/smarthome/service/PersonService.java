@@ -1,11 +1,7 @@
 package cz.cvut.fel.smarthome.service;
 
-import cz.cvut.fel.smarthome.model.entities.Command;
 import cz.cvut.fel.smarthome.model.entities.Order;
-import cz.cvut.fel.smarthome.model.entities.auxiliary.AbstractAuxiliary;
-import cz.cvut.fel.smarthome.model.entities.device.AbstractUsableDevice;
-import cz.cvut.fel.smarthome.model.entities.movable.AbstractAlive;
-import cz.cvut.fel.smarthome.model.entities.movable.Person;
+import cz.cvut.fel.smarthome.model.entities.alive.AbstractAlive;
 import cz.cvut.fel.smarthome.repository.interfaces.*;
 import cz.cvut.fel.smarthome.simpleDI.annotation.Inject;
 import javassist.NotFoundException;
@@ -17,7 +13,7 @@ public class PersonService {
     @Inject
     private AliveRepository aliveRepository;
     @Inject
-    private Locator locator;
+    private LocatorService locatorService;
 
     private AbstractAlive getPerson(String personID) throws NotFoundException {
         Optional<AbstractAlive> person = aliveRepository.find(personID);
@@ -32,14 +28,14 @@ public class PersonService {
     public Boolean goWork(String personID) throws NotFoundException {
         AbstractAlive person = getPerson(personID);
 
-        locator.deallocate(person);
+        locatorService.deallocate(person);
         return person.order(Order.WORK);
     }
 
     public Boolean goSport(String personID) throws NotFoundException {
         AbstractAlive person = getPerson(personID);
 
-        locator.deallocate(person);
+        locatorService.deallocate(person);
         return person.order(Order.SPORT);
     }
 
@@ -51,13 +47,13 @@ public class PersonService {
 
     public void move(String personID, String locationName) throws NotFoundException {
         AbstractAlive person = getPerson(personID);
-        locator.allocate(person, locationName);
+        locatorService.allocate(person, locationName);
     }
 
     public void stopActivity(String personID) throws NotFoundException {
         AbstractAlive person = getPerson(personID);
         person.order(Order.GET_FREE);
-        locator.locateBack(person);
+        locatorService.locateBack(person);
     }
 
 }
