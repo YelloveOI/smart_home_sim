@@ -1,34 +1,23 @@
 package cz.cvut.fel.smarthome.repository;
 
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
-import cz.cvut.fel.smarthome.model.entities.auxiliary.Auxiliary;
-import cz.cvut.fel.smarthome.model.entities.auxiliary.state.AvailableAuxiliaryState;
+import cz.cvut.fel.smarthome.model.entities.auxiliary.AbstractAuxiliary;
 import cz.cvut.fel.smarthome.repository.interfaces.AuxiliaryRepository;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.lang.reflect.Type;
-import java.util.*;
+import java.util.Objects;
+import java.util.Optional;
+import java.util.Random;
 
-public class AuxiliaryRepositoryImpl extends AbstractJSONRepo<String, Auxiliary> implements AuxiliaryRepository {
-
-    public AuxiliaryRepositoryImpl() throws FileNotFoundException {
-        Gson gson = new Gson();
-        BufferedReader br = new BufferedReader(new FileReader("src/main/resources/auxiliary/1.json"));
-        Type setType = new TypeToken<Set<Auxiliary>>() {}.getType();
-        pool = new HashSet<Auxiliary>(gson.fromJson(br, setType));
-        for(Auxiliary a : pool) {
-            a.setState(new AvailableAuxiliaryState(a));
-        }
-    }
+public class AuxiliaryRepositoryImpl extends AbstractRepo<String, AbstractAuxiliary> implements AuxiliaryRepository {
 
     @Override
-    public Optional<Auxiliary> findFirstByDestinyAndByAvailable(AuxiliaryType type) {
+    public Optional<AbstractAuxiliary> findRandomCarByIsAvailable() {
+        Random rnd = new Random();
+
         return pool.stream()
-                .filter(v -> v.getDestiny().equals(type))
-                .filter(Auxiliary::isAvailable)
-                .findFirst();
+                .filter(v -> v.getId().contains("CAR_"))
+                .filter(AbstractAuxiliary::isAvailable).min((v1, v2) -> {
+                    if (Objects.equals(v1, v2)) return 0;
+                    return (rnd.nextBoolean()) ? 1 : -1;
+                });
     }
 }

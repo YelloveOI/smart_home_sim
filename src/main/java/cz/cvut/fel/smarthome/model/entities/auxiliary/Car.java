@@ -1,9 +1,9 @@
 package cz.cvut.fel.smarthome.model.entities.auxiliary;
 
-public class Car extends Auxiliary {
+public class Car extends AbstractAuxiliary {
 
     public Car(String name, String location, Integer durability) {
-        super(name, location, durability);
+        super("CAR_" + name, location, durability);
     }
 
     @Override

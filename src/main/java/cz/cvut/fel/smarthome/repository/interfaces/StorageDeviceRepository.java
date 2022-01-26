@@ -6,6 +6,4 @@ import java.util.Optional;
 
 public interface StorageDeviceRepository extends CrudRepository<String, AbstractStorageDevice> {
 
-    Optional<AbstractStorageDevice> findRandomByStorageDeviceType(StorageDeviceType storageDeviceType);
-
 }

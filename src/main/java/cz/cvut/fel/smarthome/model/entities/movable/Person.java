@@ -6,12 +6,12 @@ import cz.cvut.fel.smarthome.model.event.Event;
 import java.util.PriorityQueue;
 import java.util.Queue;
 
-public class Person extends Alive {
+public class Person extends AbstractAlive {
 
     private final Queue<Event> receivedEvents;
 
     public Person(String name, String assignedLocation) {
-        super(name, assignedLocation);
+        super("PERSON_" + name, assignedLocation);
         receivedEvents = new PriorityQueue<>();
     }
 
@@ -23,6 +23,7 @@ public class Person extends Alive {
         return receivedEvents.isEmpty();
     }
 
+    @Override
     public Boolean order(Order order) {
         if(active.getCurrentActivity() != "FREE") {
             return false;

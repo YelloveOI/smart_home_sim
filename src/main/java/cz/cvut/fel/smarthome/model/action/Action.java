@@ -1,8 +1,7 @@
 package cz.cvut.fel.smarthome.model.action;
 
 
-import cz.cvut.fel.smarthome.model.entities.movable.Alive;
-import cz.cvut.fel.smarthome.model.entities.pet.Pet;
+import cz.cvut.fel.smarthome.model.entities.movable.AbstractAlive;
 
 public abstract class Action<T> {
 
@@ -12,8 +11,8 @@ public abstract class Action<T> {
         this.subject = subject;
     }
 
-    abstract public void visit(Alive actor);
+    abstract public void visit(AbstractAlive actor);
 
-    abstract public void visit(Pet actor);
+//    abstract public void visit(Pet actor);
 
 }

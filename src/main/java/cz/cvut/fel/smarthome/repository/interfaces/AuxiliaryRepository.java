@@ -1,11 +1,11 @@
 package cz.cvut.fel.smarthome.repository.interfaces;
 
-import cz.cvut.fel.smarthome.model.entities.auxiliary.Auxiliary;
+import cz.cvut.fel.smarthome.model.entities.auxiliary.AbstractAuxiliary;
 
 import java.util.Optional;
 
-public interface AuxiliaryRepository extends CrudRepository<String, Auxiliary> {
+public interface AuxiliaryRepository extends CrudRepository<String, AbstractAuxiliary> {
 
-    Optional<Auxiliary> findFirstByDestinyAndByAvailable(AuxiliaryType type);
+    Optional<AbstractAuxiliary> findRandomCarByIsAvailable();
 
 }

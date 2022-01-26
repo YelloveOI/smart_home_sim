@@ -16,18 +16,18 @@ public class Locator {
     public Locator() {
     }
 
-    public void locate(ILocateable locateable) {
-        Optional<Location> location = locationRepository.find(locateable.getLocation());
+    public void locate(ILocateable locatable) {
+        Optional<Location> location = locationRepository.find(locatable.getLocation());
         if(location.isPresent()) {
-            location.get().addLocatable(locateable);
+            location.get().addLocatable(locatable);
             locationRepository.update(location.get());
         }
     }
 
-    public void delocate(ILocateable locateable) {
-        Optional<Location> location = locationRepository.find(locateable.getLocation());
+    public void delocate(ILocateable locatable) {
+        Optional<Location> location = locationRepository.find(locatable.getLocation());
         if(location.isPresent()) {
-            location.get().removeLocatable(locateable);
+            location.get().removeLocatable(locatable);
             locationRepository.update(location.get());
         }
     }

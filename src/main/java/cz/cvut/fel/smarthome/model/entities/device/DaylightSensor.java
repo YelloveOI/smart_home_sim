@@ -13,11 +13,11 @@ import java.util.Set;
 
 public class DaylightSensor extends AbstractSimpleDevice {
 
-    public DaylightSensor(String id, String location) {
+    public DaylightSensor(String id, String location, Double activeConsumption) {
         super(
                 "SENSOR_" + id,
                 Set.of("OFF", "LIGHT", "DARK"),
-                new Consumer(5.2, "W"),
+                new Consumer(activeConsumption, "W"),
                 "OFF",
                 new Locatable(location)
         );

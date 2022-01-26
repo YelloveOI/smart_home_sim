@@ -1,10 +1,11 @@
 package cz.cvut.fel.smarthome.service;
 
-import cz.cvut.fel.smarthome.model.entities.device.AbstractStorageDevice;
-import cz.cvut.fel.smarthome.model.entities.movable.Alive;
-import cz.cvut.fel.smarthome.model.entities.auxiliary.Auxiliary;
-import cz.cvut.fel.smarthome.model.entities.pet.Pet;
-import cz.cvut.fel.smarthome.model.entities.basic.interfaces.ILocateable;
+import cz.cvut.fel.smarthome.model.entities.Command;
+import cz.cvut.fel.smarthome.model.entities.Order;
+import cz.cvut.fel.smarthome.model.entities.auxiliary.AbstractAuxiliary;
+import cz.cvut.fel.smarthome.model.entities.device.AbstractUsableDevice;
+import cz.cvut.fel.smarthome.model.entities.movable.AbstractAlive;
+import cz.cvut.fel.smarthome.model.entities.movable.Person;
 import cz.cvut.fel.smarthome.repository.interfaces.*;
 import cz.cvut.fel.smarthome.simpleDI.annotation.Inject;
 
@@ -13,131 +14,71 @@ import java.util.Optional;
 public class PersonService {
 
     @Inject
-    private Locator locator;
+    private AliveRepository aliveRepository;
     @Inject
-    private AuxiliaryRepository auxiliaryRepo;
+    private StorageDeviceRepository storageDeviceRepository;
     @Inject
-    private DeviceRepository deviceRepo;
+    private UsableDeviceRepository usableDeviceRepository;
     @Inject
-    private PersonRepository personRepo;
+    private SimpleDeviceRepository simpleDeviceRepository;
     @Inject
-    private PetRepository petRepo;
-    @Inject
-    private StorageDeviceRepository storageRepo;
+    private AuxiliaryRepository auxiliaryRepository;
 
     public PersonService() {
     }
 
-    public void goSport(String personName) {
-        Optional<Alive> tempPer = personRepo.find(personName);
-        Optional<Auxiliary> tempAux = auxiliaryRepo.findFirstByDestinyAndByAvailable(AuxiliaryType.SPORT);
+    public Boolean goWork(String personName, String carName) {
+        Optional<AbstractAlive> person = aliveRepository.find(personName);
+        Optional<AbstractAuxiliary> car = auxiliaryRepository.find(carName);
 
-        if(tempAux.isPresent() && tempPer.isPresent()) {
-            if(!tempPer.get().isFree()) {
-                getFree(personName);
-            }
-            tempPer.get().becomeBusy(tempAux.get());
-            tempAux.get().startUse();
-
-            locator.delocate(tempPer.get());
-            locator.delocate(tempAux.get());
-
-            tempPer.get().setLocation("OUTSIDE");
-            tempAux.get().setLocation("OUTSIDE");
-
-            locator.locate(tempAux.get());
-            locator.locate(tempPer.get());
-
-            auxiliaryRepo.update(tempAux.get());
-            personRepo.update(tempPer.get());
+        if(person.isEmpty() || car.isEmpty()) {
+            //TODO exception
+            return false;
         }
+
+        //TODO locator's job
+        person.get().order(Order.WORK);
+        car.get().use();
+
+        return true;
     }
 
-    public void goWork(String personName) {
-        Optional<Alive> tempPer = personRepo.find(personName);
-        Optional<Auxiliary> tempAux = auxiliaryRepo.findFirstByDestinyAndByAvailable(AuxiliaryType.WORK);
+    public Boolean goSport(String personName, String sportInventoryName) {
+        Optional<AbstractAlive> person = aliveRepository.find(personName);
+        Optional<AbstractAuxiliary> sportInventory = auxiliaryRepository.find(sportInventoryName);
 
-        if(tempAux.isPresent() && tempPer.isPresent()) {
-            if(!tempPer.get().isFree()) {
-                getFree(personName);
-            }
-            tempPer.get().becomeBusy(tempAux.get());
-            tempAux.get().startUse();
-
-            locator.delocate(tempPer.get());
-            locator.delocate(tempAux.get());
-
-            tempPer.get().setLocation("OUTSIDE");
-            tempAux.get().setLocation("OUTSIDE");
-
-            locator.locate(tempAux.get());
-            locator.locate(tempPer.get());
-
-            auxiliaryRepo.update(tempAux.get());
-            personRepo.update(tempPer.get());
+        if(person.isEmpty() || sportInventory.isEmpty()) {
+            //TODO exception
+            return false;
         }
+
+        //TODO locator's job
+        person.get().order(Order.SPORT);
+        sportInventory.get().use();
+
+        return true;
     }
 
-    public void goProcrastinate(String personName) {
-        Optional<Alive> tempPer = personRepo.find(personName);
-        Optional<DeviceOLD> tempDev = deviceRepo.findRandomByIsAvailable();
+    public Boolean goProcrastinate(String personName, String usableDeviceName) {
+        Optional<AbstractAlive> person = aliveRepository.find(personName);
+        Optional<AbstractUsableDevice> usableDevice = usableDeviceRepository.find(usableDeviceName);
 
-        if(tempPer.isPresent() && tempDev.isPresent()) {
-            if(!tempPer.get().isFree()) {
-                getFree(personName);
-            }
-            tempPer.get().becomeBusy(tempDev.get());
-            tempDev.get().startUse();
-
-            locator.delocate(tempPer.get());
-            tempPer.get().setLocation(tempDev.get().getLocation());
-            locator.locate(tempPer.get());
-
-            deviceRepo.update(tempDev.get());
-            personRepo.update(tempPer.get());
+        if(person.isEmpty() || usableDevice.isEmpty()) {
+            //TODO exception
+            return false;
         }
+
+        //TODO locator's job
+        person.get().order(Order.BUSY_5);
+        usableDevice.get().command(Command.ON);
+        usableDevice.get().command(Command.PLAY);
+
+        return true;
     }
 
-    public void getFree(String personName) {
-        Optional<Alive> tempPer = personRepo.find(personName);
-
-        if(tempPer.isPresent()) {
-            locator.delocate(tempPer.get());
-            locator.delocate((ILocateable) tempPer.get().getInUse());
-
-            tempPer.get().getInUse().stopUse();
-            tempPer.get().setLocation("HALL");
-
-            locator.locate(tempPer.get());
-            locator.locate((ILocateable) tempPer.get().getInUse());
-
-            tempPer.get().getFree();
-
-            personRepo.update(tempPer.get());
-        }
-    }
-
-    public void feedPet(String petName)  {
-        Optional<Alive> tempPer = personRepo.findFirstByIsFree();
-        Optional<Pet> tempPet = petRepo.find(petName);
-
-        if(tempPer.isPresent() && tempPet.isPresent()) {
-            Optional<AbstractStorageDevice> foodStorage = storageRepo.findRandomByStorageDeviceType(StorageDeviceType.FRIDGE);
-
-            if(foodStorage.isPresent()) {
-                locator.delocate(tempPer.get());
-                tempPer.get().setLocation(foodStorage.get().getLocation());
-                locator.locate(tempPer.get());
-                if(foodStorage.get().get()) {
-                    locator.delocate(tempPer.get());
-                    tempPer.get().setLocation(tempPet.get().getLocation());
-                    locator.locate(tempPer.get());
-                    tempPet.get().feed();
-                } else {
-                    //TODO go to shop;
-                }
-            }
-        }
+    public Boolean repairUsable(String personName, String usableName) {
+        //TODO
+        return false;
     }
 
 }

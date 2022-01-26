@@ -44,4 +44,5 @@ public abstract class AbstractSimpleDevice extends AbstractEntity<String> {
 
         return sb.toString();
     }
+
 }
