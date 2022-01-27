@@ -1,5 +1,6 @@
 package cz.cvut.fel.smarthome;
 
+import cz.cvut.fel.smarthome.controller.PersonRoutineController;
 import cz.cvut.fel.smarthome.simpleDI.DICompositionPoint;
 import cz.cvut.fel.smarthome.simpleDI.context.ApplicationContext;
 import lombok.SneakyThrows;
@@ -13,6 +14,9 @@ public class SemOmo {
 
         Configurator configurator = context.getBean(Configurator.class);
         configurator.config1();
+
+//        PersonRoutineController personRoutineController = context.getBean(PersonRoutineController.class);
+//        personRoutineController.goProcrastinate("SMART_HOUSE", "PERSON_Ivan", "TV_tv1");
 
     }
 }

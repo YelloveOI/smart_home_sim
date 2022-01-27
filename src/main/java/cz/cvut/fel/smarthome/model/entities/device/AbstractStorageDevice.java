@@ -7,7 +7,6 @@ import cz.cvut.fel.smarthome.model.entities.basic.interfaces.IStorage;
 
 import java.util.Set;
 
-//TODO нужен ли вообще storage как basic?
 public abstract class AbstractStorageDevice extends AbstractSimpleDevice implements IStorage {
 
     protected final Storage storage;

@@ -52,7 +52,7 @@ public class LocationService {
         repo.update(house);
     }
 
-    public String getLocation(String houseID, AbstractEntity entity) throws NotFoundException {
+    public String getLocationName(String houseID, AbstractEntity entity) throws NotFoundException {
         return getHouse(houseID).getLocation(entity);
     }
 
