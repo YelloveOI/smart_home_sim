@@ -9,8 +9,10 @@ import cz.cvut.fel.smarthome.model.repository.interfaces.StorageDeviceRepository
 import cz.cvut.fel.smarthome.model.repository.interfaces.UsableDeviceRepository;
 import cz.cvut.fel.smarthome.simpleDI.annotation.Inject;
 
+import java.util.Collection;
+import java.util.Set;
+
 public class SmartService {
-    //TODO
 
     @Inject
     private SimpleDeviceRepository simpleDeviceRepository;
@@ -20,50 +22,66 @@ public class SmartService {
     private UsableDeviceRepository usableDeviceRepository;
 
     public void closeBlinds() {
-        for(AbstractSimpleDevice a : simpleDeviceRepository.findAllByPredicate("BLIND_")) {
+        Set<AbstractSimpleDevice> devices = simpleDeviceRepository.findAllByPredicate("BLIND_");
+        for(AbstractSimpleDevice a : devices) {
             a.command(Command.C_CLOSE);
+            simpleDeviceRepository.update(a);
         }
     }
 
     public void openBlinds() {
-        for(AbstractSimpleDevice a : simpleDeviceRepository.findAllByPredicate("BLIND_")) {
+        Set<AbstractSimpleDevice> devices = simpleDeviceRepository.findAllByPredicate("BLIND_");
+        for(AbstractSimpleDevice a : devices) {
             a.command(Command.C_OPEN);
+            simpleDeviceRepository.update(a);
         }
     }
 
     public void turnOnAllSimpleDevices() {
-        for(AbstractSimpleDevice a : simpleDeviceRepository.findAll()) {
+        Collection<AbstractSimpleDevice> devices = simpleDeviceRepository.findAll();
+        for(AbstractSimpleDevice a : devices) {
             a.command(Command.C_ON);
+            simpleDeviceRepository.update(a);
         }
     }
 
     public void turnOffAllSimpleDevices() {
-        for(AbstractSimpleDevice a : simpleDeviceRepository.findAll()) {
+        Collection<AbstractSimpleDevice> devices = simpleDeviceRepository.findAll();
+        for(AbstractSimpleDevice a : devices) {
             a.command(Command.C_OFF);
+            simpleDeviceRepository.update(a);
         }
     }
 
     public void turnOnAllStorageDevices() {
-        for(AbstractStorageDevice a : storageDeviceRepository.findAll()) {
+        Collection<AbstractStorageDevice> devices = storageDeviceRepository.findAll();
+        for(AbstractStorageDevice a : devices) {
             a.command(Command.C_ON);
+            storageDeviceRepository.update(a);
         }
     }
 
     public void turnOffAllStorageDevices() {
-        for(AbstractStorageDevice a : storageDeviceRepository.findAll()) {
+        Collection<AbstractStorageDevice> devices = storageDeviceRepository.findAll();
+        for(AbstractStorageDevice a : devices) {
             a.command(Command.C_OFF);
+            storageDeviceRepository.update(a);
         }
     }
 
     public void turnOnAllUsableDevices() {
-        for(AbstractUsableDevice a : usableDeviceRepository.findAll()) {
+        Collection<AbstractUsableDevice> devices = usableDeviceRepository.findAll();
+        for(AbstractUsableDevice a : devices) {
             a.command(Command.C_ON);
+            usableDeviceRepository.update(a);
         }
     }
 
     public void turnOffAllUsableDevices() {
+        Collection<AbstractUsableDevice> devices = usableDeviceRepository.findAll();
         for(AbstractUsableDevice a : usableDeviceRepository.findAll()) {
             a.command(Command.C_OFF);
+            usableDeviceRepository.update(a);
         }
     }
 

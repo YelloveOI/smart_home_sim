@@ -23,12 +23,12 @@ public class SensorService {
         return sensor.get();
     }
 
-    public Boolean trigger(String sensorID) throws NotFoundException {
+    public void trigger(String sensorID) throws NotFoundException {
         AbstractSimpleDevice sensor = getSensor(sensorID);
-        Boolean result = sensor.command(Command.C_TRIGGER);
-        repo.update(sensor);
 
-        return result;
+        sensor.command(Command.C_TRIGGER);
+
+        repo.update(sensor);
     }
 
 }

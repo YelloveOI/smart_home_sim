@@ -41,6 +41,9 @@ public class DaylightSensor extends AbstractSimpleDevice {
                 }
             }
             case C_TRIGGER -> {
+                if(Objects.equals(currentState, State.S_OFF)) {
+                    return false;
+                }
                 if(Objects.equals(currentState, State.S_LIGHT)) {
                     currentState = State.S_DARK;
                     return true;

@@ -1,8 +1,11 @@
 package cz.cvut.fel.smarthome.controller;
 
+import cz.cvut.fel.smarthome.model.exception.IllegalUseException;
 import cz.cvut.fel.smarthome.model.service.*;
 import cz.cvut.fel.smarthome.simpleDI.annotation.Inject;
 import javassist.NotFoundException;
+
+import java.util.Arrays;
 
 public class PersonController {
 
@@ -16,8 +19,11 @@ public class PersonController {
         try {
             personService.goSport(personID);
             locationService.deallocate(houseID, personService.getPerson(personID));
-        } catch (NotFoundException e) {
-            System.out.println(e);
+        } catch (NotFoundException e1) {
+            System.out.println(e1);
+        } catch (IllegalUseException e2) {
+            System.out.println(e2);
+            e2.printStackTrace();
         }
     }
 
@@ -25,8 +31,11 @@ public class PersonController {
         try {
             personService.goWork(personID);
             locationService.deallocate(houseID, personService.getPerson(personID));
-        } catch (NotFoundException e) {
-            System.out.println(e);
+        } catch (NotFoundException e1) {
+            System.out.println(e1);
+        } catch (IllegalUseException e2) {
+            System.out.println(e2);
+            e2.printStackTrace();
         }
     }
 
@@ -38,8 +47,11 @@ public class PersonController {
                     personService.getPerson(personID),
                     newLocation
             );
-        } catch (NotFoundException e) {
-            System.out.println(e);
+        } catch (NotFoundException e1) {
+            System.out.println(e1);
+        } catch (IllegalUseException e2) {
+            System.out.println(e2);
+            e2.printStackTrace();
         }
     }
 
@@ -47,8 +59,11 @@ public class PersonController {
         try {
             personService.stopActivity(personID);
             locationService.locateBack(houseID, personService.getPerson(personID));
-        } catch (NotFoundException e) {
-            e.printStackTrace();
+        } catch (NotFoundException e1) {
+            System.out.println(e1);
+        } catch (IllegalUseException e2) {
+            System.out.println(e2);
+            e2.printStackTrace();
         }
     }
 

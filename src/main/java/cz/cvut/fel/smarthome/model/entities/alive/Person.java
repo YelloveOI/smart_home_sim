@@ -17,7 +17,7 @@ public class Person extends AbstractAlive {
 
     @Override
     public Boolean order(Order order) {
-        if(!Objects.equals(active.getCurrentActivity(), "FREE")) {
+        if(!(Objects.equals(active.getCurrentActivity(), "FREE") || order == Order.O_GET_FREE)) {
             return false;
         }
         switch(order) {

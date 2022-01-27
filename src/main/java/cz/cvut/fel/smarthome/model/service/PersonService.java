@@ -2,6 +2,7 @@ package cz.cvut.fel.smarthome.model.service;
 
 import cz.cvut.fel.smarthome.model.entities.Order;
 import cz.cvut.fel.smarthome.model.entities.alive.AbstractAlive;
+import cz.cvut.fel.smarthome.model.exception.IllegalUseException;
 import cz.cvut.fel.smarthome.model.repository.interfaces.*;
 import cz.cvut.fel.smarthome.simpleDI.annotation.Inject;
 import javassist.NotFoundException;
@@ -23,44 +24,55 @@ public class PersonService {
         return person.get();
     }
 
-    public Boolean goWork(String personID) throws NotFoundException {
+    public void goWork(String personID) throws NotFoundException, IllegalUseException {
         AbstractAlive person = getPerson(personID);
-        Boolean result = person.order(Order.O_WORK);
-        repo.update(person);
 
-        return result;
+        if(!person.order(Order.O_WORK)) {
+            throw new IllegalUseException("Person " + personID + "is busy");
+        }
+
+        repo.update(person);
     }
 
-    public Boolean goSport(String personID) throws NotFoundException {
+    public void goSport(String personID) throws NotFoundException, IllegalUseException {
         AbstractAlive person = getPerson(personID);
-        Boolean result = person.order(Order.O_SPORT);
-        repo.update(person);
 
-        return result;
+        if(!person.order(Order.O_SPORT)) {
+            throw new IllegalUseException("Person " + personID + "is busy");
+        }
+
+        repo.update(person);
     }
 
-    public Boolean goProcrastinate(String personID) throws NotFoundException {
+    public void goProcrastinate(String personID) throws NotFoundException, IllegalUseException {
         AbstractAlive person = getPerson(personID);
-        Boolean result = person.order(Order.O_PROCRASTINATE);
-        repo.update(person);
 
-        return result;
+       if(!person.order(Order.O_PROCRASTINATE)) {
+           throw new IllegalUseException("Person " + personID + "is busy");
+       }
+
+        repo.update(person);
     }
 
-    public Boolean stopActivity(String personID) throws NotFoundException {
+    public void stopActivity(String personID) throws NotFoundException, IllegalUseException {
         AbstractAlive person = getPerson(personID);
-        Boolean result = person.order(Order.O_GET_FREE);
+
+        if(!person.order(Order.O_GET_FREE)) {
+            throw new IllegalUseException("Algorithm error");
+        }
+
         repo.update(person);
 
-        return result;
     }
 
-    public Boolean processEvent(String personID) throws NotFoundException {
+    public void processEvent(String personID) throws NotFoundException, IllegalUseException {
         AbstractAlive person = getPerson(personID);
-        Boolean result = person.order(Order.O_PROCESS_EVENT);
-        repo.update(person);
 
-        return result;
+        if(!person.order(Order.O_PROCESS_EVENT)) {
+            throw new IllegalUseException("Person " + personID + "is busy");
+        }
+
+        repo.update(person);
     }
 
 }

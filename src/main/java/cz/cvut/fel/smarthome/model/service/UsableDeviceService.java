@@ -1,8 +1,8 @@
 package cz.cvut.fel.smarthome.model.service;
 
 import cz.cvut.fel.smarthome.model.entities.Command;
-import cz.cvut.fel.smarthome.model.entities.State;
 import cz.cvut.fel.smarthome.model.entities.device.AbstractUsableDevice;
+import cz.cvut.fel.smarthome.model.exception.IllegalUseException;
 import cz.cvut.fel.smarthome.model.repository.interfaces.UsableDeviceRepository;
 import cz.cvut.fel.smarthome.simpleDI.annotation.Inject;
 import javassist.NotFoundException;
@@ -23,20 +23,24 @@ public class UsableDeviceService {
         return device.get();
     }
 
-    public Boolean use(String deviceID) throws NotFoundException {
+    public void use(String deviceID) throws NotFoundException, IllegalUseException {
         AbstractUsableDevice device = getDevice(deviceID);
-        Boolean result = device.command(Command.C_PLAY);
-        repo.update(device);
 
-        return result;
+        if(device.command(Command.C_PLAY)) {
+            throw new IllegalUseException("Usable device " + deviceID + " can't process command " + Command.C_PLAY);
+        }
+
+        repo.update(device);
     }
 
-    public Boolean stopUse(String deviceID) throws NotFoundException {
+    public void stopUse(String deviceID) throws NotFoundException, IllegalUseException {
         AbstractUsableDevice device = getDevice(deviceID);
-        Boolean result = device.command(Command.C_STOP);
-        repo.update(device);
 
-        return result;
+        if(device.command(Command.C_STOP)) {
+            throw new IllegalUseException("Usable device " + deviceID + " can't process command " + Command.C_PLAY);
+        }
+
+        repo.update(device);
     }
 
     public void repair(String deviceID) throws NotFoundException {

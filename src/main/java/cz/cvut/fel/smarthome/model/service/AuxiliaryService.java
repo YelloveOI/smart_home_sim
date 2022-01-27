@@ -2,6 +2,7 @@ package cz.cvut.fel.smarthome.model.service;
 
 import cz.cvut.fel.smarthome.model.entities.State;
 import cz.cvut.fel.smarthome.model.entities.auxiliary.AbstractAuxiliary;
+import cz.cvut.fel.smarthome.model.exception.IllegalUseException;
 import cz.cvut.fel.smarthome.model.repository.interfaces.AuxiliaryRepository;
 import cz.cvut.fel.smarthome.simpleDI.annotation.Inject;
 import javassist.NotFoundException;
@@ -23,20 +24,24 @@ public class AuxiliaryService {
         return auxiliary.get();
     }
 
-    public Boolean use(String auxiliaryID) throws NotFoundException {
+    public void use(String auxiliaryID) throws NotFoundException, IllegalUseException {
         AbstractAuxiliary auxiliary = getAuxiliary(auxiliaryID);
-        Boolean result = auxiliary.use();
-        repo.update(auxiliary);
 
-        return result;
+        if(!auxiliary.use()) {
+            throw new IllegalUseException("Can't use auxiliary " + auxiliaryID + " it's not available or broken");
+        }
+
+        repo.update(auxiliary);
     }
 
-    public Boolean stopUse(String auxiliaryID) throws NotFoundException {
+    public void stopUse(String auxiliaryID) throws NotFoundException, IllegalUseException {
         AbstractAuxiliary auxiliary = getAuxiliary(auxiliaryID);
-        Boolean result = auxiliary.stopUse();
-        repo.update(auxiliary);
 
-        return result;
+        if(!auxiliary.stopUse()) {
+            throw new IllegalUseException("Can't use auxiliary " + auxiliaryID + " because it's broken");
+        }
+
+        repo.update(auxiliary);
     }
 
     public void repair(String auxiliaryID) throws NotFoundException {

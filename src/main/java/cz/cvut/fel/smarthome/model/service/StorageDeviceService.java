@@ -1,6 +1,7 @@
 package cz.cvut.fel.smarthome.model.service;
 
 import cz.cvut.fel.smarthome.model.entities.device.AbstractStorageDevice;
+import cz.cvut.fel.smarthome.model.exception.IllegalUseException;
 import cz.cvut.fel.smarthome.model.repository.interfaces.StorageDeviceRepository;
 import cz.cvut.fel.smarthome.simpleDI.annotation.Inject;
 import javassist.NotFoundException;
@@ -22,20 +23,24 @@ public class StorageDeviceService {
         return device.get();
     }
 
-    public Boolean get(String deviceID, String itemType) throws NotFoundException {
+    public void get(String deviceID, String itemType) throws NotFoundException, IllegalUseException {
         AbstractStorageDevice device = getDevice(deviceID);
-        Boolean result = device.get(itemType);
-        repo.update(device);
 
-        return result;
+        if(!device.get(itemType)) {
+            throw new IllegalUseException("Storage device " + deviceID + " doesn't support item type " + itemType);
+        }
+
+        repo.update(device);
     }
 
-    public Boolean put(String deviceID, String itemType, Integer itemQuantity) throws NotFoundException {
+    public void put(String deviceID, String itemType, Integer itemQuantity) throws NotFoundException, IllegalUseException {
         AbstractStorageDevice device = getDevice(deviceID);
-        Boolean result = device.put(itemType, itemQuantity);
-        repo.update(device);
 
-        return result;
+        if(device.put(itemType, itemQuantity)) {
+            throw new IllegalUseException("Storage device " + deviceID + " doesn't support item type " + itemType);
+        }
+
+        repo.update(device);
     }
 
     public Boolean isEmpty(String deviceID) throws NotFoundException {
