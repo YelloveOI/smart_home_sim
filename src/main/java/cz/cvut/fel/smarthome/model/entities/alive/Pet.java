@@ -5,7 +5,7 @@ import cz.cvut.fel.smarthome.model.entities.Order;
 public class Pet extends AbstractAlive {
     //TODO
     public Pet(String name) {
-        super(name);
+        super("PET_" + name);
     }
 
     @Override

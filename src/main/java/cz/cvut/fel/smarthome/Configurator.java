@@ -9,7 +9,7 @@ import cz.cvut.fel.smarthome.model.entities.device.TV;
 import cz.cvut.fel.smarthome.model.entities.location.House;
 import cz.cvut.fel.smarthome.model.entities.location.HouseBuilder;
 import cz.cvut.fel.smarthome.model.entities.alive.Person;
-import cz.cvut.fel.smarthome.repository.interfaces.*;
+import cz.cvut.fel.smarthome.model.repository.interfaces.*;
 import cz.cvut.fel.smarthome.simpleDI.annotation.Inject;
 
 public class Configurator {

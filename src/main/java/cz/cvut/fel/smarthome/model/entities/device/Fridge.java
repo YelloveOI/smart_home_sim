@@ -1,6 +1,7 @@
 package cz.cvut.fel.smarthome.model.entities.device;
 
 import cz.cvut.fel.smarthome.model.entities.Command;
+import cz.cvut.fel.smarthome.model.entities.State;
 import cz.cvut.fel.smarthome.model.entities.basic.Consumer;
 import cz.cvut.fel.smarthome.model.entities.basic.Storage;
 
@@ -12,9 +13,8 @@ public class Fridge extends AbstractStorageDevice {
     public Fridge(String id, String location, Double activeConsumption) {
         super(
                 "FRIDGE_" + id,
-                Set.of("OFF", "ON"),
                 new Consumer(activeConsumption, "W"),
-                "OFF",
+                State.S_OFF,
                 new Storage(Set.of("FOOD"))
         );
     }
@@ -22,16 +22,16 @@ public class Fridge extends AbstractStorageDevice {
     @Override
     public Boolean command(Command command) {
         switch(command) {
-            case ON -> {
-                if(Objects.equals(currentState, "OFF")) {
-                    currentState = "OPEN";
+            case C_ON -> {
+                if(Objects.equals(currentState, State.S_OFF)) {
+                    currentState = State.S_OPENED;
                     consumer.powerButton();
                     return true;
                 }
             }
-            case OFF -> {
-                if(!Objects.equals(currentState, "OFF")) {
-                    currentState = "OFF";
+            case C_OFF -> {
+                if(!Objects.equals(currentState, State.S_OFF)) {
+                    currentState = State.S_OFF;
                     consumer.powerButton();
                     return true;
                 }

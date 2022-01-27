@@ -13,6 +13,7 @@ public class Car extends AbstractAuxiliary {
 
     @Override
     public void repair() {
+        usable.repair();
         //TODO
     }
 }

@@ -49,12 +49,17 @@ public class Active implements IActive {
         StringBuilder sb = new StringBuilder();
         sb
                 .append("Current activity:\t")
-                .append(currentActivity);
-        if(Objects.equals(currentActivity, "FREE")) return sb.toString();
+                .append(currentActivity)
+                .append("\n\t Time spending: ");
 
-        sb
-                .append("\ttime left: ")
-                .append(LocalDateTime.now().getSecond() - clock.getSecond());
+        for(String s : timeSpent.keySet()) {
+            sb
+                    .append("\t")
+                    .append(s)
+                    .append(":")
+                    .append(timeSpent.get(s));
+        }
+
 
         return sb.toString();
     }

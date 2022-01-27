@@ -9,7 +9,6 @@ public class Person extends AbstractAlive {
 
     public Person(String name) {
         super("PERSON_" + name);
-        receivedEvents = new PriorityQueue<>();
     }
 
     public String getCurrentActivity() {
@@ -22,23 +21,23 @@ public class Person extends AbstractAlive {
             return false;
         }
         switch(order) {
-            case WORK -> {
+            case O_WORK -> {
                 active.startActivity("WORK");
                 return true;
             }
-            case SPORT -> {
+            case O_SPORT -> {
                 active.startActivity("SPORT");
                 return true;
             }
-            case PROCRASTINATE -> {
+            case O_PROCRASTINATE -> {
                 active.startActivity("PROCRASTINATE");
                 return true;
             }
-            case PROCESS_EVENT -> {
+            case O_PROCESS_EVENT -> {
                 active.startActivity("PROCESS_EVENT");
                 return true;
             }
-            case GET_FREE -> {
+            case O_GET_FREE -> {
                 active.stopActivity();
                 return true;
             }

@@ -6,13 +6,14 @@ public class SportInventory extends AbstractAuxiliary {
 
     public SportInventory(String s, Integer durability) {
         super(
-                s,
+                "SPORT_" + s,
                 new Usable(durability)
         );
     }
 
     @Override
     public void repair() {
+        usable.repair();
         //TODO
     }
 }

@@ -1,6 +1,7 @@
 package cz.cvut.fel.smarthome.model.entities.device;
 
 import cz.cvut.fel.smarthome.model.entities.Command;
+import cz.cvut.fel.smarthome.model.entities.State;
 import cz.cvut.fel.smarthome.model.entities.basic.Consumer;
 import cz.cvut.fel.smarthome.model.entities.basic.Usable;
 
@@ -12,9 +13,8 @@ public class TV extends AbstractUsableDevice {
     public TV(String id, Double activeConsumption) {
         super(
                 "TV_" + id,
-                Set.of("IDLE", "OFF", "PLAYING", "BROKEN"),
                 new Consumer(activeConsumption, "W"),
-                "OFF",
+                State.S_OFF,
                 new Usable(100)
         );
     }
@@ -28,36 +28,36 @@ public class TV extends AbstractUsableDevice {
     public Boolean command(Command command) {
 
         if(usable.isBroken()) {
-            currentState = "BROKEN";
+            currentState = State.S_BROKEN;
             return false;
         }
 
         switch (command) {
-            case ON -> {
-                if(Objects.equals(currentState, "OFF")) {
-                    currentState = "IDLE";
+            case C_ON -> {
+                if(Objects.equals(currentState, State.S_OFF)) {
+                    currentState = State.S_IDLE;
                     consumer.powerButton();
                     return true;
                 }
             }
-            case OFF -> {
-                if(Objects.equals(currentState, "IDLE")) {
-                    currentState = "OFF";
+            case C_OFF -> {
+                if(Objects.equals(currentState, State.S_IDLE)) {
+                    currentState = State.S_OFF;
                     consumer.powerButton();
                     return true;
                 }
             }
-            case PLAY -> {
-                if(Objects.equals(currentState,"IDLE")) {
+            case C_PLAY -> {
+                if(Objects.equals(currentState,State.S_IDLE)) {
                     usable.use();
-                    currentState = "PLAYING";
+                    currentState = State.S_PLAYING;
                     return true;
                 }
             }
-            case STOP -> {
-                if(Objects.equals(currentState,"PLAYING")) {
+            case C_STOP -> {
+                if(Objects.equals(currentState,State.S_PLAYING)) {
                     usable.use();
-                    currentState = "IDLE";
+                    currentState = State.S_IDLE;
                     return true;
                 }
             }

@@ -7,7 +7,6 @@ import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-//TODO
 public class House extends AbstractEntity<String> {
 
     private final Integer roomQuantity;

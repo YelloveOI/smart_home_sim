@@ -1,5 +1,6 @@
 package cz.cvut.fel.smarthome.model.entities.device;
 
+import cz.cvut.fel.smarthome.model.entities.State;
 import cz.cvut.fel.smarthome.model.entities.basic.Consumer;
 import cz.cvut.fel.smarthome.model.entities.basic.Storage;
 import cz.cvut.fel.smarthome.model.entities.basic.interfaces.IStorage;
@@ -11,8 +12,8 @@ public abstract class AbstractStorageDevice extends AbstractSimpleDevice impleme
 
     protected final Storage storage;
 
-    public AbstractStorageDevice(String id, Set<String> stateSet, Consumer consumer, String defaultState, Storage storage) {
-        super(id, stateSet, consumer, defaultState);
+    public AbstractStorageDevice(String id, Consumer consumer, State defaultState, Storage storage) {
+        super(id, consumer, defaultState);
         this.storage = storage;
     }
 
@@ -22,7 +23,8 @@ public abstract class AbstractStorageDevice extends AbstractSimpleDevice impleme
         sb
                 .append(super.toString())
                 .append("\n\t")
-                .append(storage);
+                .append(storage)
+                .append("\n--------------------------------");
 
         return sb.toString();
     }

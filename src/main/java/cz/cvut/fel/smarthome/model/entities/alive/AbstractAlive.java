@@ -16,4 +16,15 @@ public abstract class AbstractAlive extends AbstractEntity<String> {
     //true = alive doing requested order, false = nothing changed (it's busy)
     abstract public Boolean order(Order order);
 
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb
+                .append("> Alive: ")
+                .append(getId())
+                .append(active)
+                .append("\n--------------------------------");
+
+        return sb.toString();
+    }
 }

@@ -1,6 +1,7 @@
 package cz.cvut.fel.smarthome.model.entities.device;
 
 import cz.cvut.fel.smarthome.model.entities.Command;
+import cz.cvut.fel.smarthome.model.entities.State;
 import cz.cvut.fel.smarthome.model.entities.basic.Consumer;
 
 import java.util.Objects;
@@ -12,46 +13,40 @@ public class DaylightSensor extends AbstractSimpleDevice {
     public DaylightSensor(String id, Double activeConsumption) {
         super(
                 "SENSOR_DL_" + id,
-                Set.of("OFF", "LIGHT", "DARK"),
                 new Consumer(activeConsumption, "W"),
-                "OFF"
+                State.S_OFF
         );
-    }
-
-    @Override
-    public String getCurrentState() {
-        return currentState;
     }
 
     @Override
     public Boolean command(Command command) {
         switch(command) {
-            case ON -> {
-                if(Objects.equals(currentState, "OFF")) {
+            case C_ON -> {
+                if(Objects.equals(currentState, State.S_OFF)) {
                     Random rnd = new Random();
                     if(rnd.nextBoolean()) {
-                        currentState = "LIGHT";
+                        currentState = State.S_LIGHT;
                     } else {
-                        currentState = "DARK";
+                        currentState = State.S_DARK;
                     }
                     consumer.powerButton();
                     return true;
                 }
             }
-            case OFF -> {
-                if(Objects.equals(currentState, "ON")) {
-                    currentState = "OFF";
+            case C_OFF -> {
+                if(Objects.equals(currentState, State.S_ON)) {
+                    currentState = State.S_OFF;
                     consumer.powerButton();
                     return true;
                 }
             }
-            case TRIGGER -> {
-                if(Objects.equals(currentState, "LIGHT")) {
-                    currentState = "DARK";
+            case C_TRIGGER -> {
+                if(Objects.equals(currentState, State.S_LIGHT)) {
+                    currentState = State.S_DARK;
                     return true;
                 }
-                if(Objects.equals(currentState, "DARK")) {
-                    currentState = "LIGHT";
+                if(Objects.equals(currentState, State.S_DARK)) {
+                    currentState = State.S_LIGHT;
                     return true;
                 }
             }

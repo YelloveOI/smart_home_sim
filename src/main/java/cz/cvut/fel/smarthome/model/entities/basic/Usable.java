@@ -25,6 +25,7 @@ public class Usable implements IUsable {
     @Override
     public void repair() {
         durability = maxDurability;
+        isBroken = false;
     }
 
     @Override

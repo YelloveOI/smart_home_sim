@@ -1,5 +1,6 @@
 package cz.cvut.fel.smarthome.model.entities.auxiliary;
 
+import cz.cvut.fel.smarthome.model.entities.State;
 import cz.cvut.fel.smarthome.model.entities.basic.AbstractEntity;
 import cz.cvut.fel.smarthome.model.entities.basic.Usable;
 
@@ -41,8 +42,15 @@ public abstract class AbstractAuxiliary extends AbstractEntity<String> {
         return false;
     }
 
-    public Boolean isBroken() {
-        return usable.isBroken();
+    public State getState() {
+        if(usable.isBroken()) {
+            return State.S_BROKEN;
+        }
+        if(isAvailable) {
+            return State.S_AVAILABLE;
+        } else {
+            return State.S_NOT_AVAILABLE;
+        }
     }
 
     public abstract void repair();

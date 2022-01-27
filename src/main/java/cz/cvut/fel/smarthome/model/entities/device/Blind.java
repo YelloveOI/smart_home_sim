@@ -1,6 +1,7 @@
 package cz.cvut.fel.smarthome.model.entities.device;
 
 import cz.cvut.fel.smarthome.model.entities.Command;
+import cz.cvut.fel.smarthome.model.entities.State;
 import cz.cvut.fel.smarthome.model.entities.basic.Consumer;
 
 import java.util.Objects;
@@ -11,38 +12,37 @@ public class Blind extends AbstractSimpleDevice {
     public Blind(String id, Double activeConsumption) {
         super(
                 "BLIND_" + id,
-                Set.of("OPEN", "CLOSE", "OFF"),
                 new Consumer(activeConsumption, "W"),
-                "OFF"
+                State.S_OFF
         );
     }
 
     @Override
     public Boolean command(Command command) {
         switch(command) {
-            case ON -> {
-                if(Objects.equals(currentState, "OFF")) {
-                    currentState = "OPEN";
+            case C_ON -> {
+                if(Objects.equals(currentState, State.S_OFF)) {
+                    currentState = State.S_OPENED;
                     consumer.powerButton();
                     return true;
                 }
             }
-            case OFF -> {
-                if(!Objects.equals(currentState, "OFF")) {
-                    currentState = "OFF";
+            case C_OFF -> {
+                if(!Objects.equals(currentState, State.S_OFF)) {
+                    currentState = State.S_OFF;
                     consumer.powerButton();
                     return true;
                 }
             }
-            case OPEN -> {
-                if(!Objects.equals(currentState, "OFF")) {
-                    currentState = "OPEN";
+            case C_OPEN -> {
+                if(!Objects.equals(currentState, State.S_OFF)) {
+                    currentState = State.S_OPENED;
                     return true;
                 }
             }
-            case CLOSE -> {
-                if(!Objects.equals(currentState, "OFF")) {
-                    currentState = "CLOSE";
+            case C_CLOSE -> {
+                if(!Objects.equals(currentState, State.S_OFF)) {
+                    currentState = State.S_CLOSED;
                     return true;
                 }
             }

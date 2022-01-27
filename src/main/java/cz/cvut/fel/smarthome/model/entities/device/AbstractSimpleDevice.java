@@ -1,5 +1,6 @@
 package cz.cvut.fel.smarthome.model.entities.device;
 
+import cz.cvut.fel.smarthome.model.entities.State;
 import cz.cvut.fel.smarthome.model.entities.basic.AbstractEntity;
 import cz.cvut.fel.smarthome.model.entities.Command;
 import cz.cvut.fel.smarthome.model.entities.basic.Consumer;
@@ -8,24 +9,17 @@ import java.util.Set;
 
 public abstract class AbstractSimpleDevice extends AbstractEntity<String> {
 
-    //TODO state as class
-    protected final Set<String> stateSet;
     protected final Consumer consumer;
-    protected String currentState;
+    protected State currentState;
 
-    public AbstractSimpleDevice(String id, Set<String> stateSet, Consumer consumer, String defaultState) {
+    public AbstractSimpleDevice(String id, Consumer consumer, State defaultState) {
         super(id);
-        this.stateSet = stateSet;
         this.consumer = consumer;
         this.currentState = defaultState;
     }
 
     //true = state changed, false = state not changed
     abstract public Boolean command(Command command);
-
-    public String getCurrentState() {
-        return currentState;
-    }
 
     @Override
     public String toString() {
@@ -36,7 +30,8 @@ public abstract class AbstractSimpleDevice extends AbstractEntity<String> {
                 .append("\n\t Current state: ")
                 .append(currentState)
                 .append("\n\t")
-                .append(consumer);
+                .append(consumer)
+                .append("\n--------------------------------");
 
         return sb.toString();
     }
