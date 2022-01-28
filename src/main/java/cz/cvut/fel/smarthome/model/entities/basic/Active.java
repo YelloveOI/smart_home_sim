@@ -1,32 +1,32 @@
 package cz.cvut.fel.smarthome.model.entities.basic;
 
+import cz.cvut.fel.smarthome.model.activity.ActivityType;
 import cz.cvut.fel.smarthome.model.entities.basic.interfaces.IActive;
 
 import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Objects;
 
 public class Active implements IActive {
 
-    private final Map<String, Integer> timeSpent;
+    private final Map<ActivityType, Integer> timeSpent;
 
-    private String currentActivity;
+    private ActivityType currentActivity;
     private LocalDateTime clock;
 
     public Active() {
         this.timeSpent = new HashMap<>();
-        this.currentActivity = "FREE";
+        this.currentActivity = ActivityType.A_FREE;
         this.clock = LocalDateTime.now();
     }
 
     @Override
-    public String getCurrentActivity() {
+    public ActivityType getCurrentActivity() {
         return currentActivity;
     }
 
     @Override
-    public void startActivity(String activity) {
+    public void startActivity(ActivityType activity) {
         stopActivity();
         currentActivity = activity;
     }
@@ -41,7 +41,7 @@ public class Active implements IActive {
         }
 
         clock = LocalDateTime.now();
-        currentActivity = "FREE";
+        currentActivity = ActivityType.A_FREE;
     }
 
     @Override
@@ -52,12 +52,12 @@ public class Active implements IActive {
                 .append(currentActivity)
                 .append("\n\t Time spending: ");
 
-        for(String s : timeSpent.keySet()) {
+        for(ActivityType at : timeSpent.keySet()) {
             sb
                     .append("\t")
-                    .append(s)
+                    .append(at)
                     .append(":")
-                    .append(timeSpent.get(s));
+                    .append(timeSpent.get(at));
         }
 
 

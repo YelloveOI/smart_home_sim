@@ -12,7 +12,7 @@ public abstract class AbstractStorageDevice extends AbstractSimpleDevice impleme
     protected final Storage storage;
 
     public AbstractStorageDevice(String id, Consumer consumer, State defaultState, Storage storage) {
-        super(id, consumer, defaultState);
+        super("STORAGE_" + id, consumer, defaultState);
         this.storage = storage;
     }
 

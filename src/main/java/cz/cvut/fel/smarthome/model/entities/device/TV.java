@@ -12,7 +12,7 @@ public class TV extends AbstractUsableDevice {
 
     public TV(String id, Double activeConsumption) {
         super(
-                "TV_" + id,
+                id,
                 new Consumer(activeConsumption, "W"),
                 State.S_OFF,
                 new Usable(100)

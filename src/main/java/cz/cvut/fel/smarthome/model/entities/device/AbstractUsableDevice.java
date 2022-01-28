@@ -11,7 +11,7 @@ public abstract class AbstractUsableDevice extends AbstractSimpleDevice {
     protected final Usable usable;
 
     public AbstractUsableDevice(String id, Consumer consumer, State defaultState, Usable usable) {
-        super(id, consumer, defaultState);
+        super("USABLE_" + id, consumer, defaultState);
         this.usable = usable;
     }
 

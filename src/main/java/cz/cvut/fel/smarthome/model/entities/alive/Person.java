@@ -1,18 +1,14 @@
 package cz.cvut.fel.smarthome.model.entities.alive;
 
 import cz.cvut.fel.smarthome.model.entities.Order;
+import cz.cvut.fel.smarthome.model.activity.ActivityType;
 
 import java.util.Objects;
-import java.util.PriorityQueue;
 
 public class Person extends AbstractAlive {
 
     public Person(String name) {
         super("PERSON_" + name);
-    }
-
-    public String getCurrentActivity() {
-        return active.getCurrentActivity();
     }
 
     @Override
@@ -22,19 +18,19 @@ public class Person extends AbstractAlive {
         }
         switch(order) {
             case O_WORK -> {
-                active.startActivity("WORK");
+                active.startActivity(ActivityType.A_WORK);
                 return true;
             }
             case O_SPORT -> {
-                active.startActivity("SPORT");
+                active.startActivity(ActivityType.A_SPORT);
                 return true;
             }
             case O_PROCRASTINATE -> {
-                active.startActivity("PROCRASTINATE");
+                active.startActivity(ActivityType.A_PROCRASTINATE);
                 return true;
             }
             case O_PROCESS_EVENT -> {
-                active.startActivity("PROCESS_EVENT");
+                active.startActivity(ActivityType.A_PROCESS_EVENT);
                 return true;
             }
             case O_GET_FREE -> {
