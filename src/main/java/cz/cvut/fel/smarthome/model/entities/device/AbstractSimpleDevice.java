@@ -4,6 +4,7 @@ import cz.cvut.fel.smarthome.model.entities.State;
 import cz.cvut.fel.smarthome.model.entities.basic.AbstractEntity;
 import cz.cvut.fel.smarthome.model.entities.Command;
 import cz.cvut.fel.smarthome.model.entities.basic.Consumer;
+import cz.cvut.fel.smarthome.model.event.Event;
 
 import java.util.Set;
 
@@ -20,6 +21,8 @@ public abstract class AbstractSimpleDevice extends AbstractEntity<String> {
 
     //true = state changed, false = state not changed
     abstract public Boolean command(Command command);
+
+    abstract public <T extends AbstractSimpleDevice> Event<T> getEvent();
 
     @Override
     public String toString() {

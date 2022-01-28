@@ -11,5 +11,7 @@ public enum State {
     S_PLAYING,
     S_BROKEN,
     S_AVAILABLE,
-    S_NOT_AVAILABLE
+    S_NOT_AVAILABLE,
+    S_OVERLOAD,
+    S_NORMAL
 }
