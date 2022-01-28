@@ -20,4 +20,12 @@ public class SmartController {
         smartService.turnOffAllUsableDevices();
     }
 
+    public void openBlinds() {
+        smartService.openBlinds();
+    }
+
+    public void closeBlinds() {
+        smartService.closeBlinds();
+    }
+
 }

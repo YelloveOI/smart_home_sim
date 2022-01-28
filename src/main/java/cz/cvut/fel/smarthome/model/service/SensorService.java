@@ -2,6 +2,9 @@ package cz.cvut.fel.smarthome.model.service;
 
 import cz.cvut.fel.smarthome.model.entities.Command;
 import cz.cvut.fel.smarthome.model.entities.device.AbstractSimpleDevice;
+import cz.cvut.fel.smarthome.model.entities.device.DaylightSensor;
+import cz.cvut.fel.smarthome.model.event.Event;
+import cz.cvut.fel.smarthome.model.event.EventType;
 import cz.cvut.fel.smarthome.model.repository.interfaces.SimpleDeviceRepository;
 import cz.cvut.fel.smarthome.simpleDI.annotation.Inject;
 import javassist.NotFoundException;
@@ -30,5 +33,6 @@ public class SensorService {
 
         repo.update(sensor);
     }
+
 
 }

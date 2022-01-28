@@ -4,7 +4,7 @@ import cz.cvut.fel.smarthome.model.entities.basic.AbstractEntity;
 
 import java.time.LocalDateTime;
 
-public abstract class Event<T extends AbstractEntity<String>> implements Comparable<Event> {
+public class Event<T extends AbstractEntity<String>>{
 
     private final T sender;
     private final LocalDateTime date;
@@ -40,6 +40,17 @@ public abstract class Event<T extends AbstractEntity<String>> implements Compara
         return priority;
     }
 
-    abstract public String toString();
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb
+                .append("> Event from ")
+                .append(sender.getId())
+                .append("\ttype ")
+                .append(eventType)
+                .append("\twith description: ")
+                .append(description);
 
+        return sb.toString();
+    }
 }
