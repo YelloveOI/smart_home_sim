@@ -40,4 +40,5 @@ public class Person extends AbstractAlive {
         }
         return false;
     }
+
 }
