@@ -24,14 +24,6 @@ public class SmartEventChannel extends EventChannel {
                 smartController.closeBlinds();
                 return true;
             }
-            case E_OVERLOAD -> {
-                smartController.turnOffAllDevice();
-                //TODO person turns on all devices
-                return true;
-            }
-            case E_NORMAL -> {
-                //TODO all are happy
-            }
         }
 
         return false;
