@@ -15,16 +15,6 @@ public class PersonEventChannel extends EventChannel {
 
     @Override
     protected Boolean process(Event e) {
-        //TODO
-        switch(e.getEventType()) {
-            case IM_HUNGRY -> {
-                service.feedPet((String) e.getSender().getId());
-                return false;
-            }
-            default -> {
-                //TODO "nobody can process event"
-                return true;
-            }
-        }
+        return false;
     }
 }
