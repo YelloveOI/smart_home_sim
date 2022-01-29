@@ -11,18 +11,20 @@ import java.util.Set;
 public abstract class AbstractSimpleDevice extends AbstractEntity<String> {
 
     protected final Consumer consumer;
-    protected State currentState;
+    protected State state;
 
     public AbstractSimpleDevice(String id, Consumer consumer, State defaultState) {
         super(id);
         this.consumer = consumer;
-        this.currentState = defaultState;
+        this.state = defaultState;
     }
 
     //true = state changed, false = state not changed
     abstract public Boolean command(Command command);
 
-    abstract public <T extends AbstractSimpleDevice> Event<T> getEvent();
+    public State getState() {
+        return state;
+    }
 
     @Override
     public String toString() {
@@ -31,7 +33,7 @@ public abstract class AbstractSimpleDevice extends AbstractEntity<String> {
                 .append("> Device: ")
                 .append(id)
                 .append("\n\t Current state: ")
-                .append(currentState)
+                .append(state)
                 .append("\n\t")
                 .append(consumer)
                 .append("\n--------------------------------");

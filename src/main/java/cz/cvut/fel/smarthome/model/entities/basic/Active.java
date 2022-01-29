@@ -1,6 +1,6 @@
 package cz.cvut.fel.smarthome.model.entities.basic;
 
-import cz.cvut.fel.smarthome.model.activity.ActivityType;
+import cz.cvut.fel.smarthome.model.ActivityType;
 import cz.cvut.fel.smarthome.model.entities.basic.interfaces.IActive;
 
 import java.time.LocalDateTime;

@@ -22,51 +22,37 @@ public class DaylightSensor extends AbstractSimpleDevice {
     }
 
     @Override
-    public Event<DaylightSensor> getEvent() {
-        switch(currentState) {
-            case S_DARK -> {
-                return new Event<>(this, 2, EventType.E_DARK, "Sensor " + getId() + " detected a lack of light");
-            }
-            case S_LIGHT -> {
-                return new Event<>(this, 2, EventType.E_LIGHT, "Sensor " + getId() + " detected too much light");
-            }
-        }
-
-        return null;
-    }
-
-    @Override
     public Boolean command(Command command) {
         switch(command) {
             case C_ON -> {
-                if(Objects.equals(currentState, State.S_OFF)) {
+                if(Objects.equals(state, State.S_OFF)) {
                     Random rnd = new Random();
                     if(rnd.nextBoolean()) {
-                        currentState = State.S_LIGHT;
+                        state = State.S_LIGHT;
                     } else {
-                        currentState = State.S_DARK;
+                        state = State.S_DARK;
                     }
                     consumer.powerButton();
                     return true;
                 }
             }
             case C_OFF -> {
-                if(Objects.equals(currentState, State.S_ON)) {
-                    currentState = State.S_OFF;
+                if(Objects.equals(state, State.S_ON)) {
+                    state = State.S_OFF;
                     consumer.powerButton();
                     return true;
                 }
             }
             case C_TRIGGER -> {
-                if(Objects.equals(currentState, State.S_OFF)) {
+                if(Objects.equals(state, State.S_OFF)) {
                     return false;
                 }
-                if(Objects.equals(currentState, State.S_LIGHT)) {
-                    currentState = State.S_DARK;
+                if(Objects.equals(state, State.S_LIGHT)) {
+                    state = State.S_DARK;
                     return true;
                 }
-                if(Objects.equals(currentState, State.S_DARK)) {
-                    currentState = State.S_LIGHT;
+                if(Objects.equals(state, State.S_DARK)) {
+                    state = State.S_LIGHT;
                     return true;
                 }
             }

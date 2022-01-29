@@ -27,19 +27,12 @@ public class AuxiliaryService {
     public void use(String auxiliaryID) throws NotFoundException, IllegalUseException {
         AbstractAuxiliary auxiliary = getAuxiliary(auxiliaryID);
 
-        if(!auxiliary.use()) {
-            throw new IllegalUseException("Can't use auxiliary " + auxiliaryID + " it's not available or broken");
-        }
 
         repo.update(auxiliary);
     }
 
     public void stopUse(String auxiliaryID) throws NotFoundException, IllegalUseException {
         AbstractAuxiliary auxiliary = getAuxiliary(auxiliaryID);
-
-        if(!auxiliary.stopUse()) {
-            throw new IllegalUseException("Can't use auxiliary " + auxiliaryID + " because it's broken");
-        }
 
         repo.update(auxiliary);
     }

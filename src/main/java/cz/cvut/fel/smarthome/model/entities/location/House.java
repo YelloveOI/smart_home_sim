@@ -32,6 +32,7 @@ public class House extends AbstractEntity<String> {
         this.embeddedMap = embeddedMap;
         this.locations = locations;
         this.preferredLocations = preferredLocations;
+        this.locations.add(new Location("OUTSIDE", LocationType.OUTSIDE));
     }
 
     public Boolean locateBack(AbstractEntity entity) {
@@ -53,13 +54,13 @@ public class House extends AbstractEntity<String> {
             return false;
         }
 
-        if(
-                entity instanceof Car && locations.stream()
-                        .filter(v -> v.getId().contains(locationName))
-                        .findAny().get().getLocationType() != LocationType.GARAGE
-        ) {
-            return false;
-        }
+//        if(
+//                entity instanceof Car && locations.stream()
+//                        .filter(v -> v.getId().contains(locationName))
+//                        .findAny().get().getLocationType() != LocationType.GARAGE
+//        ) {
+//            return false;
+//        }
 
         locations.stream()
                 .filter(v -> v.getId().contains(locationName))

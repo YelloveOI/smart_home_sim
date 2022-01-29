@@ -26,19 +26,12 @@ public class UsableDeviceService {
     public void use(String deviceID) throws NotFoundException, IllegalUseException {
         AbstractUsableDevice device = getDevice(deviceID);
 
-        if(device.command(Command.C_PLAY)) {
-            throw new IllegalUseException("Usable device " + deviceID + " can't process command " + Command.C_PLAY);
-        }
 
         repo.update(device);
     }
 
     public void stopUse(String deviceID) throws NotFoundException, IllegalUseException {
         AbstractUsableDevice device = getDevice(deviceID);
-
-        if(device.command(Command.C_STOP)) {
-            throw new IllegalUseException("Usable device " + deviceID + " can't process command " + Command.C_PLAY);
-        }
 
         repo.update(device);
     }

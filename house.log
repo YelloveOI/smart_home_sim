@@ -1,43 +1,191 @@
-Plain event from Device device_name1 , date: 2022-01-16T01:59:51.104953100
-	 description: state changed from to InactiveDeviceStatePlain event from Device device_name2 , date: 2022-01-16T01:59:51.120574800
-	 description: state changed from to InactiveDeviceStatePlain event from Device device_name3 , date: 2022-01-16T01:59:51.120574800
-	 description: state changed from to InactiveDeviceStatePlain event from Device device_name8 , date: 2022-01-16T01:59:51.120574800
-	 description: state changed from to InactiveDeviceStatePlain event from Device device_name10 , date: 2022-01-16T01:59:51.120574800
-	 description: state changed from to InactiveDeviceStatePlain event from Device device_name9 , date: 2022-01-16T01:59:51.120574800
-	 description: state changed from to InactiveDeviceStatePlain event from Device device_name4 , date: 2022-01-16T01:59:51.120574800
-	 description: state changed from to InactiveDeviceStatePlain event from Device device_name5 , date: 2022-01-16T01:59:51.120574800
-	 description: state changed from to InactiveDeviceStatePlain event from Device device_name6 , date: 2022-01-16T01:59:51.120574800
-	 description: state changed from to InactiveDeviceStatePlain event from Device device_name7 , date: 2022-01-16T01:59:51.120574800
-	 description: state changed from to InactiveDeviceStatePlain event from Device Car1 , date: 2022-01-16T01:59:51.136194300
-	 description: used by sbdPlain event from Person Wasua , date: 2022-01-16T01:59:51.136194300
-	 description: going workPlain event from Device Ski , date: 2022-01-16T01:59:51.136194300
-	 description: used by sbdPlain event from Person Manya , date: 2022-01-16T01:59:51.136194300
-	 description: going sportPlain event from Device device_name10 , date: 2022-01-16T01:59:51.136194300
-	 description: state changed from to IdleDeviceStatePlain event from Person Tolik , date: 2022-01-16T01:59:51.136194300
-	 description: acts TurnOnActionPlain event from Device device_name10 , date: 2022-01-16T01:59:51.136194300
-	 description: state changed from to ActiveDeviceStatePlain event from Person Tolik , date: 2022-01-16T01:59:51.136194300
-	 description: going procrastinatePlain event from Device device_name9 , date: 2022-01-16T01:59:51.136194300
-	 description: state changed from to IdleDeviceStatePlain event from Person Bolik , date: 2022-01-16T01:59:51.136194300
-	 description: acts TurnOnActionPlain event from Device device_name9 , date: 2022-01-16T01:59:51.136194300
-	 description: state changed from to ActiveDeviceStatePlain event from Person Bolik , date: 2022-01-16T01:59:51.136194300
-	 description: going procrastinatePlain event from Device device_name3 , date: 2022-01-16T01:59:51.136194300
-	 description: state changed from to IdleDeviceStatePlain event from Person Trolik , date: 2022-01-16T01:59:51.136194300
-	 description: acts TurnOnActionPlain event from Device device_name3 , date: 2022-01-16T01:59:51.136194300
-	 description: state changed from to ActiveDeviceStatePlain event from Person Trolik , date: 2022-01-16T01:59:51.136194300
-	 description: going procrastinatePlain event from Device Car1 , date: 2022-01-16T01:59:51.136194300
-	 description: stopped use by sbdPlain event from Person Wasua , date: 2022-01-16T01:59:51.136194300
-	 description: is free nowPlain event from Device device_name10 , date: 2022-01-16T01:59:51.136194300
-	 description: state changed from to IdleDeviceStatePlain event from Person Tolik , date: 2022-01-16T01:59:51.136194300
-	 description: is free nowPlain event from Device Bike2 , date: 2022-01-16T01:59:51.136194300
-	 description: used by sbdPlain event from Person Tolik , date: 2022-01-16T01:59:51.136194300
-	 description: going sportPlain event from Device device_name9 , date: 2022-01-16T01:59:51.136194300
-	 description: state changed from to IdleDeviceStatePlain event from Person Bolik , date: 2022-01-16T01:59:51.136194300
-	 description: is free nowPlain event from Device Ski , date: 2022-01-16T01:59:51.136194300
-	 description: stopped use by sbdPlain event from Person Manya , date: 2022-01-16T01:59:51.136194300
-	 description: is free nowPlain event from Device device_name10 , date: 2022-01-16T01:59:51.136194300
-	 description: state changed from to ActiveDeviceStatePlain event from Person Manya , date: 2022-01-16T01:59:51.136194300
-	 description: going procrastinatePlain event from Device Ski , date: 2022-01-16T01:59:51.136194300
-	 description: used by sbdPlain event from Person Bolik , date: 2022-01-16T01:59:51.136194300
-	 description: going sportPlain event from Device device_name9 , date: 2022-01-16T01:59:51.136194300
-	 description: state changed from to ActiveDeviceStatePlain event from Person Zhmyshenko Valerij Albertovich , date: 2022-01-16T01:59:51.136194300
-	 description: going procrastinate
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan going work
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo going work
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan going work
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan going work
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan going work
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan going work
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan going work
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan going work
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert going work
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan going work
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate going work
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate going work
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use

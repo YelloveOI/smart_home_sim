@@ -15,7 +15,7 @@ public class ReportEventChannel extends EventChannel {
     protected Boolean process(Event e) {
         try {
             FileWriter fw = new FileWriter(new File("house.log"), true);
-            fw.write(e.toString());
+            fw.write(e.toString() + "\n");
             fw.flush();
         } catch (Exception ex) {
             System.out.println("cant reach file to log");

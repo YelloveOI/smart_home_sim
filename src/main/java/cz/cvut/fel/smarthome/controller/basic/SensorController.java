@@ -1,6 +1,9 @@
 package cz.cvut.fel.smarthome.controller.basic;
 
 import cz.cvut.fel.smarthome.controller.EventController;
+import cz.cvut.fel.smarthome.model.entities.device.AbstractSimpleDevice;
+import cz.cvut.fel.smarthome.model.event.Event;
+import cz.cvut.fel.smarthome.model.event.EventType;
 import cz.cvut.fel.smarthome.model.service.SensorService;
 import cz.cvut.fel.smarthome.simpleDI.annotation.Inject;
 import javassist.NotFoundException;
@@ -15,7 +18,25 @@ public class SensorController {
     public void trigger(String sensorID) {
         try {
             sensorService.trigger(sensorID);
-            eventController.notify(sensorService.getSensor(sensorID).getEvent());
+
+            AbstractSimpleDevice device = sensorService.getSensor(sensorID);
+            Event<AbstractSimpleDevice> event;
+
+            switch(device.getState()) {
+                case S_DARK -> {
+                    event = new Event<>(device, 2, EventType.E_DARK, "Sensor detected a lack of light");
+                }
+                case S_LIGHT -> {
+                    event = new Event<>(device, 2, EventType.E_LIGHT, "Sensor detected too much light");
+                }
+                case S_OVERLOAD -> {
+                    event = new Event<>(device, 2, EventType.E_OVERLOAD, "Sensor detected overload");
+                }
+                default -> {
+                    event = new Event<>(device, 1, EventType.E_NORMAL, "Everything is okay");
+                }
+            }
+            eventController.notify(event);
         } catch (NotFoundException e) {
             System.out.println(e);
         }

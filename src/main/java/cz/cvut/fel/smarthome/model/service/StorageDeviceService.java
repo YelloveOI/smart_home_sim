@@ -26,9 +26,6 @@ public class StorageDeviceService {
     public void get(String deviceID, String itemType) throws NotFoundException, IllegalUseException {
         AbstractStorageDevice device = getDevice(deviceID);
 
-        if(!device.get(itemType)) {
-            throw new IllegalUseException("Storage device " + deviceID + " doesn't support item type " + itemType);
-        }
 
         repo.update(device);
     }
@@ -36,9 +33,6 @@ public class StorageDeviceService {
     public void put(String deviceID, String itemType, Integer itemQuantity) throws NotFoundException, IllegalUseException {
         AbstractStorageDevice device = getDevice(deviceID);
 
-        if(device.put(itemType, itemQuantity)) {
-            throw new IllegalUseException("Storage device " + deviceID + " doesn't support item type " + itemType);
-        }
 
         repo.update(device);
     }

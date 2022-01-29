@@ -44,7 +44,7 @@ public class Event<T extends AbstractEntity<String>>{
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb
-                .append("> Event from ")
+                .append(">--- Event from ")
                 .append(sender.getId())
                 .append("\ttype ")
                 .append(eventType)

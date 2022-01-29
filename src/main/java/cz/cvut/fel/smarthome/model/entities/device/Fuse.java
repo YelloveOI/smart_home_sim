@@ -23,49 +23,35 @@ public class Fuse extends AbstractSimpleDevice {
     public Boolean command(Command command) {
         switch(command) {
             case C_ON -> {
-                if(Objects.equals(currentState, State.S_OFF)) {
+                if(Objects.equals(state, State.S_OFF)) {
                     Random rnd = new Random();
-                    currentState = State.S_NORMAL;
+                    state = State.S_NORMAL;
                     consumer.powerButton();
                     return true;
                 }
             }
             case C_OFF -> {
-                if(Objects.equals(currentState, State.S_ON)) {
-                    currentState = State.S_OFF;
+                if(Objects.equals(state, State.S_ON)) {
+                    state = State.S_OFF;
                     consumer.powerButton();
                     return true;
                 }
             }
             case C_TRIGGER -> {
-                if(Objects.equals(currentState, State.S_OFF)) {
+                if(Objects.equals(state, State.S_OFF)) {
                     return false;
                 }
-                if(Objects.equals(currentState, State.S_NORMAL)) {
-                    currentState = State.S_OVERLOAD;
+                if(Objects.equals(state, State.S_NORMAL)) {
+                    state = State.S_OVERLOAD;
                     return true;
                 }
-                if(Objects.equals(currentState, State.S_OVERLOAD)) {
-                    currentState = State.S_NORMAL;
+                if(Objects.equals(state, State.S_OVERLOAD)) {
+                    state = State.S_NORMAL;
                     return true;
                 }
             }
         }
         return false;
-    }
-
-    @Override
-    public Event<Fuse> getEvent() {
-        switch(currentState) {
-            case S_NORMAL -> {
-                return new Event<>(this, 2, EventType.E_NORMAL, "Sensor " + getId() + " says that current is normal");
-            }
-            case S_OVERLOAD -> {
-                return new Event<>(this, 2, EventType.E_OVERLOAD, "Sensor " + getId() + " detected overload");
-            }
-        }
-
-        return null;
     }
 
 }

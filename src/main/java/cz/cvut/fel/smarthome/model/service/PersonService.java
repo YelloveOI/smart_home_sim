@@ -27,29 +27,17 @@ public class PersonService {
     public void goWork(String personID) throws NotFoundException, IllegalUseException {
         AbstractAlive person = getPerson(personID);
 
-        if(!person.order(Order.O_WORK)) {
-            throw new IllegalUseException("Person " + personID + "is busy");
-        }
-
         repo.update(person);
     }
 
     public void goSport(String personID) throws NotFoundException, IllegalUseException {
         AbstractAlive person = getPerson(personID);
 
-        if(!person.order(Order.O_SPORT)) {
-            throw new IllegalUseException("Person " + personID + "is busy");
-        }
-
         repo.update(person);
     }
 
-    public void goProcrastinate(String personID) throws NotFoundException, IllegalUseException {
+    public void useDevice(String personID) throws NotFoundException, IllegalUseException {
         AbstractAlive person = getPerson(personID);
-
-       if(!person.order(Order.O_PROCRASTINATE)) {
-           throw new IllegalUseException("Person " + personID + "is busy");
-       }
 
         repo.update(person);
     }
@@ -57,22 +45,8 @@ public class PersonService {
     public void stopActivity(String personID) throws NotFoundException, IllegalUseException {
         AbstractAlive person = getPerson(personID);
 
-        if(!person.order(Order.O_GET_FREE)) {
-            throw new IllegalUseException("Algorithm error");
-        }
-
         repo.update(person);
 
-    }
-
-    public void processEvent(String personID) throws NotFoundException, IllegalUseException {
-        AbstractAlive person = getPerson(personID);
-
-        if(!person.order(Order.O_PROCESS_EVENT)) {
-            throw new IllegalUseException("Person " + personID + "is busy");
-        }
-
-        repo.update(person);
     }
 
 }

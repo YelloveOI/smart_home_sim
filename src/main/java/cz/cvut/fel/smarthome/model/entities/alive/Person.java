@@ -1,7 +1,7 @@
 package cz.cvut.fel.smarthome.model.entities.alive;
 
+import cz.cvut.fel.smarthome.model.ActivityType;
 import cz.cvut.fel.smarthome.model.entities.Order;
-import cz.cvut.fel.smarthome.model.activity.ActivityType;
 
 import java.util.Objects;
 
@@ -25,12 +25,8 @@ public class Person extends AbstractAlive {
                 active.startActivity(ActivityType.A_SPORT);
                 return true;
             }
-            case O_PROCRASTINATE -> {
-                active.startActivity(ActivityType.A_PROCRASTINATE);
-                return true;
-            }
-            case O_PROCESS_EVENT -> {
-                active.startActivity(ActivityType.A_PROCESS_EVENT);
+            case O_USE_DEVICE -> {
+                active.startActivity(ActivityType.A_USING_DEVICE);
                 return true;
             }
             case O_GET_FREE -> {

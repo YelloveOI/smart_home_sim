@@ -1,5 +1,6 @@
 package cz.cvut.fel.smarthome;
 
+import cz.cvut.fel.smarthome.controller.BusynessController;
 import cz.cvut.fel.smarthome.model.entities.auxiliary.Car;
 import cz.cvut.fel.smarthome.model.entities.auxiliary.SportInventory;
 import cz.cvut.fel.smarthome.model.entities.device.Blind;
@@ -27,7 +28,11 @@ public class Configurator {
     @Inject
     private AuxiliaryRepository auxiliaryRepository;
 
-    public void config1() {
+    private String houseName;
+
+    public void config1(String houseName) {
+        this.houseName = houseName;
+
         Person p1 = new Person("Ivan");
         Person p2 = new Person("Robert");
         Person p3 = new Person("Kate");
@@ -71,7 +76,13 @@ public class Configurator {
                 .addEmbedded("window2", "room1")
                 .addEmbedded("window3", "room2")
                 .addEmbedded("window4", "room2")
-                .setHouseName("SMART_HOUSE")
+                .setHouseName(houseName)
+                .addPreferredLocation(p1, "room1")
+                .addPreferredLocation(p2, "room2")
+                .addPreferredLocation(p3, "room3")
+                .addPreferredLocation(p4, "room1")
+                .addPreferredLocation(c1, "garage1")
+                .addPreferredLocation(bike, "room1")
                 .build();
 
         house.allocateEntity(p1, "room1");
@@ -87,6 +98,10 @@ public class Configurator {
         house.allocateEntity(tv2, "room2");
         house.allocateEntity(c1, "garage1");
         houseRepository.create(house);
+    }
+
+    public String getHouseName() {
+        return houseName;
     }
 
 }

@@ -26,8 +26,9 @@ public class HouseBuilder {
         this.locations.add(new Location("OUTSIDE", LocationType.OUTSIDE));
     }
 
-    public void addPreferredLocation(AbstractEntity entity, String locationName) {
+    public HouseBuilder addPreferredLocation(AbstractEntity entity, String locationName) {
         preferredLocations.put(entity, locationName);
+        return this;
     }
 
     public HouseBuilder setHouseName(String houseName) {
