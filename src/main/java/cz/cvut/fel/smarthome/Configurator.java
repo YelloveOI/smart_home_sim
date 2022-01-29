@@ -36,7 +36,6 @@ public class Configurator {
         aliveRepository.create(p2);
         aliveRepository.create(p3);
         aliveRepository.create(p4);
-
         Blind b1 = new Blind("b1",  5.2);
         Blind b2 = new Blind("b2",  5.2);
         Blind b3 = new Blind("b3",  5.2);
