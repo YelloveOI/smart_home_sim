@@ -28,11 +28,11 @@ public class SensorController {
 
             switch(device.getState()) {
                 case S_DARK -> {
-                    event = new Event<>(device, 2, EventType.E_DARK, "Sensor detected a lack of light");
+                    event = new Event<>(device, 1, EventType.E_DARK, "Sensor detected a lack of light");
                     eventController.notify(event);
                 }
                 case S_LIGHT -> {
-                    event = new Event<>(device, 2, EventType.E_LIGHT, "Sensor detected too much light");
+                    event = new Event<>(device, 1, EventType.E_LIGHT, "Sensor detected too much light");
                     eventController.notify(event);
                 }
                 case S_OVERLOAD -> {

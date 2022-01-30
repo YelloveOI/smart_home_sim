@@ -20,6 +20,8 @@ public class PersonController {
     private LocationService locationService;
     @Inject
     private ReportController reportController;
+    @Inject
+    private SmartController smartController;
 
 
     public void goSport(String houseID, String personID) {

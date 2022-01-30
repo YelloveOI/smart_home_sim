@@ -28,7 +28,6 @@ public class SmartEventChannel extends EventChannel {
             }
             case E_OVERLOAD -> {
                 smartController.turnOffAllDevice();
-                //TODO person turns on all devices
                 return true;
             }
             case E_NORMAL -> {

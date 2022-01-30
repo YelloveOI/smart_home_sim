@@ -4,13 +4,11 @@ import cz.cvut.fel.smarthome.controller.BusynessController;
 import cz.cvut.fel.smarthome.controller.EventController;
 import cz.cvut.fel.smarthome.model.entities.auxiliary.Car;
 import cz.cvut.fel.smarthome.model.entities.auxiliary.SportInventory;
-import cz.cvut.fel.smarthome.model.entities.device.Blind;
-import cz.cvut.fel.smarthome.model.entities.device.DaylightSensor;
-import cz.cvut.fel.smarthome.model.entities.device.Fridge;
-import cz.cvut.fel.smarthome.model.entities.device.TV;
+import cz.cvut.fel.smarthome.model.entities.device.*;
 import cz.cvut.fel.smarthome.model.entities.location.House;
 import cz.cvut.fel.smarthome.model.entities.location.HouseBuilder;
 import cz.cvut.fel.smarthome.model.entities.alive.Person;
+import cz.cvut.fel.smarthome.model.event.Event;
 import cz.cvut.fel.smarthome.model.repository.interfaces.*;
 import cz.cvut.fel.smarthome.simpleDI.annotation.Inject;
 
@@ -30,6 +28,8 @@ public class Configurator {
     private AuxiliaryRepository auxiliaryRepository;
     @Inject
     private BusynessController busynessController;
+    @Inject
+    private EventController eventController;
 
     private String houseName;
 
@@ -50,10 +50,12 @@ public class Configurator {
         Blind b3 = new Blind("b3",  5.2);
         Blind b4 = new Blind("b4",  5.2);
         DaylightSensor ds1 = new DaylightSensor("ds1",1.2);
+        Fuse fs1 = new Fuse("fs1", 1.9);
         simpleDeviceRepository.create(b1);
         simpleDeviceRepository.create(b2);
         simpleDeviceRepository.create(b3);
         simpleDeviceRepository.create(b4);
+        simpleDeviceRepository.create(fs1);
         simpleDeviceRepository.create(ds1);
 
         Fridge f1 = new Fridge("f1", "room2", 20.1);
@@ -103,6 +105,7 @@ public class Configurator {
         houseRepository.create(house);
 
         busynessController.init();
+        eventController.init();
     }
 
     public String getHouseName() {
