@@ -4,5 +4,6 @@ public enum Order {
     O_SPORT,
     O_WORK,
     O_USE_DEVICE,
-    O_GET_FREE
+    O_GET_FREE,
+    O_SLEEP
 }

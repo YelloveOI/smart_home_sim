@@ -1,7 +1,7 @@
 package cz.cvut.fel.smarthome.controller.basic;
 
 import cz.cvut.fel.smarthome.controller.EventController;
-import cz.cvut.fel.smarthome.controller.ReportController;
+import cz.cvut.fel.smarthome.Reporter;
 import cz.cvut.fel.smarthome.model.entities.device.AbstractSimpleDevice;
 import cz.cvut.fel.smarthome.model.event.Event;
 import cz.cvut.fel.smarthome.model.event.EventType;
@@ -16,13 +16,13 @@ public class SensorController {
     @Inject
     private EventController eventController;
     @Inject
-    private ReportController reportController;
+    private Reporter reporter;
 
 
     public void trigger(String sensorID) {
         try {
             sensorService.trigger(sensorID);
-            reportController.report("Sensor " + sensorID + " triggered");
+            reporter.report("Sensor " + sensorID + " triggered");
             AbstractSimpleDevice device = sensorService.getSensor(sensorID);
             Event<AbstractSimpleDevice> event;
 

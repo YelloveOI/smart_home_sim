@@ -1,11 +1,6 @@
 package cz.cvut.fel.smarthome.controller.basic;
 
-import cz.cvut.fel.smarthome.controller.EventController;
-import cz.cvut.fel.smarthome.controller.ReportController;
-import cz.cvut.fel.smarthome.model.entities.alive.AbstractAlive;
-import cz.cvut.fel.smarthome.model.entities.alive.Person;
-import cz.cvut.fel.smarthome.model.event.Event;
-import cz.cvut.fel.smarthome.model.event.EventType;
+import cz.cvut.fel.smarthome.Reporter;
 import cz.cvut.fel.smarthome.model.exception.IllegalUseException;
 import cz.cvut.fel.smarthome.model.service.LocationService;
 import cz.cvut.fel.smarthome.model.service.PersonService;
@@ -19,7 +14,7 @@ public class PersonController {
     @Inject
     private LocationService locationService;
     @Inject
-    private ReportController reportController;
+    private Reporter reporter;
     @Inject
     private SmartController smartController;
 
@@ -29,7 +24,7 @@ public class PersonController {
             personService.goSport(personID);
             locationService.deallocate(houseID, personService.getPerson(personID));
 
-            reportController.report("Person " + personID + " now going sport");
+            reporter.report("Person " + personID + " now going sport");
         } catch (NotFoundException e1) {
             System.out.println(e1);
         } catch (IllegalUseException e2) {
@@ -43,7 +38,7 @@ public class PersonController {
             personService.goWork(personID);
             locationService.deallocate(houseID, personService.getPerson(personID));
 
-            reportController.report("Person " + personID + " now going work");
+            reporter.report("Person " + personID + " now going work");
         } catch (NotFoundException e1) {
             System.out.println(e1);
         } catch (IllegalUseException e2) {
@@ -61,7 +56,7 @@ public class PersonController {
                     newLocation
             );
 
-            reportController.report("Person " + personID + " now using device");
+            reporter.report("Person " + personID + " now using device");
         } catch (NotFoundException e1) {
             System.out.println(e1);
         } catch (IllegalUseException e2) {
@@ -75,7 +70,7 @@ public class PersonController {
             personService.stopActivity(personID);
             locationService.locateBack(houseID, personService.getPerson(personID));
 
-            reportController.report("Person " + personID + " now is free");
+            reporter.report("Person " + personID + " now is free");
         } catch (NotFoundException e1) {
             System.out.println(e1);
         } catch (IllegalUseException e2) {

@@ -1,4 +1,4 @@
-package cz.cvut.fel.smarthome.controller;
+package cz.cvut.fel.smarthome;
 
 import cz.cvut.fel.smarthome.model.entities.alive.AbstractAlive;
 import cz.cvut.fel.smarthome.model.entities.auxiliary.AbstractAuxiliary;
@@ -12,7 +12,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.util.stream.Collectors;
 
-public class ReportController {
+public class Reporter {
 
     @Inject
     private AliveRepository aliveRepository;
@@ -24,6 +24,8 @@ public class ReportController {
     private StorageDeviceRepository storageDeviceRepository;
     @Inject
     private AuxiliaryRepository auxiliaryRepository;
+    @Inject
+    private HouseRepository houseRepository;
 
     public void report(String report) {
         try {
@@ -72,6 +74,15 @@ public class ReportController {
             sb.append("--------------------------------\n");
             sb.append(s);
         }
+        report(sb.toString());
+    }
+
+    public void houseReport() {
+        StringBuilder sb = new StringBuilder();
+        sb
+                .append("\t\t> HOUSE REPORT\n--------------------------------\n")
+                .append(houseRepository.find("SMART_HOME").get())
+                .append("\n--------------------------------\n");
         report(sb.toString());
     }
 
