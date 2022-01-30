@@ -11,7 +11,7 @@ public class SemOmo {
         ApplicationContext context = compositionPoint.run();
 
         Configurator configurator = context.getBean(Configurator.class);
-        configurator.config1("SMART_HOME");
+        configurator.config2("SMART_HOME");
 
         Simulator simulator = context.getBean(Simulator.class);
         simulator.start(100);
