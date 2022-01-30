@@ -1,11 +1,6 @@
 package cz.cvut.fel.smarthome.controller.basic;
 
-import cz.cvut.fel.smarthome.controller.EventController;
 import cz.cvut.fel.smarthome.controller.ReportController;
-import cz.cvut.fel.smarthome.model.entities.basic.AbstractEntity;
-import cz.cvut.fel.smarthome.model.entities.device.AbstractUsableDevice;
-import cz.cvut.fel.smarthome.model.event.Event;
-import cz.cvut.fel.smarthome.model.event.EventType;
 import cz.cvut.fel.smarthome.model.service.SmartService;
 import cz.cvut.fel.smarthome.simpleDI.annotation.Inject;
 

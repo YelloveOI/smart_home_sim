@@ -1,8 +1,8 @@
 package cz.cvut.fel.smarthome.model.entities.alive;
 
 import cz.cvut.fel.smarthome.model.entities.Order;
-import cz.cvut.fel.smarthome.model.entities.basic.AbstractEntity;
-import cz.cvut.fel.smarthome.model.entities.basic.Active;
+import cz.cvut.fel.smarthome.model.basic.AbstractEntity;
+import cz.cvut.fel.smarthome.model.basic.Active;
 
 public abstract class AbstractAlive extends AbstractEntity<String> {
 
@@ -23,7 +23,7 @@ public abstract class AbstractAlive extends AbstractEntity<String> {
                 .append("> Alive: ")
                 .append(getId())
                 .append(active)
-                .append("\n--------------------------------");
+                .append("--------------------------------\n");
 
         return sb.toString();
     }

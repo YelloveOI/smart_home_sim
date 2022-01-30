@@ -1,6 +1,6 @@
-package cz.cvut.fel.smarthome.model.entities.basic;
+package cz.cvut.fel.smarthome.model.basic;
 
-import cz.cvut.fel.smarthome.model.entities.basic.interfaces.IUsable;
+import cz.cvut.fel.smarthome.model.basic.interfaces.IUsable;
 
 public class Usable implements IUsable {
 
@@ -36,7 +36,7 @@ public class Usable implements IUsable {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("Physical state:");
+        sb.append("\tPhysical state:");
 
         if(isBroken) {
             sb.append("\tBROKEN");
@@ -44,6 +44,7 @@ public class Usable implements IUsable {
             sb.append("\tNOT BROKEN");
         }
 
+        sb.append("\n");
         return sb.toString();
     }
 }

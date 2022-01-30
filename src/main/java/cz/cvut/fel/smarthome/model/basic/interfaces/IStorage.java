@@ -1,6 +1,4 @@
-package cz.cvut.fel.smarthome.model.entities.basic.interfaces;
-
-import java.util.Set;
+package cz.cvut.fel.smarthome.model.basic.interfaces;
 
 public interface IStorage {
 

@@ -1,23 +1,20 @@
-package cz.cvut.fel.smarthome.model.entities.basic;
+package cz.cvut.fel.smarthome.model.basic;
 
 import cz.cvut.fel.smarthome.model.ActivityType;
-import cz.cvut.fel.smarthome.model.entities.basic.interfaces.IActive;
+import cz.cvut.fel.smarthome.model.basic.interfaces.IActive;
 
-import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.Map;
 
 public class Active implements IActive {
 
-    private final Map<ActivityType, Integer> timeSpent;
+    private final Map<ActivityType, Long> timeSpent;
 
     private ActivityType currentActivity;
-    private LocalDateTime clock;
 
     public Active() {
         this.timeSpent = new HashMap<>();
         this.currentActivity = ActivityType.A_FREE;
-        this.clock = LocalDateTime.now();
     }
 
     @Override
@@ -28,19 +25,18 @@ public class Active implements IActive {
     @Override
     public void startActivity(ActivityType activity) {
         stopActivity();
+
+        if(timeSpent.containsKey(activity)) {
+            timeSpent.replace(activity, timeSpent.get(activity) + 1);
+        } else {
+            timeSpent.put(activity, 1L);
+        }
+
         currentActivity = activity;
     }
 
     @Override
     public void stopActivity() {
-        Integer timeDifference = LocalDateTime.now().getSecond() - clock.getSecond();
-        if(timeSpent.containsKey(currentActivity)) {
-            timeSpent.replace(currentActivity, timeSpent.get(currentActivity) + timeDifference);
-        } else {
-            timeSpent.put(currentActivity, timeDifference);
-        }
-
-        clock = LocalDateTime.now();
         currentActivity = ActivityType.A_FREE;
     }
 
@@ -60,6 +56,7 @@ public class Active implements IActive {
                     .append(timeSpent.get(at));
         }
 
+        sb.append("\n");
 
         return sb.toString();
     }

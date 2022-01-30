@@ -1,7 +1,6 @@
 package cz.cvut.fel.smarthome.model.entities.location;
 
-import cz.cvut.fel.smarthome.model.entities.auxiliary.Car;
-import cz.cvut.fel.smarthome.model.entities.basic.AbstractEntity;
+import cz.cvut.fel.smarthome.model.basic.AbstractEntity;
 
 import java.util.Map;
 import java.util.Set;

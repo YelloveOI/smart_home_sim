@@ -1,7 +1,7 @@
 package cz.cvut.fel.smarthome.controller;
 
 import cz.cvut.fel.smarthome.model.entities.auxiliary.AbstractAuxiliary;
-import cz.cvut.fel.smarthome.model.entities.basic.AbstractEntity;
+import cz.cvut.fel.smarthome.model.basic.AbstractEntity;
 import cz.cvut.fel.smarthome.model.entities.device.AbstractUsableDevice;
 import cz.cvut.fel.smarthome.model.repository.interfaces.AliveRepository;
 import cz.cvut.fel.smarthome.model.repository.interfaces.AuxiliaryRepository;

@@ -2,10 +2,8 @@ package cz.cvut.fel.smarthome.model.entities.device;
 
 import cz.cvut.fel.smarthome.model.entities.Command;
 import cz.cvut.fel.smarthome.model.entities.State;
-import cz.cvut.fel.smarthome.model.entities.basic.Consumer;
-import cz.cvut.fel.smarthome.model.entities.basic.Storage;
-import cz.cvut.fel.smarthome.model.event.Event;
-import cz.cvut.fel.smarthome.model.event.EventType;
+import cz.cvut.fel.smarthome.model.basic.Consumer;
+import cz.cvut.fel.smarthome.model.basic.Storage;
 
 import java.util.Objects;
 import java.util.Set;

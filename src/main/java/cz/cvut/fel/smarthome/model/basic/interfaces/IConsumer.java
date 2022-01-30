@@ -1,4 +1,4 @@
-package cz.cvut.fel.smarthome.model.entities.basic.interfaces;
+package cz.cvut.fel.smarthome.model.basic.interfaces;
 
 public interface IConsumer {
 

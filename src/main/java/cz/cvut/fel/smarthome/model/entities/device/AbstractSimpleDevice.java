@@ -1,12 +1,9 @@
 package cz.cvut.fel.smarthome.model.entities.device;
 
 import cz.cvut.fel.smarthome.model.entities.State;
-import cz.cvut.fel.smarthome.model.entities.basic.AbstractEntity;
+import cz.cvut.fel.smarthome.model.basic.AbstractEntity;
 import cz.cvut.fel.smarthome.model.entities.Command;
-import cz.cvut.fel.smarthome.model.entities.basic.Consumer;
-import cz.cvut.fel.smarthome.model.event.Event;
-
-import java.util.Set;
+import cz.cvut.fel.smarthome.model.basic.Consumer;
 
 public abstract class AbstractSimpleDevice extends AbstractEntity<String> {
 
@@ -35,8 +32,7 @@ public abstract class AbstractSimpleDevice extends AbstractEntity<String> {
                 .append("\n\t Current state: ")
                 .append(state)
                 .append("\n\t")
-                .append(consumer)
-                .append("\n--------------------------------");
+                .append(consumer);
 
         return sb.toString();
     }

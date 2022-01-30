@@ -26,27 +26,26 @@ public class PersonService {
 
     public void goWork(String personID) throws NotFoundException, IllegalUseException {
         AbstractAlive person = getPerson(personID);
-
+        person.order(Order.O_WORK);
         repo.update(person);
     }
 
     public void goSport(String personID) throws NotFoundException, IllegalUseException {
         AbstractAlive person = getPerson(personID);
-
+        person.order(Order.O_SPORT);
         repo.update(person);
     }
 
     public void useDevice(String personID) throws NotFoundException, IllegalUseException {
         AbstractAlive person = getPerson(personID);
-
+        person.order(Order.O_USE_DEVICE);
         repo.update(person);
     }
 
     public void stopActivity(String personID) throws NotFoundException, IllegalUseException {
         AbstractAlive person = getPerson(personID);
-
+        person.order(Order.O_GET_FREE);
         repo.update(person);
-
     }
 
 }

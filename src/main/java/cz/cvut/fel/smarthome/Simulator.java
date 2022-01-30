@@ -2,6 +2,7 @@ package cz.cvut.fel.smarthome;
 
 import cz.cvut.fel.smarthome.controller.ActivityController;
 import cz.cvut.fel.smarthome.controller.BusynessController;
+import cz.cvut.fel.smarthome.controller.ReportController;
 import cz.cvut.fel.smarthome.controller.SensorEventGenerator;
 import cz.cvut.fel.smarthome.controller.basic.*;
 import cz.cvut.fel.smarthome.simpleDI.annotation.Inject;
@@ -18,6 +19,8 @@ public class Simulator {
     private SmartController smartController;
     @Inject
     private SensorEventGenerator sensorEventGenerator;
+    @Inject
+    private ReportController reportController;
 
     private final Map<String, Integer> stopActivityMap;
 
@@ -43,6 +46,12 @@ public class Simulator {
 
             if(rnd.nextInt(5) == 0) {
                 sensorEventGenerator.generateSensorEvent();
+            }
+
+            if(clock % 7 == 0) {
+                reportController.aliveReport();
+                reportController.deviceReport();
+                reportController.auxiliaryReport();
             }
 
             clock++;

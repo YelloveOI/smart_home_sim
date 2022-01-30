@@ -1,8 +1,8 @@
 package cz.cvut.fel.smarthome.model.entities.auxiliary;
 
 import cz.cvut.fel.smarthome.model.entities.State;
-import cz.cvut.fel.smarthome.model.entities.basic.AbstractEntity;
-import cz.cvut.fel.smarthome.model.entities.basic.Usable;
+import cz.cvut.fel.smarthome.model.basic.AbstractEntity;
+import cz.cvut.fel.smarthome.model.basic.Usable;
 
 public abstract class AbstractAuxiliary extends AbstractEntity<String> {
 
@@ -59,15 +59,16 @@ public abstract class AbstractAuxiliary extends AbstractEntity<String> {
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb
-                .append("> Auxiliary")
+                .append("> Auxiliary : ")
+                .append(getId())
                 .append("\n\t")
-                .append("State:\n\t");
+                .append("State:\t");
         if(isAvailable) {
             sb.append("AVAILABLE");
         } else {
             sb.append("NOT_AVAILABLE");
         }
-        sb.append("\n\t");
+        sb.append("\n");
         sb.append(usable);
 
         return sb.toString();

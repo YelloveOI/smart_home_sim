@@ -1,11 +1,9 @@
 package cz.cvut.fel.smarthome.model.entities.device;
 
 import cz.cvut.fel.smarthome.model.entities.State;
-import cz.cvut.fel.smarthome.model.entities.basic.Consumer;
-import cz.cvut.fel.smarthome.model.entities.basic.Storage;
-import cz.cvut.fel.smarthome.model.entities.basic.interfaces.IStorage;
-
-import java.util.Set;
+import cz.cvut.fel.smarthome.model.basic.Consumer;
+import cz.cvut.fel.smarthome.model.basic.Storage;
+import cz.cvut.fel.smarthome.model.basic.interfaces.IStorage;
 
 public abstract class AbstractStorageDevice extends AbstractSimpleDevice implements IStorage {
 
@@ -22,8 +20,7 @@ public abstract class AbstractStorageDevice extends AbstractSimpleDevice impleme
         sb
                 .append(super.toString())
                 .append("\n\t")
-                .append(storage)
-                .append("\n--------------------------------");
+                .append(storage);
 
         return sb.toString();
     }

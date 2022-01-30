@@ -1,6 +1,6 @@
 package cz.cvut.fel.smarthome.model.entities.auxiliary;
 
-import cz.cvut.fel.smarthome.model.entities.basic.Usable;
+import cz.cvut.fel.smarthome.model.basic.Usable;
 
 public class SportInventory extends AbstractAuxiliary {
 

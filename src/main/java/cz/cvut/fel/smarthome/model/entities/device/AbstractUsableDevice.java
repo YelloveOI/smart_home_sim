@@ -1,10 +1,8 @@
 package cz.cvut.fel.smarthome.model.entities.device;
 
 import cz.cvut.fel.smarthome.model.entities.State;
-import cz.cvut.fel.smarthome.model.entities.basic.Consumer;
-import cz.cvut.fel.smarthome.model.entities.basic.Usable;
-
-import java.util.Set;
+import cz.cvut.fel.smarthome.model.basic.Consumer;
+import cz.cvut.fel.smarthome.model.basic.Usable;
 
 public abstract class AbstractUsableDevice extends AbstractSimpleDevice {
 
@@ -20,9 +18,7 @@ public abstract class AbstractUsableDevice extends AbstractSimpleDevice {
         StringBuilder sb = new StringBuilder();
         sb
                 .append(super.toString())
-                .append("\n\t")
-                .append(usable)
-                .append("\n--------------------------------");
+                .append(usable);
 
         return sb.toString();
     }

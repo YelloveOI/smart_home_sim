@@ -1,7 +1,8 @@
-package cz.cvut.fel.smarthome.model.entities.basic;
+package cz.cvut.fel.smarthome.model.basic;
 
-import cz.cvut.fel.smarthome.model.entities.basic.interfaces.IConsumer;
+import cz.cvut.fel.smarthome.model.basic.interfaces.IConsumer;
 
+import java.text.DecimalFormat;
 import java.time.LocalDateTime;
 
 public class Consumer implements IConsumer {
@@ -9,14 +10,12 @@ public class Consumer implements IConsumer {
     private final Double consumption;
     private final String unit;
     private Boolean isActive;
-    private LocalDateTime clock;
     private Double consumed;
 
     public Consumer(Double consumption, String unit) {
         this.consumption = consumption;
         this.unit = unit;
         this.isActive = false;
-        this.clock = LocalDateTime.now();
         this.consumed = 0d;
     }
 
@@ -29,8 +28,7 @@ public class Consumer implements IConsumer {
     @Override
     public Double getConsumed() {
         if(isActive) {
-            consumed += ((LocalDateTime.now().getSecond() - clock.getSecond()) * consumption)/60;
-            clock = LocalDateTime.now();
+            consumed += 24 * consumption;
         }
 
         return consumed;
@@ -43,13 +41,12 @@ public class Consumer implements IConsumer {
             isActive = false;
         } else {
             isActive = true;
-            clock = LocalDateTime.now();
         }
     }
 
     @Override
     public String toString() {
-        return "Consumed:\t" + getConsumed() + unit;
+        return "Consumed:\t" + new DecimalFormat("#0.00").format(getConsumed()) + unit + "\n";
     }
 
 }

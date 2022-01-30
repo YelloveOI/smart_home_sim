@@ -1,6 +1,6 @@
-package cz.cvut.fel.smarthome.model.entities.basic;
+package cz.cvut.fel.smarthome.model.basic;
 
-import cz.cvut.fel.smarthome.model.entities.basic.interfaces.IStorage;
+import cz.cvut.fel.smarthome.model.basic.interfaces.IStorage;
 
 import java.util.HashMap;
 import java.util.Map;
