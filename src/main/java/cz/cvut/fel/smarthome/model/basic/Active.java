@@ -1,6 +1,5 @@
 package cz.cvut.fel.smarthome.model.basic;
 
-import cz.cvut.fel.smarthome.model.ActivityType;
 import cz.cvut.fel.smarthome.model.basic.interfaces.IActive;
 
 import java.util.HashMap;

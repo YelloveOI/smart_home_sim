@@ -1,35 +1,41 @@
 # cz.cvut.fel.smarthome.SemOmo
 
+- Ivan Shalaev, Oleksii Afanasiev
+
 - Všechny diagramy jsou ve složce "diagrams"
 
-- Ivan Shalaev
+- Projekt je realizován ve styly MVC (také použitá myšlenka  jednosměrné N-tier architektury a-la Enterprise)
+- ###Obecné vysvětlení: 
+  - Hlavními součástí modelů jsou _entity_, ty dědí od abstraktní třídy AbstractEntity ve které je zapouzdřen parametrický ID
+  - _Entity_ jsou složené z kombinací primitivních komponent: _Active_, _Consumer_, _Storage_, _Usable_
+  - Každá z těchto komponent reprezentuje nějakou vlastnost _entity_
+  - Repositáře a servisy příslušných _entit_ jsou odděleny a mezi sebou nekomunikují 
+  - Interakce mezi _entitami_ se koná v Controller úrovni
+- ### Vysvětlení modelu:
+  - Každá konkrétní (neabstrakni) třída pouze rozšiřuje metody třídy od kterou dědí
+  - **AbstractAlive** reprezentuje živý unit, API reprezentováno metodem _order()_, každá dědici ji třída přitížuje tento metod, compozice: _Active_
+  - **AbstractAuxiliary** reprezentuje non-smart unit který může být použit, compozice: _Usable_
+  - **AbstractSimpleDevice** reprezentuje smart spotřebič který můžeme řídit, API reprezentováno metodem _command()_, každá dědici ji třída přitížuje tento metod, compozice: _Consumer_
+  - **AbstractStorageDevice** dědí od _AbstractSimpleDevice_ a reprezentuje device se schránkou, compozice: _Storage_
+  - **AbstractUsableDevice** dědí od _AbstractSimpleDevice_ a reprezentuje device který může být použit, compozice: _Usable_
+  - **Location** reprezentuje lokaci, agreguje _AbstractEntity_
+  - **House** reprezentuje dům, agreguje _Location_ a je určena pro rozmístění entit a zapouzdření obecného stavu domů
+- ###Vysvětlení kontroléru:
+  - Basic kontroléry splní primitivní use-casy _entit_, ošetřuje výjimky příslušných servisů a hodí _Eventy_
+  - **BusynessController** určuje na úrovni kontroléru je-li _entita_ obsazena
+  - **EventController** dostává _Eventy_ a zpracuje
+  - **ActivityController** je určen pro generaci náhodných aktivit
+  - **SensorEventGenerator** je určen pro generaci náhodných událostí (respektivě zapíná triggery sensorů)
+- View je představen třídou **Reporter** udělán více jako kontroller, zapisuje reporty do souboru a konzole
+- **Configurator** a **Simulator** splňují příslušné názvům funkce
 
-- Jsou několik typu chování a jejich kombinování (spolu s přidáním dat) tvoří entity - Person, Pět, Děvice, Auxiliary, Sensor. Varianty "chování" jsou
-    1. Active: umožňuje entitě mít aktivity typu práce, sport a prokrastinace. Liší se pouzivannym předmětem, práce - auto, sport - kolo/lyze prokrastinace - děvice a také následujícím rozmístěním - sport a práce entita jde ven, prokrastinace je domů.
 
-    2. Actor: umožňuje entitě provádět akce. Ty momentálně působí na cíl akcí. V projektu k dispozici 3 akce zapnout/vypnout děvice a poškodit děvice.
 
-    3. Useable: umožňuje používat entitu entitami Aktive. Blokuje entitu na dobu používání.
-
-    4. Každá entita má unikátní ID (String name), stav a je rozmístěna lokátorem . Entita koná podle svého skutečného stavu. Stav se mění ovlivem jiných entit nebo simulovanými činnostmi.
-
-    5. Každá entita posílá Event v případě změny svého stavu nebo když provádí činnosti s jinými entitami. Eventy jsou vyšetřeny postupně několika Event Processorami
-
-    Person: Aktive, Actor
-    Pet: Actor
-    Auxiliary(kolo, auto, lyže): Useable
-    Device: Useable (také Control a Data, ty jsou rozhraní správy a týkají se jen Děvice)
-
-    Entity jsou uloženy do JSON souboru a přístupné přes Repository. Také je přidán jednoduchý Dependency Injection Container.
-
-    Návrhové vzory:
-    1. Státe: stavy entit
-    2. Dependency Injection: simpleDI
-    3. Decorator: model.location.Location
-    4. Singleton: implementovaný pomocí DI @Inject(scope=Singleton)
-    5. Visitor: Actor-Action
-    6. Chain of Responsibility: model.event.event_channel.EventChannel
-    7. Data Access Object: repository 
-    8. Architektura MVC
-
-- Projekt není plně implementován ale tuším, že architektura bude vhodná na realizaci nových features. Například, je jasné jak postupovat na ošetření eventu "vhodnými" entitami: pomocí Chain of Responsibility + Event Channel dekorovaný event (který má množinu Action navíc) se pošle do vhodnou instancí a tam bude ošetřen buď Actorem nebo Systémem (univerzální Actor). Je jednoduché přidat jiné chybějící servicy díky DI kontejneru.
+- ###Návrhové vzory:
+  1. Object Pool: model.repository pro jednoduchost představen jako pool
+  2. Dependency Injection: simpleDI
+  3. Singleton, Prototype: implementovaný pomocí DI
+  4. Bridge: model.basic z nichz jsou sestaveny entity
+  5. Chain of Responsibility: controller.event_channel
+  6. Data Access Object: model.repository 
+  7. Architektura MVC

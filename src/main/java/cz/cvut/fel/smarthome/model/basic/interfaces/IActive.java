@@ -1,6 +1,6 @@
 package cz.cvut.fel.smarthome.model.basic.interfaces;
 
-import cz.cvut.fel.smarthome.model.ActivityType;
+import cz.cvut.fel.smarthome.model.basic.ActivityType;
 
 public interface IActive {
 

@@ -1,9 +1,6 @@
 package cz.cvut.fel.smarthome.model.entities.alive;
 
-import cz.cvut.fel.smarthome.model.ActivityType;
 import cz.cvut.fel.smarthome.model.entities.Order;
-
-import java.util.Objects;
 
 public class Pet extends AbstractAlive {
 
