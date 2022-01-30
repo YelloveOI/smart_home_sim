@@ -4,6 +4,9 @@ import cz.cvut.fel.smarthome.model.entities.State;
 import cz.cvut.fel.smarthome.model.basic.Consumer;
 import cz.cvut.fel.smarthome.model.basic.Usable;
 
+/**
+ * Represents a device which could be used
+ */
 public abstract class AbstractUsableDevice extends AbstractSimpleDevice {
 
     protected final Usable usable;

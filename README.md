@@ -4,6 +4,12 @@
 
 - Všechny diagramy jsou ve složce "diagrams"
 
+- Počet iterací určuje parametr funkce simulator.start(PARAMETR)
+
+- Aby se spustila druhá konfigurace změňte configurator.config2("SMART_HOME") na configurator.config1("SMART_HOME") v SemOmo.java
+
+- Soubor s logami je house.log, potřebuje manuální vyklizení po každém spuštění
+
 - Projekt je realizován ve styly MVC (také použitá myšlenka  jednosměrné N-tier architektury a-la Enterprise)
 - ###Obecné vysvětlení: 
   - Hlavními součástí modelů jsou _entity_, ty dědí od abstraktní třídy AbstractEntity ve které je zapouzdřen parametrický ID
@@ -29,7 +35,17 @@
 - View je představen třídou **Reporter** udělán více jako kontroller, zapisuje reporty do souboru a konzole
 - **Configurator** a **Simulator** splňují příslušné názvům funkce
 
-
+- ###Požadavky:
+  - F1) chybí entita patro, okno je realizováno jako LocationType.EMBEDDED, kolo/lyze jako SportInventory, zvíře existuje, ale funkcionalita je prázdná
+  - F2) AbstractSimpleDevice.command(Command command) reprezentuje API, devicy s obsahem reprezentovány jako AbstractStorageDevice (prakticky pro tento ty devicu neimplementovaná žádná interakce s jinými entitamy)
+  - F3) AbstractSimpleDevice.consumer (viz. Consumer), implementovaná spotřeba jen v aktivním stavu, ve vypnutém stavu považuje se za 0
+  - F4) implementováno pouze pomoci *entity*.toString() viz. Reporter
+  - F5) implementováno jako jednotlivý metody v kontrolérech viz PersonController
+  - F6) entita House je zodpovědná za rozmístění entit, logika zapouzdřena do LocationService/LocationControllera. Pouze sensory generují eventy viz. SensorEventGenerator
+  - F7) viz. EventController (+ event channels)
+  - F8) viz. Reporter
+  - F9) nesplněno
+  - F10) viz. ActivityController, krom toho osoby pouzivaji devicy
 
 - ###Návrhové vzory:
   1. Object Pool: model.repository pro jednoduchost představen jako pool

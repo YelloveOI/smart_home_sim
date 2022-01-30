@@ -5,6 +5,9 @@ import cz.cvut.fel.smarthome.model.basic.Consumer;
 import cz.cvut.fel.smarthome.model.basic.Storage;
 import cz.cvut.fel.smarthome.model.basic.interfaces.IStorage;
 
+/**
+ * Represents device which can store items
+ */
 public abstract class AbstractStorageDevice extends AbstractSimpleDevice implements IStorage {
 
     protected final Storage storage;

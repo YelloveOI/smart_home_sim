@@ -6,6 +6,10 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
+/**
+ * A primitive class for storage entities
+ * Allows simple actions with storage, keeps state of storage
+ */
 public class Storage implements IStorage {
 
     private final Set<String> itemTypeSet;

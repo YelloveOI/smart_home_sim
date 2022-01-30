@@ -9,6 +9,11 @@ import cz.cvut.fel.smarthome.model.service.SensorService;
 import cz.cvut.fel.smarthome.simpleDI.annotation.Inject;
 import javassist.NotFoundException;
 
+/**
+ * Implements simple sensor's use-cases
+ * Process exceptions to services
+ * Throw messages to reporter
+ */
 public class SensorController {
 
     @Inject

@@ -6,6 +6,9 @@ import cz.cvut.fel.smarthome.controller.event_channel.SmartEventChannel;
 import cz.cvut.fel.smarthome.model.event.Event;
 import cz.cvut.fel.smarthome.simpleDI.annotation.Inject;
 
+/**
+ * Start point of event processing, aggregates EventChannels
+ */
 public class EventController {
 
     @Inject

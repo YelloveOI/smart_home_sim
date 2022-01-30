@@ -12,6 +12,10 @@ import java.io.File;
 import java.io.FileWriter;
 import java.util.stream.Collectors;
 
+/**
+ * Responsible to report writing
+ * Writes report into file house.log and console
+ */
 public class Reporter {
 
     @Inject

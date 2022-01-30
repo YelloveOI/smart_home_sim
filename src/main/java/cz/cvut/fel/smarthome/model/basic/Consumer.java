@@ -5,6 +5,11 @@ import cz.cvut.fel.smarthome.model.basic.interfaces.IConsumer;
 import java.text.DecimalFormat;
 import java.time.LocalDateTime;
 
+
+/**
+ * A primitive class for consumer entities
+ * Turns OFF/ON by it's current state and keeps records
+ */
 public class Consumer implements IConsumer {
 
     private final Double consumption;

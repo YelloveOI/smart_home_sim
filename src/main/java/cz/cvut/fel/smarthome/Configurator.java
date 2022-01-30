@@ -12,6 +12,9 @@ import cz.cvut.fel.smarthome.model.event.Event;
 import cz.cvut.fel.smarthome.model.repository.interfaces.*;
 import cz.cvut.fel.smarthome.simpleDI.annotation.Inject;
 
+/**
+ * Configures all smart home system
+ */
 public class Configurator {
 
     @Inject

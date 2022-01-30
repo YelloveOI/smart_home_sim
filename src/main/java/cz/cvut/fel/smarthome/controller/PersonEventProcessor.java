@@ -4,6 +4,9 @@ import cz.cvut.fel.smarthome.Reporter;
 import cz.cvut.fel.smarthome.controller.basic.SmartController;
 import cz.cvut.fel.smarthome.simpleDI.annotation.Inject;
 
+/**
+ * Represents logic of person's event processing
+ */
 public class PersonEventProcessor {
 
     @Inject

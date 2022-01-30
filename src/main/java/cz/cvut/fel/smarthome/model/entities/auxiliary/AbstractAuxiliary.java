@@ -4,6 +4,9 @@ import cz.cvut.fel.smarthome.model.entities.State;
 import cz.cvut.fel.smarthome.model.basic.AbstractEntity;
 import cz.cvut.fel.smarthome.model.basic.Usable;
 
+/**
+ * Represent an usable non-smart unit
+ */
 public abstract class AbstractAuxiliary extends AbstractEntity<String> {
 
     protected final Usable usable;

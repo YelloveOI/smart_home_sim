@@ -5,6 +5,9 @@ import cz.cvut.fel.smarthome.model.service.UsableDeviceService;
 import cz.cvut.fel.smarthome.simpleDI.annotation.Inject;
 import javassist.NotFoundException;
 
+/**
+ * Provides locationID searching by entityID
+ */
 public class LocationController {
 
     @Inject

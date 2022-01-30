@@ -5,6 +5,11 @@ import cz.cvut.fel.smarthome.model.basic.AbstractEntity;
 import cz.cvut.fel.smarthome.model.entities.Command;
 import cz.cvut.fel.smarthome.model.basic.Consumer;
 
+/**
+ * Represents smart consumer
+ * API implemented via function "command", thus different
+ * devices could override this function to it's own behaviour
+ */
 public abstract class AbstractSimpleDevice extends AbstractEntity<String> {
 
     protected final Consumer consumer;
@@ -16,7 +21,11 @@ public abstract class AbstractSimpleDevice extends AbstractEntity<String> {
         this.state = defaultState;
     }
 
-    //true = state changed, false = state not changed
+    /**
+     * Represents device API
+     * @param command
+     * @return true = state changed, false = state not changed
+     */
     abstract public Boolean command(Command command);
 
     public State getState() {

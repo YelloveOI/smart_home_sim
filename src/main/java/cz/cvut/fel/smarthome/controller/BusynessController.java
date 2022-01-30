@@ -14,6 +14,9 @@ import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+/**
+ * Defines entities as "busy" or "free" to use/act
+ */
 public class BusynessController {
 
     @Inject

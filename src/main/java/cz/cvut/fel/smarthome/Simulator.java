@@ -8,6 +8,10 @@ import cz.cvut.fel.smarthome.simpleDI.annotation.Inject;
 
 import java.util.*;
 
+
+/**
+ * Represents simple simulator
+ */
 public class Simulator {
 
     @Inject

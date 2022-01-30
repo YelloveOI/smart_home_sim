@@ -5,6 +5,10 @@ import cz.cvut.fel.smarthome.model.basic.AbstractEntity;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * Represents location
+ * Defines entity location, could have different types
+ */
 public class Location extends AbstractEntity<String> {
 
     private final LocationType locationType;

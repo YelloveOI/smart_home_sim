@@ -5,6 +5,10 @@ import cz.cvut.fel.smarthome.model.basic.interfaces.IActive;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * A primitive class for active entities
+ * Processes incoming activities and keeps records
+ */
 public class Active implements IActive {
 
     private final Map<ActivityType, Long> timeSpent;

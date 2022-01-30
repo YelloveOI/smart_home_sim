@@ -13,6 +13,9 @@ import java.lang.reflect.Field;
 import java.util.Arrays;
 import java.util.stream.Collectors;
 
+/**
+ * Spring-like been factory
+ */
 public class BeanFactory {
 
     private final BeanConfigurator beanConfigurator;
@@ -25,6 +28,9 @@ public class BeanFactory {
         this.beanConfigurator = new JavaBeanConfigurator(configuration.getPackageToScan(), configuration.getInterfaceToImplementation());
     }
 
+    /**
+     * Composes inner bean's field and return
+     */
     @SneakyThrows
     public <T> T getBean(Class<T> clazz) {
         Class<? extends T> implementationClass = clazz;

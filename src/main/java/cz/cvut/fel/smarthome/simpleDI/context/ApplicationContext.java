@@ -5,6 +5,9 @@ import cz.cvut.fel.smarthome.simpleDI.factory.BeanFactory;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+/**
+ * Spring-like application context
+ */
 public class ApplicationContext {
 
     private BeanFactory beanFactory;
@@ -14,6 +17,10 @@ public class ApplicationContext {
         this.beanFactory = beanFactory;
     }
 
+    /**
+     *  Gets bean from context, if it doesn't exist creates it
+     *  (for Singleton scope)
+     */
     public <T> T getBean(Class<T> clazz) {
         if(clazz == ApplicationContext.class) {
             return (T) this;
@@ -30,6 +37,9 @@ public class ApplicationContext {
         return bean;
     }
 
+    /**
+     * Creates a new bean (for Prototype scope)
+     */
     public <T> T getNewBean(Class<T> clazz) {
         T bean = beanFactory.getBean(clazz);
 

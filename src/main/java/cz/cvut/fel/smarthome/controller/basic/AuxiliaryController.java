@@ -7,6 +7,11 @@ import cz.cvut.fel.smarthome.model.service.LocationService;
 import cz.cvut.fel.smarthome.simpleDI.annotation.Inject;
 import javassist.NotFoundException;
 
+/**
+ * Implements simple auxiliary's use-cases
+ * Process exceptions to services
+ * Throw messages to reporter
+ */
 public class AuxiliaryController {
 
     @Inject

@@ -6,6 +6,9 @@ import cz.cvut.fel.smarthome.controller.basic.PersonController;
 import cz.cvut.fel.smarthome.model.event.Event;
 import cz.cvut.fel.smarthome.simpleDI.annotation.Inject;
 
+/**
+ * Channel for person event processing
+ */
 public class PersonEventChannel extends EventChannel {
 
     @Inject

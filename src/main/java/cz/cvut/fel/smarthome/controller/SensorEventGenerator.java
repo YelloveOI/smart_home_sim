@@ -9,6 +9,10 @@ import java.util.Objects;
 import java.util.Random;
 import java.util.Set;
 
+/**
+ * Generates event (in usual meaning), or rather
+ * triggers random sensor
+ */
 public class SensorEventGenerator {
 
     @Inject

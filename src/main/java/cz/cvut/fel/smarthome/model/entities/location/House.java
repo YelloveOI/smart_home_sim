@@ -6,6 +6,11 @@ import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+/**
+ * Represents house
+ * Aggregates locations, processes allocating/deallocating entities,
+ * contains house properties
+ */
 public class House extends AbstractEntity<String> {
 
     private final Integer roomQuantity;

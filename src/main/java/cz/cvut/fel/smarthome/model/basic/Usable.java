@@ -2,6 +2,11 @@ package cz.cvut.fel.smarthome.model.basic;
 
 import cz.cvut.fel.smarthome.model.basic.interfaces.IUsable;
 
+/**
+ * A primitive class for usable entities
+ * Processes use/stopUse callings, keeps state
+ * Allows to usable entity to be broken
+ */
 public class Usable implements IUsable {
 
     private final Integer maxDurability;

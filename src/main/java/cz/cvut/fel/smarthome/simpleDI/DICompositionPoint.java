@@ -3,6 +3,9 @@ package cz.cvut.fel.smarthome.simpleDI;
 import cz.cvut.fel.smarthome.simpleDI.context.ApplicationContext;
 import cz.cvut.fel.smarthome.simpleDI.factory.BeanFactory;
 
+/**
+ * Composes DI container in a right way
+ */
 public class DICompositionPoint {
     public ApplicationContext context;
 

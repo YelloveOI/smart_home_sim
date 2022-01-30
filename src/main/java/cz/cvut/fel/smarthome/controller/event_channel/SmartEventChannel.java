@@ -5,6 +5,10 @@ import cz.cvut.fel.smarthome.model.event.Event;
 import cz.cvut.fel.smarthome.simpleDI.annotation.Inject;
 import cz.cvut.fel.smarthome.controller.basic.SmartController;
 
+/**
+ * Channel for smart home event processing
+ * Represents logic of smart home
+ */
 public class SmartEventChannel extends EventChannel {
 
     @Inject

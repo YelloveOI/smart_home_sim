@@ -2,6 +2,11 @@ package cz.cvut.fel.smarthome.model.basic;
 
 import java.util.Objects;
 
+/**
+ * Represent entity with parametrized ID
+ * Used only for persisted layer goals
+ * @param <ID>
+ */
 public abstract class AbstractEntity<ID> {
 
     protected final ID id;

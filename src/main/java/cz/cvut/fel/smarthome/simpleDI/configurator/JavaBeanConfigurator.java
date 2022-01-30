@@ -6,6 +6,9 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
+/**
+ * Spring-like bean configurator
+ */
 public class JavaBeanConfigurator implements BeanConfigurator {
 
     private final Reflections scanner;
@@ -16,6 +19,9 @@ public class JavaBeanConfigurator implements BeanConfigurator {
         this.interfaceToImplementation = new HashMap<>(interfaceToImplementation);
     }
 
+    /**
+     * Try to automatically find implementation for @param interfaceClass
+     */
     @Override
     public <T> Class<? extends T> getImplementationClass(Class<T> interfaceClass) {
         return interfaceToImplementation.computeIfAbsent(interfaceClass, clazz -> {

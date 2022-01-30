@@ -4,6 +4,11 @@ import cz.cvut.fel.smarthome.Reporter;
 import cz.cvut.fel.smarthome.model.service.SmartService;
 import cz.cvut.fel.smarthome.simpleDI.annotation.Inject;
 
+/**
+ * Implements simple smart home's use-cases
+ * Process exceptions to services
+ * Throw messages to reporter
+ */
 public class SmartController {
 
     @Inject

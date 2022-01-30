@@ -6,6 +6,11 @@ import cz.cvut.fel.smarthome.model.service.UsableDeviceService;
 import cz.cvut.fel.smarthome.simpleDI.annotation.Inject;
 import javassist.NotFoundException;
 
+/**
+ * Implements simple usable device's use-cases
+ * Process exceptions to services
+ * Throw messages to reporter
+ */
 public class UsableDeviceController {
 
     @Inject

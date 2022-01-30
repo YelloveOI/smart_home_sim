@@ -10,6 +10,9 @@ import cz.cvut.fel.smarthome.simpleDI.annotation.Inject;
 
 import java.util.*;
 
+/**
+ * Starts random activities for active entities
+ */
 public class ActivityController {
 
     @Inject
