@@ -1,6 +1,7 @@
 package cz.cvut.fel.smarthome.controller.basic;
 
 import cz.cvut.fel.smarthome.controller.EventController;
+import cz.cvut.fel.smarthome.controller.ReportController;
 import cz.cvut.fel.smarthome.model.entities.alive.AbstractAlive;
 import cz.cvut.fel.smarthome.model.entities.alive.Person;
 import cz.cvut.fel.smarthome.model.event.Event;
@@ -18,7 +19,7 @@ public class PersonController {
     @Inject
     private LocationService locationService;
     @Inject
-    private EventController eventController;
+    private ReportController reportController;
 
 
     public void goSport(String houseID, String personID) {
@@ -26,12 +27,7 @@ public class PersonController {
             personService.goSport(personID);
             locationService.deallocate(houseID, personService.getPerson(personID));
 
-            eventController.notify(new Event<AbstractAlive>(
-                    personService.getPerson(personID),
-                    1,
-                    EventType.E_NORMAL,
-                    personService.getPerson(personID).getId() + " going sport"
-            ));
+            reportController.report("Person " + personID + " now going sport");
         } catch (NotFoundException e1) {
             System.out.println(e1);
         } catch (IllegalUseException e2) {
@@ -45,12 +41,7 @@ public class PersonController {
             personService.goWork(personID);
             locationService.deallocate(houseID, personService.getPerson(personID));
 
-            eventController.notify(new Event<AbstractAlive>(
-                    personService.getPerson(personID),
-                    1,
-                    EventType.E_NORMAL,
-                    personService.getPerson(personID).getId() + " going work"
-            ));
+            reportController.report("Person " + personID + " now going work");
         } catch (NotFoundException e1) {
             System.out.println(e1);
         } catch (IllegalUseException e2) {
@@ -68,12 +59,7 @@ public class PersonController {
                     newLocation
             );
 
-            eventController.notify(new Event<AbstractAlive>(
-                    personService.getPerson(personID),
-                    1,
-                    EventType.E_NORMAL,
-                    personService.getPerson(personID).getId() + " procrastinating"
-            ));
+            reportController.report("Person " + personID + " now using device");
         } catch (NotFoundException e1) {
             System.out.println(e1);
         } catch (IllegalUseException e2) {
@@ -87,12 +73,7 @@ public class PersonController {
             personService.stopActivity(personID);
             locationService.locateBack(houseID, personService.getPerson(personID));
 
-//            eventController.notify(new Event<AbstractAlive>(
-//                    personService.getPerson(personID),
-//                    1,
-//                    EventType.E_NORMAL,
-//                    personService.getPerson(personID).getId() + " getting free"
-//            ));
+            reportController.report("Person " + personID + " now is free");
         } catch (NotFoundException e1) {
             System.out.println(e1);
         } catch (IllegalUseException e2) {

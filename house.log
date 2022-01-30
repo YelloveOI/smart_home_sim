@@ -189,3 +189,1808 @@
 >--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
 >--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
 >--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan going work
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert going work
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan going work
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan going work
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate going work
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate going work
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan going work
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert going work
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo going work
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan going work
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate going work
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert going work
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan going work
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now is free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo going work
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now is free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan going work
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now is free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan going work
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now is free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate going work
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now is free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan going work
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now is free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate going work
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now is free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan going work
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now is free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan going work
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now is free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert going work
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now is free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan going work
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert going work
+>--- Event from SENSOR_DL_ds1	type E_NORMAL	with description: Everything is okay
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from SENSOR_DL_ds1	type E_NORMAL	with description: Everything is okay
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now is free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from SENSOR_DL_ds1	type E_NORMAL	with description: Everything is okay
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from SENSOR_DL_ds1	type E_NORMAL	with description: Everything is okay
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert going work
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from SENSOR_DL_ds1	type E_NORMAL	with description: Everything is okay
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from SENSOR_DL_ds1	type E_NORMAL	with description: Everything is okay
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now is free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan going work
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from SENSOR_DL_ds1	type E_NORMAL	with description: Everything is okay
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from SENSOR_DL_ds1	type E_NORMAL	with description: Everything is okay
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from SENSOR_DL_ds1	type E_NORMAL	with description: Everything is okay
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from SENSOR_DL_ds1	type E_NORMAL	with description: Everything is okay
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now is free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan going work
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from SENSOR_DL_ds1	type E_NORMAL	with description: Everything is okay
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now is free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate going work
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now is free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert going work
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from SENSOR_DL_ds1	type E_NORMAL	with description: Everything is okay
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from SENSOR_DL_ds1	type E_NORMAL	with description: Everything is okay
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from SENSOR_DL_ds1	type E_NORMAL	with description: Everything is okay
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from SENSOR_DL_ds1	type E_NORMAL	with description: Everything is okay
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now is free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo going work
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from SENSOR_DL_ds1	type E_NORMAL	with description: Everything is okay
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now is free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo going work
+>--- Event from SENSOR_DL_ds1	type E_NORMAL	with description: Everything is okay
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from SENSOR_DL_ds1	type E_NORMAL	with description: Everything is okay
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now is free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo going work
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from SENSOR_DL_ds1	type E_NORMAL	with description: Everything is okay
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from SENSOR_DL_ds1	type E_NORMAL	with description: Everything is okay
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now is free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan going work
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from SENSOR_DL_ds1	type E_NORMAL	with description: Everything is okay
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now is free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan going work
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from SENSOR_DL_ds1	type E_NORMAL	with description: Everything is okay
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate going work
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now is free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan going work
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now is free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan going work
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now is free
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan going work
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now is free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan going work
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now is free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert going work
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now is free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert going work
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now is free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo going work
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now is free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate going work
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now is free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo going work
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now is free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate going work
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate going work
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now is free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate going work
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now is free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate going work
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now is free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan going work
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now is free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo going work
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now is free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan going work
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now is free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan going work
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now is free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo going work
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now is free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo going work
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now is free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate going work
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now is free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan going work
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from SMART_CONTROLLER	type E_NORMAL	with description: All devices are turned ON
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo going work
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from SENSOR_DL_ds1	type E_DARK	with description: Sensor detected a lack of light
+>--- Event from SMART_CONTROLLER	type E_NORMAL	with description: All devices are turned ON
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan going work
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from SENSOR_DL_ds1	type E_LIGHT	with description: Sensor detected too much light
+>--- Event from SMART_CONTROLLER	type E_NORMAL	with description: All devices are turned ON
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan going work
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from SENSOR_DL_ds1	type E_DARK	with description: Sensor detected a lack of light
+>--- Event from SMART_CONTROLLER	type E_NORMAL	with description: All devices are turned ON
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from SENSOR_DL_ds1	type E_DARK	with description: Sensor detected a lack of light
+>--- Event from SMART_CONTROLLER	type E_NORMAL	with description: All devices are turned ON
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate going work
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from SENSOR_DL_ds1	type E_LIGHT	with description: Sensor detected too much light
+>--- Event from SMART_CONTROLLER	type E_NORMAL	with description: All devices are turned ON
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan going work
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from SENSOR_DL_ds1	type E_LIGHT	with description: Sensor detected too much light
+>--- Event from SMART_CONTROLLER	type E_NORMAL	with description: All devices are turned ON
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan going work
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now is free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan going work
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from SENSOR_DL_ds1	type E_DARK	with description: Sensor detected a lack of light
+>--- Event from SMART_CONTROLLER	type E_NORMAL	with description: All devices are turned ON
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan going work
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from SENSOR_DL_ds1	type E_LIGHT	with description: Sensor detected too much light
+>--- Event from SMART_CONTROLLER	type E_NORMAL	with description: All devices are turned ON
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert going work
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from SENSOR_DL_ds1	type E_DARK	with description: Sensor detected a lack of light
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate going work
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from SENSOR_DL_ds1	type E_LIGHT	with description: Sensor detected too much light
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from SENSOR_DL_ds1	type E_DARK	with description: Sensor detected a lack of light
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now is free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan going work
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from SENSOR_DL_ds1	type E_LIGHT	with description: Sensor detected too much light
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from SENSOR_DL_ds1	type E_DARK	with description: Sensor detected a lack of light
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now is free
+>--- Event from SENSOR_DL_ds1	type E_LIGHT	with description: Sensor detected too much light
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan going work
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from SENSOR_DL_ds1	type E_DARK	with description: Sensor detected a lack of light
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from SENSOR_DL_ds1	type E_LIGHT	with description: Sensor detected too much light
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now is free
+>--- Event from SENSOR_DL_ds1	type E_DARK	with description: Sensor detected a lack of light
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate going work
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from SENSOR_DL_ds1	type E_LIGHT	with description: Sensor detected too much light
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now is free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from SENSOR_DL_ds1	type E_DARK	with description: Sensor detected a lack of light
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo going work
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from SENSOR_DL_ds1	type E_LIGHT	with description: Sensor detected too much light
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from SENSOR_DL_ds1	type E_DARK	with description: Sensor detected a lack of light
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now is free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from SENSOR_DL_ds1	type E_LIGHT	with description: Sensor detected too much light
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate going work
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from SENSOR_DL_ds1	type E_DARK	with description: Sensor detected a lack of light
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now is free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate going work
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from SENSOR_DL_ds1	type E_LIGHT	with description: Sensor detected too much light
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from SENSOR_DL_ds1	type E_DARK	with description: Sensor detected a lack of light
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now is free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate going work
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now is free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate going work
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now is free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert going work
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from SENSOR_DL_ds1	type E_LIGHT	with description: Sensor detected too much light
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from SENSOR_DL_ds1	type E_DARK	with description: Sensor detected a lack of light
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo procrastinating
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now is free
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from CAR_c1	type E_NORMAL	with description: CAR_c1 now in use
+>--- Event from PERSON_Strasidlo	type E_NORMAL	with description: PERSON_Strasidlo going work
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan procrastinating
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now in use
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate procrastinating
+>--- Event from SENSOR_DL_ds1	type E_LIGHT	with description: Sensor detected too much light
+>--- Event from PERSON_Ivan	type E_NORMAL	with description: PERSON_Ivan getting free
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now free
+>--- Event from SENSOR_DL_ds1	type E_DARK	with description: Sensor detected a lack of light
+>--- Event from USABLE_tv2	type E_NORMAL	with description: USABLE_tv2 now in use
+>--- Event from PERSON_Robert	type E_NORMAL	with description: PERSON_Robert procrastinating
+>--- Event from PERSON_Kate	type E_NORMAL	with description: PERSON_Kate getting free
+>--- Event from USABLE_tv1	type E_NORMAL	with description: USABLE_tv1 now free
+SMART HOME turned ON all devices
+Auxiliary CAR_c1 now in use
+Person PERSON_Ivan now going work
+Device USABLE_tv2 now in use
+Person PERSON_Robert now using device
+Device USABLE_tv1 now in use
+Person PERSON_Kate now using device
+Person PERSON_Robert now is free
+Device USABLE_tv2 now in available to use
+Person PERSON_Kate now is free
+Device USABLE_tv1 now in available to use
+Device USABLE_tv2 now in use
+Person PERSON_Robert now using device
+Device USABLE_tv1 now in use
+Person PERSON_Kate now using device
+Person PERSON_Ivan now is free
+Auxiliary CAR_c1 now is free
+Person PERSON_Robert now is free
+Device USABLE_tv2 now in available to use
+Device USABLE_tv2 now in use
+Person PERSON_Ivan now using device
+Auxiliary CAR_c1 now in use
+Person PERSON_Robert now going work
+Person PERSON_Kate now is free
+Device USABLE_tv1 now in available to use
+Sensor SENSOR_DL_ds1 triggered
+SMART HOME opened blinds
+Device USABLE_tv1 now in use
+Person PERSON_Strasidlo now using device
+Person PERSON_Ivan now is free
+Device USABLE_tv2 now in available to use
+Device USABLE_tv2 now in use
+Person PERSON_Ivan now using device
+Device USABLE_tv1 now in available to use
+Person PERSON_Strasidlo now is free
+Sensor SENSOR_DL_ds1 triggered
+SMART HOME closed blinds
+Device USABLE_tv1 now in use
+Person PERSON_Kate now using device
+Person PERSON_Ivan now is free
+Device USABLE_tv2 now in available to use
+Person PERSON_Kate now is free
+Device USABLE_tv1 now in available to use
+Device USABLE_tv2 now in use
+Person PERSON_Strasidlo now using device
+Auxiliary CAR_c1 now is free
+Person PERSON_Robert now is free
+Device USABLE_tv1 now in use
+Person PERSON_Kate now using device
+Auxiliary CAR_c1 now in use
+Person PERSON_Robert now going work
+Device USABLE_tv2 now in available to use
+Person PERSON_Strasidlo now is free
+Person PERSON_Kate now is free
+Device USABLE_tv1 now in available to use
+Device USABLE_tv2 now in use
+Person PERSON_Ivan now using device
+Person PERSON_Ivan now is free
+Device USABLE_tv2 now in available to use
+Device USABLE_tv2 now in use
+Person PERSON_Kate now using device
+Device USABLE_tv1 now in use
+Person PERSON_Strasidlo now using device
+Person PERSON_Kate now is free
+Auxiliary CAR_c1 now is free
+Person PERSON_Robert now is free
+Device USABLE_tv2 now in available to use
+Device USABLE_tv1 now in available to use
+Person PERSON_Strasidlo now is free
+Auxiliary CAR_c1 now in use
+Person PERSON_Ivan now going work
+Device USABLE_tv2 now in use
+Person PERSON_Kate now using device
+Device USABLE_tv1 now in use
+Person PERSON_Robert now using device
+Sensor SENSOR_DL_ds1 triggered
+SMART HOME opened blinds
+Person PERSON_Kate now is free
+Person PERSON_Robert now is free
+Device USABLE_tv2 now in available to use
+Device USABLE_tv1 now in available to use
+Device USABLE_tv2 now in use
+Person PERSON_Kate now using device
+Person PERSON_Kate now is free
+Device USABLE_tv2 now in available to use
+Device USABLE_tv2 now in use
+Person PERSON_Kate now using device
+Person PERSON_Ivan now is free
+Auxiliary CAR_c1 now is free
+Sensor SENSOR_DL_ds1 triggered
+SMART HOME closed blinds
+Device USABLE_tv1 now in use
+Person PERSON_Ivan now using device
+Auxiliary CAR_c1 now in use
+Person PERSON_Robert now going work
+Person PERSON_Kate now is free
+Device USABLE_tv2 now in available to use
+Sensor SENSOR_DL_ds1 triggered
+SMART HOME opened blinds
+Device USABLE_tv2 now in use
+Person PERSON_Kate now using device
+Person PERSON_Ivan now is free
+Device USABLE_tv1 now in available to use
+Sensor SENSOR_DL_ds1 triggered
+SMART HOME closed blinds
+Device USABLE_tv1 now in use
+Person PERSON_Strasidlo now using device
+Person PERSON_Kate now is free
+Device USABLE_tv2 now in available to use
+Device USABLE_tv2 now in use
+Person PERSON_Ivan now using device
+Device USABLE_tv1 now in available to use
+Person PERSON_Strasidlo now is free
+Device USABLE_tv1 now in use
+Person PERSON_Strasidlo now using device
+Person PERSON_Ivan now is free
+Device USABLE_tv2 now in available to use
+Auxiliary CAR_c1 now is free
+Person PERSON_Robert now is free
+Auxiliary CAR_c1 now in use
+Person PERSON_Ivan now going work
+Device USABLE_tv1 now in available to use
+Person PERSON_Strasidlo now is free
+Device USABLE_tv2 now in use
+Person PERSON_Robert now using device
+Device USABLE_tv1 now in use
+Person PERSON_Kate now using device
+Person PERSON_Robert now is free
+Device USABLE_tv2 now in available to use
+Person PERSON_Kate now is free
+Device USABLE_tv1 now in available to use
+Device USABLE_tv2 now in use
+Person PERSON_Strasidlo now using device
+Person PERSON_Ivan now is free
+Auxiliary CAR_c1 now is free
+Device USABLE_tv2 now in available to use
+Person PERSON_Strasidlo now is free
+Auxiliary CAR_c1 now in use
+Person PERSON_Kate now going work
+Device USABLE_tv2 now in use
+Person PERSON_Robert now using device
+Device USABLE_tv1 now in use
+Person PERSON_Ivan now using device
+Person PERSON_Robert now is free
+Device USABLE_tv2 now in available to use
+Device USABLE_tv2 now in use
+Person PERSON_Strasidlo now using device
+Person PERSON_Ivan now is free
+Device USABLE_tv1 now in available to use
+Device USABLE_tv1 now in use
+Person PERSON_Ivan now using device
+Device USABLE_tv2 now in available to use
+Person PERSON_Strasidlo now is free
+Person PERSON_Ivan now is free
+Device USABLE_tv1 now in available to use
+Device USABLE_tv2 now in use
+Person PERSON_Ivan now using device
+Device USABLE_tv1 now in use
+Person PERSON_Strasidlo now using device
+Person PERSON_Kate now is free
+Auxiliary CAR_c1 now is free
+Auxiliary CAR_c1 now in use
+Person PERSON_Kate now going work
+Person PERSON_Ivan now is free
+Device USABLE_tv2 now in available to use
+Device USABLE_tv1 now in available to use
+Person PERSON_Strasidlo now is free
+Device USABLE_tv2 now in use
+Person PERSON_Robert now using device
+Sensor SENSOR_DL_ds1 triggered
+SMART HOME opened blinds
+Device USABLE_tv1 now in use
+Person PERSON_Strasidlo now using device
+Person PERSON_Robert now is free
+Device USABLE_tv2 now in available to use
+Device USABLE_tv2 now in use
+Person PERSON_Robert now using device
+Device USABLE_tv1 now in available to use
+Person PERSON_Strasidlo now is free
+Sensor SENSOR_DL_ds1 triggered
+SMART HOME closed blinds
+Device USABLE_tv1 now in use
+Person PERSON_Strasidlo now using device
+Person PERSON_Robert now is free
+Device USABLE_tv2 now in available to use
+Sensor SENSOR_DL_ds1 triggered
+SMART HOME opened blinds
+Device USABLE_tv2 now in use
+Person PERSON_Ivan now using device
+Person PERSON_Kate now is free
+Auxiliary CAR_c1 now is free
+Device USABLE_tv1 now in available to use
+Person PERSON_Strasidlo now is free
+Auxiliary CAR_c1 now in use
+Person PERSON_Kate now going work
+Device USABLE_tv1 now in use
+Person PERSON_Strasidlo now using device
+Person PERSON_Ivan now is free
+Device USABLE_tv2 now in available to use
+Device USABLE_tv2 now in use
+Person PERSON_Robert now using device
+Device USABLE_tv1 now in available to use
+Person PERSON_Strasidlo now is free
+Device USABLE_tv1 now in use
+Person PERSON_Ivan now using device
+Person PERSON_Robert now is free
+Device USABLE_tv2 now in available to use
+Device USABLE_tv2 now in use
+Person PERSON_Robert now using device
+Person PERSON_Ivan now is free
+Device USABLE_tv1 now in available to use
+Sensor SENSOR_DL_ds1 triggered
+SMART HOME closed blinds
+Person PERSON_Robert now is free
+Device USABLE_tv2 now in available to use
+Person PERSON_Kate now is free
+Auxiliary CAR_c1 now is free
+Device USABLE_tv2 now in use
+Person PERSON_Robert now using device
+Device USABLE_tv1 now in use
+Person PERSON_Strasidlo now using device
+Sensor SENSOR_DL_ds1 triggered
+SMART HOME opened blinds
+Auxiliary CAR_c1 now in use
+Person PERSON_Ivan now going work
+Person PERSON_Robert now is free
+Device USABLE_tv2 now in available to use
+Device USABLE_tv1 now in available to use
+Person PERSON_Strasidlo now is free
+Device USABLE_tv2 now in use
+Person PERSON_Kate now using device
+Device USABLE_tv1 now in use
+Person PERSON_Robert now using device
+Person PERSON_Kate now is free
+Device USABLE_tv2 now in available to use
+Sensor SENSOR_DL_ds1 triggered
+SMART HOME closed blinds
+Device USABLE_tv2 now in use
+Person PERSON_Kate now using device
+Person PERSON_Robert now is free
+Device USABLE_tv1 now in available to use
+Sensor SENSOR_DL_ds1 triggered
+SMART HOME opened blinds
+Device USABLE_tv1 now in use
+Person PERSON_Robert now using device
+Person PERSON_Kate now is free
+Device USABLE_tv2 now in available to use
+Sensor SENSOR_DL_ds1 triggered
+SMART HOME closed blinds
+Device USABLE_tv2 now in use
+Person PERSON_Kate now using device
+Person PERSON_Ivan now is free
+Auxiliary CAR_c1 now is free
+Person PERSON_Robert now is free
+Device USABLE_tv1 now in available to use
+Device USABLE_tv1 now in use
+Person PERSON_Ivan now using device
+Auxiliary CAR_c1 now in use
+Person PERSON_Robert now going work
+Person PERSON_Kate now is free
+Device USABLE_tv2 now in available to use
+Device USABLE_tv2 now in use
+Person PERSON_Kate now using device
+Person PERSON_Ivan now is free
+Device USABLE_tv1 now in available to use
+Sensor SENSOR_DL_ds1 triggered
+SMART HOME opened blinds
+Person PERSON_Kate now is free
+Device USABLE_tv2 now in available to use
+Sensor SENSOR_DL_ds1 triggered
+SMART HOME closed blinds
+Device USABLE_tv2 now in use
+Person PERSON_Ivan now using device
+Device USABLE_tv1 now in use
+Person PERSON_Strasidlo now using device
+Sensor SENSOR_DL_ds1 triggered
+SMART HOME opened blinds

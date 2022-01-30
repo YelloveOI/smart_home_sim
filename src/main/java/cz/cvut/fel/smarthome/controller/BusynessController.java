@@ -31,7 +31,7 @@ public class BusynessController {
         this.busynessMap = new HashMap<>();
     }
 
-    public void takeData() {
+    public void init() {
         for(
                 String s : aliveRepository.findAll().stream()
                 .map(AbstractEntity::getId)

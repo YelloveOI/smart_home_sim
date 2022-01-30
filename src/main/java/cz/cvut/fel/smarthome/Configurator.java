@@ -1,6 +1,7 @@
 package cz.cvut.fel.smarthome;
 
 import cz.cvut.fel.smarthome.controller.BusynessController;
+import cz.cvut.fel.smarthome.controller.EventController;
 import cz.cvut.fel.smarthome.model.entities.auxiliary.Car;
 import cz.cvut.fel.smarthome.model.entities.auxiliary.SportInventory;
 import cz.cvut.fel.smarthome.model.entities.device.Blind;
@@ -27,6 +28,8 @@ public class Configurator {
     private UsableDeviceRepository usableDeviceRepository;
     @Inject
     private AuxiliaryRepository auxiliaryRepository;
+    @Inject
+    private BusynessController busynessController;
 
     private String houseName;
 
@@ -98,6 +101,8 @@ public class Configurator {
         house.allocateEntity(tv2, "room2");
         house.allocateEntity(c1, "garage1");
         houseRepository.create(house);
+
+        busynessController.init();
     }
 
     public String getHouseName() {

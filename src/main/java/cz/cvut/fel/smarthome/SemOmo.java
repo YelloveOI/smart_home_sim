@@ -6,7 +6,6 @@ import lombok.SneakyThrows;
 
 public class SemOmo {
 
-    @SneakyThrows
     public static void main(String[] args) {
         DICompositionPoint compositionPoint = new DICompositionPoint();
         ApplicationContext context = compositionPoint.run();

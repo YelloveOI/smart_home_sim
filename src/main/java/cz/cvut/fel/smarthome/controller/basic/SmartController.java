@@ -1,6 +1,7 @@
 package cz.cvut.fel.smarthome.controller.basic;
 
 import cz.cvut.fel.smarthome.controller.EventController;
+import cz.cvut.fel.smarthome.controller.ReportController;
 import cz.cvut.fel.smarthome.model.entities.basic.AbstractEntity;
 import cz.cvut.fel.smarthome.model.entities.device.AbstractUsableDevice;
 import cz.cvut.fel.smarthome.model.event.Event;
@@ -13,74 +14,30 @@ public class SmartController {
     @Inject
     private SmartService smartService;
     @Inject
-    private EventController eventController;
+    private ReportController reportController;
 
     public void turnOnAllDevice() {
         smartService.turnOnAllSimpleDevices();
         smartService.turnOnAllStorageDevices();
         smartService.turnOnAllUsableDevices();
-
-        eventController.notify(new Event<AbstractEntity<String>>(
-                new AbstractEntity<String>("SMART_CONTROLLER") {
-                    @Override
-                    public String getId() {
-                        return super.getId();
-                    }
-                },
-                1,
-                EventType.E_NORMAL,
-                "All devices are turned ON"
-        ));
+        reportController.report("SMART HOME turned ON all devices");
     }
 
     public void turnOffAllDevice() {
         smartService.turnOffAllSimpleDevices();
         smartService.turnOffAllStorageDevices();
         smartService.turnOffAllUsableDevices();
-
-        eventController.notify(new Event<AbstractEntity<String>>(
-                new AbstractEntity<String>("SMART_CONTROLLER") {
-                    @Override
-                    public String getId() {
-                        return super.getId();
-                    }
-                },
-                1,
-                EventType.E_NORMAL,
-                "All devices are turned OFF"
-        ));
+        reportController.report("SMART HOME turned OFF all devices");
     }
 
     public void openBlinds() {
         smartService.openBlinds();
-
-        eventController.notify(new Event<AbstractEntity<String>>(
-                new AbstractEntity<String>("SMART_CONTROLLER") {
-                    @Override
-                    public String getId() {
-                        return super.getId();
-                    }
-                },
-                1,
-                EventType.E_NORMAL,
-                "All blinds are open"
-        ));
+        reportController.report("SMART HOME opened blinds");
     }
 
     public void closeBlinds() {
         smartService.closeBlinds();
-
-        eventController.notify(new Event<AbstractEntity<String>>(
-                new AbstractEntity<String>("SMART_CONTROLLER") {
-                    @Override
-                    public String getId() {
-                        return super.getId();
-                    }
-                },
-                1,
-                EventType.E_NORMAL,
-                "All blinds are closed"
-        ));
+        reportController.report("SMART HOME closed blinds");
     }
 
 }

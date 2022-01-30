@@ -25,7 +25,6 @@ public class SmartService {
         Set<AbstractSimpleDevice> devices = simpleDeviceRepository.findAllByPredicate("BLIND_");
         for(AbstractSimpleDevice a : devices) {
             a.command(Command.C_CLOSE);
-            simpleDeviceRepository.update(a);
         }
     }
 
@@ -33,7 +32,6 @@ public class SmartService {
         Set<AbstractSimpleDevice> devices = simpleDeviceRepository.findAllByPredicate("BLIND_");
         for(AbstractSimpleDevice a : devices) {
             a.command(Command.C_OPEN);
-            simpleDeviceRepository.update(a);
         }
     }
 
@@ -41,7 +39,6 @@ public class SmartService {
         Collection<AbstractSimpleDevice> devices = simpleDeviceRepository.findAll();
         for(AbstractSimpleDevice a : devices) {
             a.command(Command.C_ON);
-            simpleDeviceRepository.update(a);
         }
     }
 
@@ -49,7 +46,6 @@ public class SmartService {
         Collection<AbstractSimpleDevice> devices = simpleDeviceRepository.findAll();
         for(AbstractSimpleDevice a : devices) {
             a.command(Command.C_OFF);
-            simpleDeviceRepository.update(a);
         }
     }
 
@@ -57,7 +53,6 @@ public class SmartService {
         Collection<AbstractStorageDevice> devices = storageDeviceRepository.findAll();
         for(AbstractStorageDevice a : devices) {
             a.command(Command.C_ON);
-            storageDeviceRepository.update(a);
         }
     }
 
@@ -65,7 +60,6 @@ public class SmartService {
         Collection<AbstractStorageDevice> devices = storageDeviceRepository.findAll();
         for(AbstractStorageDevice a : devices) {
             a.command(Command.C_OFF);
-            storageDeviceRepository.update(a);
         }
     }
 
@@ -73,7 +67,6 @@ public class SmartService {
         Collection<AbstractUsableDevice> devices = usableDeviceRepository.findAll();
         for(AbstractUsableDevice a : devices) {
             a.command(Command.C_ON);
-            usableDeviceRepository.update(a);
         }
     }
 
@@ -81,7 +74,6 @@ public class SmartService {
         Collection<AbstractUsableDevice> devices = usableDeviceRepository.findAll();
         for(AbstractUsableDevice a : usableDeviceRepository.findAll()) {
             a.command(Command.C_OFF);
-            usableDeviceRepository.update(a);
         }
     }
 

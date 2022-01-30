@@ -5,11 +5,11 @@ import cz.cvut.fel.smarthome.model.event.Event;
 public abstract class EventChannel {
 
     private final Integer priority;
+
     private EventChannel nextChannel;
 
-    public EventChannel(Integer priority, EventChannel nextChannel) {
+    public EventChannel(Integer priority) {
         this.priority = priority;
-        this.nextChannel = nextChannel;
     }
 
     public void setNextChannel(EventChannel nextChannel) {

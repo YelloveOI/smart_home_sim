@@ -1,6 +1,7 @@
 package cz.cvut.fel.smarthome.controller.basic;
 
 import cz.cvut.fel.smarthome.controller.EventController;
+import cz.cvut.fel.smarthome.controller.ReportController;
 import cz.cvut.fel.smarthome.model.entities.device.AbstractStorageDevice;
 import cz.cvut.fel.smarthome.model.entities.device.AbstractUsableDevice;
 import cz.cvut.fel.smarthome.model.event.Event;
@@ -15,17 +16,12 @@ public class UsableDeviceController {
     @Inject
     private UsableDeviceService usableDeviceService;
     @Inject
-    private EventController eventController;
+    private ReportController reportController;
 
     public void use(String deviceID) {
         try {
             usableDeviceService.use(deviceID);
-            eventController.notify(new Event<AbstractUsableDevice>(
-                    usableDeviceService.getDevice(deviceID),
-                    1,
-                    EventType.E_NORMAL,
-                    usableDeviceService.getDevice(deviceID).getId() + " now in use"
-            ));
+            reportController.report("Device " + deviceID + " now in use");
         } catch (NotFoundException e1) {
             System.out.println(e1);
         } catch (IllegalUseException e2) {
@@ -38,12 +34,7 @@ public class UsableDeviceController {
     public void stopUse(String deviceID) {
         try {
             usableDeviceService.stopUse(deviceID);
-//            eventController.notify(new Event<AbstractUsableDevice>(
-//                    usableDeviceService.getDevice(deviceID),
-//                    1,
-//                    EventType.E_NORMAL,
-//                    usableDeviceService.getDevice(deviceID).getId() + " now free"
-//            ));
+            reportController.report("Device " + deviceID + " now in available to use");
         } catch (NotFoundException e1) {
             System.out.println(e1);
         } catch (IllegalUseException e2) {
@@ -55,6 +46,7 @@ public class UsableDeviceController {
     public void repair(String deviceID) {
         try {
             usableDeviceService.repair(deviceID);
+            reportController.report("Device " + deviceID + " repaired");
         } catch (NotFoundException e) {
             System.out.println(e);
         }

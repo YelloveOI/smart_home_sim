@@ -1,6 +1,7 @@
 package cz.cvut.fel.smarthome.controller.basic;
 
 import cz.cvut.fel.smarthome.controller.EventController;
+import cz.cvut.fel.smarthome.controller.ReportController;
 import cz.cvut.fel.smarthome.model.entities.device.AbstractStorageDevice;
 import cz.cvut.fel.smarthome.model.event.Event;
 import cz.cvut.fel.smarthome.model.event.EventType;
@@ -14,17 +15,12 @@ public class StorageDeviceController {
     @Inject
     private StorageDeviceService storageDeviceService;
     @Inject
-    private EventController eventController;
+    private ReportController reportController;
 
     public void get(String deviceID, String itemType) {
         try {
             storageDeviceService.get(deviceID, itemType);
-            eventController.notify(new Event<AbstractStorageDevice>(
-                    storageDeviceService.getDevice(deviceID),
-                    1,
-                    EventType.E_NORMAL,
-                    "Decreased number of " + itemType + " in " + storageDeviceService.getDevice(deviceID)
-            ));
+            reportController.report("Storage device " + deviceID + ": item" + itemType + " was dragged out");
         } catch (NotFoundException e1) {
             System.out.println(e1);
         } catch (IllegalUseException e2) {
@@ -36,12 +32,7 @@ public class StorageDeviceController {
     public void put(String deviceID, String itemType, Integer itemQuantity) {
         try {
             storageDeviceService.put(deviceID, itemType, itemQuantity);
-            eventController.notify(new Event<AbstractStorageDevice>(
-                    storageDeviceService.getDevice(deviceID),
-                    1,
-                    EventType.E_NORMAL,
-                    storageDeviceService.getDevice(deviceID) + " get " + itemQuantity + " of " + itemType
-            ));
+            reportController.report("Storage device " + deviceID + ": " + itemQuantity + " item(s)" + itemType + " was putted");
         } catch (NotFoundException e1) {
             System.out.println(e1);
         } catch (IllegalUseException e2) {
