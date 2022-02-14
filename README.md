@@ -1,6 +1,6 @@
 # cz.cvut.fel.smarthome.SemOmo
 
-- Ivan Shalaev, Oleksii Afanasiev
+- Ivan Shalaev
 
 - Všechny diagramy jsou ve složce "diagrams"
 
