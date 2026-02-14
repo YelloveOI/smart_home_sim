@@ -1,5 +1,9 @@
 cz.cvut.fel.smarthome.SemOmo
 
+This project implements a smart home simulation system designed using the MVC architectural pattern with elements of a one-directional N-tier architecture. The system models a virtual household composed of entities such as persons, devices, sensors, and locations, built through composable behavioral components.
+Controllers manage interactions, generate activities, and process events triggered during the simulation. All system events, state changes, and actions are recorded in a centralized log file, creating a complete history of the simulated home’s behavior.
+The project emphasizes modular design, separation of concerns, and the application of established design patterns to ensure extensibility and maintainability.
+
 -   Ivan Shalaev
 
 -   All diagrams are located in the “diagrams” folder
